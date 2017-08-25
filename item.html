@@ -2,10 +2,9 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>Template Start Page</title>
-  <link href="css/common-styles.css" rel="stylesheet">
-  <link href="css/start.css" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+  <title>Item Page</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/item.css" rel="stylesheet">
 </head>
 <body>
 
@@ -49,88 +48,108 @@
 
 
 
-  <div class="promo-block">
-    <a href="#" class="prev">
-      <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </a>
-    <a href="#" class="next">
-      <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </a>
 
-    <div class="slider-images">
-      <a href="#" class="active">
-        <img src="img/startPage/promo/promo-1.jpg" alt="New collection Black White" title="New collection Black White">
-      </a>
-      <a href="#">
-        <img src="img/startPage/promo/promo-2.jpg" alt="Sale" title="Sale">
-      </a>
-      <a href="#">
-        <img src="img/startPage/promo/promo-3.jpg" alt="Discount" title="Discount">
-      </a>
+<section class="item">
+  <a href="catalog.html" class="to-catalog">< Back to catalog</a>
+
+  <article>
+    <div class="item-photo">
+      <img class="main-photo" src="img/itemPage/full.jpg" alt="main-photo" title="main-photo">
+
+      <ul class="preview">
+        <li>
+          <img src="img/itemPage/full.jpg">
+          <div class="shadow"></div>
+        </li>
+        <li>
+          <img src="img/itemPage/preview1.jpg">
+          <div></div>
+        </li>
+        <li>
+          <img src="img/itemPage/preview2.jpg">
+          <div></div>
+        </li>
+      </ul>
     </div>
 
+    <div class="item-info">
+      <h2>Dark classic fit suit</h2>
+      <p>Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
+      <span class="item-price">&#163;180.60</span>
 
-    <nav class="radio-commands">
-      <div class="middle">
+      <div class="sizes">
+        <span>Size:</span>
+        <ul class="item-sizes">
+          <li>
+            <input type="radio" value="52" checked>
+            <span class="checked">UK 52</span>
+          </li>
+          <li>
+            <input type="radio" value="54">
+            <span>UK 54</span>
+          </li>
+          <li>
+            <input type="radio"value="56">
+            <span>UK 56</span>
+          </li>
+        </ul>
       </div>
-    </nav>
+
+
+      <div class="colors">
+        <span>Color:</span>
+        <ul class="item-colors">
+          <li>
+            <input type="radio" value="Black">
+            <span>Black</span>
+          </li>
+
+          <li>
+            <input type="radio" value="Blue" checked>
+            <span class="checked">Blue</span>
+          </li>
+        </ul>
+      </div>
+
+
+      <button>Add to bag</button>
+
+    </div>
+  </article>
+</section>
+
+<section class="banners">
+  <div class="banner">
+    <div class="banner-info">
+      <h3>adidas blue</h3>
+      <span>For Men</span>
+    </div>
+    <img src="img/itemPage/banners/banner-1.jpg" alt="Adidas Blue For Men" title="Adidas Blue For Men">
   </div>
 
+  <div class="banner">
+    <div class="banner-info">
+      <h3>repair patches</h3>
+      <span>&pound;150.50</span>
+    </div>
+    <img src="img/itemPage/banners/banner-2.jpg" alt="repair patches &pound;150.50" title="repair patches &pound;150.50">
+  </div>
 
-
-
-
-
-
-
-
-
-
-  <section class="banners">
-    <a href="item.html" class="banner">
-      <div class="banner-info">
-        <h3>nike red</h3>
-        <span>new</span>
-      </div>
-      <img src="img/startPage/banner1.jpg" alt="Nike" title="Nike">
-    </a>
-
-    <a href="catalog.html" class="banner">
-      <div class="banner-info">
-        <h3>caps & hats</h3>
-        <span>sale -50%</span>
-      </div>
-      <img src="img/startPage/banner2.jpg" alt="caps & hats" title="caps & hats">
-    </a>
+  <div class="banner">
+    <div class="banner-info">
+      <h3>sale</h3>
+      <span>-70%</span>
+    </div>
+    <img src="img/itemPage/banners/banner-3.jpg" alt="Sale -70%" title="Sale -70%">
+  </div>
   </section>
 
-  <section class="arrivals">
-    <h2>new arrivals</h2>
-    <ul class="list-arrivals">
-      <li>
-        <img src="img/startPage/Arrivals1.jpg" alt="Straight Leg Jeans" title="Straight Leg Jeans">
-        <span class="product-name">Straight Leg Jeans</span>
-        <span class="price">&pound;55</span>
-      </li>
-      <li>
-        <img src="img/startPage/Arrivals2.jpg" alt="Boyfriend T-shirt with Bohemian Print" title="Boyfriend T-shirt with Bohemian Print">
-        <span class="product-name">Boyfriend T-shirt with Bohemian Print</span>
-        <span class="price">&pound;34.25</span>
-      </li>
-      <li>
-        <img src="img/startPage/Arrivals3.jpg" alt="Only Busted Knee Jean" title="Only Busted Knee Jean">
-        <span class="product-name">Only Busted Knee Jean</span>
-        <span class="price">&pound;140.50</span>
-      </li>
-      <li>
-        <img src="img/startPage/Arrivals4.jpg" alt="Only Skinny Jeans" title="Only Skinny Jeans">
-        <span class="product-name">Only Skinny Jeans</span>
-        <span class="price">&pound;12.75</span>
-      </li>
-    </ul>
 
-    <button>All arrivals</button>
-  </section>
+
+
+
+
+
 
   <footer>
     <div class="quick-links">
@@ -189,7 +208,6 @@
     </div>
   </footer>
 
-
   <div class="copyright">
     <span>&copy; 2010-2017, The Template Group inc.</span>
 
@@ -206,10 +224,9 @@
     </ul>
   </div>
 
-
 </main>
 
-<script src="js/slider.js"></script>
+<script src="js/item-photo-preview.js"></script>
 
 </body>
 </html>

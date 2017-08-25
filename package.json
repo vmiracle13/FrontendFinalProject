@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce-shop",
+  "version": "1.0.0",
+  "description": "My final project",
+  "main": "",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vmiracle13@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
