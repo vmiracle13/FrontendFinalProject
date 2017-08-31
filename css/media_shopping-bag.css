@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h2 {
+    padding: 3.4% 9.1%;
+    font-size: 1.25em;
+  }
+  .product-list {
+    padding: 4.3% 5.4%;
+  }
+  .wrap img {
+    width: 144px;
+    height: auto;
+  }
+  .product-info .price {
+    font-size: 1.17em;
+  }
+  .product-info button {
+    width: auto;
+    height: auto;
+  }
+  .product {
+    margin-bottom: 14.4%;
+  }
+  .shadow {
+    height: 98%;
+  }
+  .shadow span {
+    left: 12%;
+  }
+  .product-list {
+    padding: 4.3% 5.4% 2%;
+  }
+  .coupon-code {
+    padding: 1.7% 0;
+  }
+  .bottom-info {
+    padding: 4% 5.4% 5%;
+  }
+  .total-sum input {
+    font-size: 1em;
+  }
+  .total-sum {
+    flex-basis: 11%;
+  }
+  button {
+    width: 39%;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  h2 {
+    padding: 5.8% 10.3%;
+  }
+  .product-list {
+    padding: 4.4% 5.8%;
+  }
+  .wrap img {
+    width: 158px;
+  }
+  .product {
+    flex-basis: 100%;
+    margin-bottom: 13%;
+  }
+  .product-info {
+    flex-basis: 50%;
+  }
+  .product-info button {
+    width: auto;
+  }
+  .shadow span {
+    left: 16%;
+  }
+  .coupon-code {
+    font-size: 0.625em;
+    padding: 4% 0;
+  }
+  .bottom-info {
+    padding: 5.7% 5.7% 5.7%;
+  }
+  .bottom-info span {
+    font-size: 0.625em;
+  }
+  .total-sum {
+    flex-basis: 19.5%;
+  }
+  .total-sum input {
+    font-family: "OpenSans Bold",sans-serif;
+    font-size: 0.875em;
+  }
+  button {
+    width: 48.4%;
+    font-size: 1.125em;
+  }
+  .clear {
+    font-size: 0.625em;
+    padding: 0;
+  }
+  .message {
+    text-align: center;
+  }
+}

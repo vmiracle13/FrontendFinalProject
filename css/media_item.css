@@ -1,0 +1,155 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .to-catalog {
+    padding: 3.125% 9.4%;
+    margin-bottom: 6.2%;
+  }
+  article {
+    padding: 0 5.2%;
+    flex-direction: column;
+  }
+  .item-photo {
+    flex-direction: row;
+  }
+  .main-photo {
+    width: 516px;
+    height: 344px;
+  }
+  .preview {
+    flex-direction: column;
+  }
+  .preview li {
+    width: 173px;
+  }
+  .item-info {
+    padding-top: 3.5%;
+    text-align: center;
+  }
+  .item-info h2 {
+    margin-bottom: 4.7%;
+    order: 1;
+  }
+  .item-info .item-price {
+    margin-bottom: 4.7%;
+    order: 2;
+
+  }
+  .item-info p {
+    padding: 0 16%;
+    font-size: 0.875em;
+    margin-bottom: 7.6%;
+    order: 3;
+  }
+  .sizes, .colors {
+    justify-content: center;
+  }
+  .sizes {
+     order: 4;
+   }
+  .colors {
+    margin-bottom: 16%;
+    margin-left: 12%;
+    order: 5;
+  }
+  .size-value {
+    flex-basis: 14%;
+  }
+  .color-value {
+   flex-basis: 15%;
+ }
+
+  .color-value:last-of-type {
+    margin-right: 10%;
+  }
+
+  .size-value span, .color-value span {
+    padding: 10% 18%;
+  }
+
+  .sizes span, .colors span {
+    margin-right: 5%;
+  }
+  button {
+    /*padding: 4% 11.55%;*/
+    width: 40.4%;
+    height: 70px;
+    order: 6;
+  }
+  .item {
+    margin-bottom: 18.7%;
+  }
+  .banners {
+    margin-bottom: 0;
+  }
+  .banner img {
+    height: 250px;
+  }
+  .banner:first-child .banner-info {
+    top: 8%;
+  }
+  .banner:nth-of-type(2) {
+    border-right: none;
+  }
+  .banner:last-of-type{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .to-catalog {
+    padding: 7.3% 5.6%;
+  }
+  article{
+    padding: 0 5.6%;
+    flex-direction: column;
+  }
+  .main-photo {
+    width: 317px;
+    height: 223px;
+  }
+  .item-photo {
+    margin-bottom: 15%;
+  }
+  .item-info {
+    text-align: center;
+    padding-left: 0;
+  }
+  .item-info h2 {
+    margin-bottom: 9.5%;
+    order: 1;
+  }
+  .item-info p {
+    font-size: 0.875em;
+    margin-bottom: 16.5%;
+    line-height: 2;
+    order: 3;
+  }
+  .item-info .item-price {
+    font-size: 1.125em;
+    margin-bottom: 10%;
+    order: 2;
+  }
+  .sizes, .colors {
+    margin-bottom: 20%;
+  }
+  .sizes {
+    order: 4;
+  }
+  .colors {
+    order: 5;
+  }
+  .sizes span, .colors span {
+    margin-right: 11%;
+  }
+  button {
+    /*padding: 7% 19%;*/
+    width: 70%;
+    height: 60px;
+    order: 6;
+  }
+  .item {
+    margin-bottom: 28.3%;
+  }
+  .preview {
+    width: 317px;
+  }
+}

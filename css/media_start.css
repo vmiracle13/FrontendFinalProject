@@ -1,0 +1,138 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .promo-block {
+    height: 820px;
+  }
+  .prev, .next {
+    display: none;
+  }
+  .radio-commands {
+    height: 8.46%;
+  }
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 10.9%;
+  }
+  .banners {
+    height: 32.55%;
+  }
+  .banner:first-of-type {
+    flex-basis: 66%;
+  }
+  .banner:last-of-type {
+    flex-basis: 35%;
+  }
+  .list-items li:nth-of-type(4) {
+    display: none;
+  }
+  button {
+    width: 40.1%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+  .top {
+    align-items: baseline;
+  }
+  .promo-block {
+    height: 475px;
+  }
+  .radio-commands {
+    height: 14.4%;
+    display: flex;
+    z-index: 0;
+    padding: 0;
+  }
+  .radio-commands .middle {
+    align-items: center;
+    width: 25%;
+  }
+  .banners {
+    margin-bottom: 16.4%;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .banner{
+    border: none;
+  }
+  .banner:nth-of-type(2) {
+    display: none;
+  }
+  .banner-info {
+    top: 13%;
+  }
+  .banner-info h3 {
+    font-size: 1.375em;
+    margin-bottom: 8.4%;
+  }
+  .banner-info span {
+    font-size: 0.875em;
+  }
+  h2 {
+    font-size: 1.625em;
+    margin-bottom: 12.25%;
+  }
+  .list-items {
+    padding: 0 4.9%;
+    margin-bottom: 17.15%;
+  }
+  .list-items li {
+    flex-basis: 47%;
+  }
+  .list-items li:nth-of-type(n + 3) {
+    display: none;
+  }
+  .list-items img {
+    margin-bottom: 20.8%;
+  }
+  .catalog {
+    margin-bottom: 26%;
+  }
+  button {
+    font-size: 1.125em;
+    /*padding: 4.41% 15%;*/
+  }
+  footer {
+    flex-direction: column;
+  }
+  .quick-links {
+    border-bottom: 1px solid #e5e5e5;
+    border-right: none;
+    padding-top: 9.78%;
+    padding-left: 4.9%;
+    padding-bottom: 15.43%;
+  }
+  .quick-links li {
+    margin-bottom: 18.6%;
+  }
+  .socials {
+    padding: 0;
+    border-right: none;
+  }
+  .socials p {
+    display: none;
+  }
+  .socials ul li {
+    padding: 7.2% 6.93% 12% 5.87%;
+  }
+  .socials ul li:first-of-type {
+    border-right: 1px solid #e5e5e5;
+  }
+  .socials li:last-of-type {
+    padding-right: 13.33%;
+  }
+  .socials h4 {
+    font-size: 0.875em
+  }
+  .socials .tweet-us {
+    font-size: 0.75em;
+  }
+  .copyright span, .legal-ref li {
+    font-size: 0.625em;
+  }
+  .center h4 {
+    font-size: 0.875em;
+  }
+  .socials li:last-of-type {
+    padding-right: 0;
+  }
+}

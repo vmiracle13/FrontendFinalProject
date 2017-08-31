@@ -3,8 +3,12 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Item Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/reset.css" rel="stylesheet">
+  <link href="fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/item.css" rel="stylesheet">
+  <link href="css/media_common-styles.css" rel="stylesheet">
+  <link href="css/media_item.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,10 +23,11 @@
         <a href="#" class="sign-up">Email sign up</a>
 
         <div class="bag-short-info">
-          <span>Bag&nbsp;</span>
+          <span class="totalSum">Bag&nbsp;</span>
           <span class="bag-sum-productAmount">(0)</span>
         </div>
       </div>
+      <i class="fa fa-bars none" aria-hidden="true"></i>
     </div>
 
     <div class="wrap-nav">
@@ -38,120 +43,102 @@
       </nav>
 
       <div class="search">
-        <input type="text" name="search" placeholder="Style Name">
+        <input type="text" id="search" placeholder="Style Name" class="search-input">
+        <label class="glass-icon" for="search"></label>
       </div>
     </div>
   </header>
 
+  <section class="item">
+    <a href="catalog.html" class="to-catalog">< Back to catalog</a>
 
+    <article>
+      <div class="item-photo">
+        <img class="main-photo" src="img/itemPage/full.jpg" alt="main-photo" title="main-photo">
 
-
-
-
-
-<section class="item">
-  <a href="catalog.html" class="to-catalog">< Back to catalog</a>
-
-  <article>
-    <div class="item-photo">
-      <img class="main-photo" src="img/itemPage/full.jpg" alt="main-photo" title="main-photo">
-
-      <ul class="preview">
-        <li>
-          <img src="img/itemPage/full.jpg">
-          <div class="shadow"></div>
-        </li>
-        <li>
-          <img src="img/itemPage/preview1.jpg">
-          <div></div>
-        </li>
-        <li>
-          <img src="img/itemPage/preview2.jpg">
-          <div></div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="item-info">
-      <h2>Dark classic fit suit</h2>
-      <p>Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
-      <span class="item-price">&#163;180.60</span>
-
-      <div class="sizes">
-        <span>Size:</span>
-        <ul class="item-sizes">
+        <ul class="preview">
           <li>
+            <img src="img/itemPage/full.jpg">
+            <div class="shadow-img"></div>
+          </li>
+          <li>
+            <img src="img/itemPage/preview1.jpg">
+            <div></div>
+          </li>
+          <li>
+            <img src="img/itemPage/preview2.jpg">
+            <div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="item-info">
+        <h2 class="name">Dark classic fit suit</h2>
+        <p class="description">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
+        <span class="item-price">&#163;180.60</span>
+
+        <div class="sizes">
+          <span>Size:</span>
+          <div class="size-value">
             <input type="radio" value="52" checked>
             <span class="checked">UK 52</span>
-          </li>
-          <li>
+          </div>
+          <div class="size-value">
             <input type="radio" value="54">
             <span>UK 54</span>
-          </li>
-          <li>
-            <input type="radio"value="56">
+          </div>
+          <div class="size-value">
+            <input type="radio" value="56">
             <span>UK 56</span>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
 
-
-      <div class="colors">
-        <span>Color:</span>
-        <ul class="item-colors">
-          <li>
+        <div class="colors">
+          <span>Color:</span>
+          <div class="color-value">
             <input type="radio" value="Black">
             <span>Black</span>
-          </li>
-
-          <li>
+          </div>
+          <div class="color-value">
             <input type="radio" value="Blue" checked>
             <span class="checked">Blue</span>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <a href="#"><button>Add to bag</button></a>
+
       </div>
-
-
-      <button>Add to bag</button>
-
-    </div>
-  </article>
-</section>
-
-<section class="banners">
-  <div class="banner">
-    <div class="banner-info">
-      <h3>adidas blue</h3>
-      <span>For Men</span>
-    </div>
-    <img src="img/itemPage/banners/banner-1.jpg" alt="Adidas Blue For Men" title="Adidas Blue For Men">
-  </div>
-
-  <div class="banner">
-    <div class="banner-info">
-      <h3>repair patches</h3>
-      <span>&pound;150.50</span>
-    </div>
-    <img src="img/itemPage/banners/banner-2.jpg" alt="repair patches &pound;150.50" title="repair patches &pound;150.50">
-  </div>
-
-  <div class="banner">
-    <div class="banner-info">
-      <h3>sale</h3>
-      <span>-70%</span>
-    </div>
-    <img src="img/itemPage/banners/banner-3.jpg" alt="Sale -70%" title="Sale -70%">
-  </div>
+    </article>
   </section>
 
+  <section class="banners">
+    <div class="banner">
+      <div class="banner-info">
+        <h3>adidas blue</h3>
+        <span>For Men</span>
+      </div>
+      <img src="img/itemPage/banners/banner-1.jpg" alt="Adidas Blue For Men" title="Adidas Blue For Men">
+    </div>
 
+    <div class="banner">
+      <div class="banner-info">
+        <h3>repair patches</h3>
+        <span>&pound;150.50</span>
+      </div>
+      <img src="img/itemPage/banners/banner-2.jpg" alt="repair patches &pound;150.50"
+           title="repair patches &pound;150.50">
+    </div>
 
+    <div class="banner">
+      <div class="banner-info">
+        <h3>sale</h3>
+        <span>-70%</span>
+      </div>
+      <img src="img/itemPage/banners/banner-3.jpg" alt="Sale -70%" title="Sale -70%">
+    </div>
+  </section>
 
-
-
-
-
-  <footer>
+  <footer class="footer">
     <div class="quick-links">
       <div class="left-ref-block">
         <h4>quick links</h4>
@@ -203,8 +190,22 @@
 
       <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5days.</p>
 
-      <a href="facebook.com" class="facebook"></a>
-      <a href="tweeter.com" class="tweeter"></a>
+      <div class="social-ref">
+        <a href="facebook.com" class="facebook"></a>
+        <a href="tweeter.com" class="tweeter"></a>
+      </div>
+    </div>
+
+    <div class="block-mobile">
+      <ul class="legal-ref">
+        <li><a href="#">Legal notice</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Site map</a></li>
+      </ul>
+      <div class="social-ref mobile">
+        <a href="facebook.com" class="facebook"></a>
+        <a href="tweeter.com" class="tweeter"></a>
+      </div>
     </div>
   </footer>
 
@@ -212,21 +213,22 @@
     <span>&copy; 2010-2017, The Template Group inc.</span>
 
     <div class="center">
-      <h4>Share</h4>
-      <span class="triangle"></span>
-      <span class="amount-visitors">1&nbsp;437</span>
+      <h4>Share</h4>&nbsp;<span class="amount-visitors">1&nbsp;437</span>
     </div>
 
     <ul class="legal-ref">
-      <li>Legal notice</li>
-      <li>Privacy policy</li>
-      <li>Site map</li>
+      <li><a href="#">Legal notice</a></li>
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Site map</a></li>
     </ul>
   </div>
-
 </main>
 
 <script src="js/item-photo-preview.js"></script>
+<script src="js/search-field.js"></script>
+<script src="js/openHamburgerMenu.js"></script>
+<script src="js/bag.js"></script>
+<script src="js/item.js"></script>
 
 </body>
 </html>

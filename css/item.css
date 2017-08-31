@@ -11,7 +11,7 @@ img {
 
 .to-catalog {
   display: block;
-  padding: 2.08% 4.62%;
+  padding: 2.08% 6.92%;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 4.62%;
 }
@@ -23,27 +23,34 @@ article {
 }
 
 .item-photo {
-  /*width: 535px;*/
-  flex-basis: 53%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
 }
 
 .main-photo {
-  width: 100%;
+  width: 535px;
+  height: 312px;
 }
 
 .preview {
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 
 .preview li {
   flex-basis: 33.31%;
-  height: 113px;
+  height: auto;
+  width: 176px;
   position: relative;
 }
 
-.shadow {
+.preview li img {
+  width: 100%;
+  height: 100%;
+}
+
+.shadow-img {
   background: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
@@ -52,11 +59,8 @@ article {
   left: 0;
 }
 
-.preview img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+
+
 
 
 
@@ -72,6 +76,8 @@ article {
   padding-top: 1.5%;
   padding-left: 3.86%;
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-info h2 {
@@ -82,128 +88,89 @@ article {
 
 .item-info p {
   font-family: "Times New Roman", serif;
-  font-size: 0.95em;
+  font-size: 1em;
   font-style: italic;
   margin-bottom: 5.32%;
   line-height: 1.8;
 }
 
-.item-price {
+.item-info .item-price {
   display: block;
   font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 1.5625em;
   margin-bottom: 7.47%;
 }
 
-span:not(.item-price) {
+.item-info span {
   font-size: 0.75em;
   font-family: "Roboto Regular", Arial, sans-serif;
 }
 
-.sizes {
+.sizes, .colors {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 8%;
 }
 
-.item-sizes {
-  flex-basis: 55%;
-  margin-bottom: 7%;
-  margin-left: 11.7%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.item-sizes li {
-  flex-basis: 28%;
-  position: relative;
-}
-
-.item-sizes input, .item-colors input {
+.sizes input, .colors input {
   opacity: 0;
 }
 
-.item-sizes span, .item-colors span {
-  font-family: "OpenSans Bold", Arial, sans-serif;
-  font-size: 0.875em;
-  cursor: pointer;
+.sizes span, .colors span {
   display: block;
-  position: absolute;
-  padding: 12% 21%;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 0.75em;
+  margin-right: 47px;
 }
 
-.item-sizes span {
-  bottom: -20%;
-  left: -20%;
-  padding: 17% 28%;
+.size-value span, .color-value span {
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 0.875em;
+  position: absolute;
+  top: -62%;
+  left: 0;
+  padding: 7% 15%;
+}
+
+.size-value, .color-value{
+  position: relative;
+  flex-basis: 27%;
 }
 
 .checked {
   border: 1px solid #e5e5e5;
 }
 
-.colors {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10.51%;
-}
-
-.item-colors {
-  flex-basis: 80%;
-  margin-left: 12%;
-  display: flex;
-  flex-direction: row;
-}
-
-.item-colors li {
-  flex-basis: 27%;
-  position: relative;
-}
-
-.item-colors span {
-  bottom: -45%;
-  left: -20%;
-}
-
 button {
-  padding: 3.5% 0;
-  width: 50%;
-  font-family: "OpenSans Semibold", Arial, sans-serif;
+  /*padding: 3.3% 18.3%;
+  width: 72%;
+  height: 18.6%;
+  font-family: "OpenSans Bold", Arial, sans-serif;*/
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.banner {
-  border-right: 1px solid #e5e5e5;
-  color: #fff;
+button a {
+  width: 100%;
+  height: 100%;
 }
 
-.banner:last-of-type {
-  border-right: none;
-}
-.banner:last-of-type h3 {
+.banner:nth-of-type(3) h3 {
   color: #f14a58;
 }
 
-.banner:last-of-type span{
+.banner:nth-of-type(1) span, .banner:nth-of-type(3) span {
+  font-family: "Times New Roman", serif;
+  font-size: 1em;
+}
+
+.banner:nth-of-type(3) span{
   color: #757575;
+}
+
+.banner:nth-of-type(2) span{
+  font-family: "Roboto Regular", serif;
+  font-size: 0.875em;
+  font-style: normal;
 }
 
 .banner span {
@@ -212,21 +179,10 @@ button {
 
 .banner h3 {
   margin-bottom: 8%;
+  color: #fff;
 }
 
-.banner:first-of-type h3 {
-  margin-bottom: 8%;
-}
-
-.banner:nth-of-type(2) h3 {
-  margin-bottom: 4%;
-}
-
-.banner:last-of-type h3 {
-  margin-bottom: 4%;
-}
-
-.banner-info {
+.banner:not(:nth-of-type(1)) .banner-info {
   position: absolute;
   top: 73%;
   right: 50%;
@@ -234,9 +190,6 @@ button {
   width: 100%;
 }
 
-.banner:first-of-type .banner-info {
-  transform: none;
-  top: 16%;
-  right: 10%;
-  width: auto;
+footer {
+  border-top: none;
 }

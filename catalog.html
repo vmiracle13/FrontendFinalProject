@@ -3,8 +3,12 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Catalog Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/reset.css" rel="stylesheet">
-  <link href="css/start.css" rel="stylesheet">
+  <link href="fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/catalog.css" rel="stylesheet">
+  <link href="css/media_common-styles.css" rel="stylesheet">
+  <link href="css/media_catalog.css" rel="stylesheet">
 
 </head>
 <body>
@@ -24,7 +28,9 @@
           <span class="bag-sum-productAmount">(0)</span>
         </div>
       </div>
+      <i class="fa fa-bars none" aria-hidden="true"></i>
     </div>
+
 
     <div class="wrap-nav">
       <nav>
@@ -39,14 +45,278 @@
       </nav>
 
       <div class="search">
-        <input type="text" name="search" placeholder="Style Name">
+        <input type="text" id="search" placeholder="Style Name" class="search-input">
+        <label class="glass-icon" for="search"></label>
       </div>
     </div>
   </header>
 
 
 
+  <div class="filter-wrap">
+    <nav class="filter">
+      <div class="title selected">
+        <span class="nav-item-small">Fashion</span>
+        <span class="nav-item">Casual style</span>
+      </div>
+      <div class="title">
+        <span class="nav-item">Product type</span>
+      </div>
+      <div class="title">
+        <span class="nav-item">Color</span>
+      </div>
+      <div class="title selected">
+        <span class="nav-item-small">Brand</span>
+        <span class="nav-item">Antipodium</span>
+      </div>
+      <div class="title selected">
+        <span class="nav-item-small">Size</span>
+        <span class="nav-item">UK 18</span>
+      </div>
+      <div class="title">
+        <span class="nav-item">Price range</span>
+      </div>
+      <i class="fa fa-times none" aria-hidden="true"></i>
+    </nav>
 
+    <div class="wrap-filter-props">
+      <div class="filter-submenu">
+        <span>Fashion</span>
+        <ul class="sub-navigation" data-number="0">
+        <li><span>Not selected</span></li>
+        <li><span>Nail the 90s</span></li>
+        <li class="selected-prop"><span>Casual style</span></li>
+        <li><span>New look</span></li>
+        <li><span>Sport</span></li>
+        <li><span>Vintage</span></li>
+        <li><span>Classic style</span></li>
+        </ul>
+      </div>
+      <div class="filter-submenu">
+        <span>Product type</span>
+        <ul class="sub-navigation" data-number="1">
+          <li class="not-selected"><span>Not selected</span></li>
+          <li><span>Coats & Jackets</span></li>
+          <li><span>Dresses</span></li>
+          <li><span>Jersey tops</span></li>
+        </ul>
+      </div>
+      <div class="filter-submenu">
+        <span>Color</span>
+        <ul class="sub-navigation" data-number="2">
+          <li class="not-selected"><span>Not selected</span></li>
+          <li><span>Black</span></li>
+          <li><span>Blue</span></li>
+          <li><span>Red</span></li>
+          <li><span>Green</span></li>
+          <li><span>Golden</span></li>
+        </ul>
+      </div>
+      <div class="filter-submenu">
+        <span>Brand</span>
+        <ul class="sub-navigation" data-number="3">
+          <li><span>Not selected</span></li>
+          <li><span>Chi Chi London</span></li>
+          <li class="selected-prop"><span>Antipodium</span></li>
+          <li><span>Adidas</span></li>
+          <li><span>New Balance</span></li>
+          <li><span>River Island</span></li>
+        </ul>
+      </div>
+      <div class="filter-submenu">
+        <span>Size</span>
+        <ul class="sub-navigation" data-number="4">
+          <li><span>Not selected</span></li>
+          <li><span>UK 2</span></li>
+          <li class="selected-prop"><span>UK 18</span></li>
+          <li><span>UK 18L</span></li>
+          <li><span>UK 20</span></li>
+          <li><span>UK 20L</span></li>
+          <li><span>UK 20S</span></li>
+          <li><span>UK 22S</span></li>
+          <li><span>UK 22</span></li>
+        </ul>
+      </div>
+      <div class="filter-submenu">
+        <span>Price range</span>
+        <ul class="sub-navigation" data-number="5">
+          <li class="not-selected"><span>Not selected</span></li>
+          <li><span>To &pound;99</span></li>
+          <li><span>&pound;100-&pound;299</span></li>
+          <li><span>From &pound;300</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<section class="main-catalog main-catalog-shadow">
+  <div class="sale-info">
+    <p class="sale">Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</p>
+    <p class="valid-till">This offer is valid in-store and online. Prices displayed reflect this additional discount.
+      This offer ends at 11:59 GMT on March 1st 2015</p>
+  </div>
+
+  <ul class="list-items">
+    <li>
+      <div class="wrap">
+      <img src="img/catalogPage/catalog-1.jpg" alt="Straight Leg Jeans" title="Straight Leg Jeans">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">straight leg jeans</span>
+      <span class="price">&pound;65.50</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-2.jpg" alt="Boyfriend T-shirt with Bohemian Print" title="Boyfriend T-shirt with Bohemian Print">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">neck knitted jumper</span>
+      <span class="price">&pound;76.25</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-3.jpg" alt="Only Busted Knee Jean" title="Only Busted Knee Jean">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">turtle neck jumper in rib</span>
+      <span class="price">&pound;130.25</span>
+      <span class="specific">New</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-4.jpg" alt="Only Skinny Jeans" title="Only Skinny Jeans">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">with patchwork crochet</span>
+      <span class="price">&pound;80.60</span>
+    </li>
+    <li>
+      <img src="img/catalogPage/catalog-5.jpg" alt="Straight Leg Jeans" title="Straight Leg Jeans">
+      <div class="advertisement">
+        <div class="wrap-position">
+          <h3>Levi's</h3>
+          <span>Buyer's choice</span>
+        </div>
+      </div>
+      <span class="product-name">levi's jeans for women</span>
+      <span class="price"></span>
+      <span class="specific">More colours</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-6.jpg" alt="Boyfriend T-shirt with Bohemian Print" title="Boyfriend T-shirt with Bohemian Print">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">Boyfriend T-shirt with Bohemian Print</span>
+      <span class="initial-price">&pound;120.00</span>
+      <span class="specific">-25%</span>
+      <span class="price">&pound;90.00</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-7.jpg" alt="Only Busted Knee Jean" title="Only Busted Knee Jean">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">color block</span>
+      <span class="price">&pound;24.75</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-8.jpg" alt="Only Skinny Jeans" title="Only Skinny Jeans">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">monki festval knitted</span>
+      <span class="price">&pound;12.75</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-9.jpg" alt="Straight Leg Jeans" title="Straight Leg Jeans">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">oversized cardigan</span>
+      <span class="price">&pound;90.00</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-10.jpg" alt="Boyfriend T-shirt with Bohemian Print" title="Boyfriend T-shirt with Bohemian Print">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">paul & joe sister jumper with neon trims</span>
+      <span class="price">&pound;19.75</span>
+      <span class="specific">New</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-11.jpg" alt="Only Busted Knee Jean" title="Only Busted Knee Jean">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">Only Busted Knee Jean</span>
+      <span class="price">&pound;140.50</span>
+    </li>
+    <li>
+      <div class="wrap">
+        <img src="img/catalogPage/catalog-12.jpg" alt="Only Skinny Jeans" title="Only Skinny Jeans">
+        <a href="item.html" class="shadow">
+          <span>View item</span>
+        </a>
+      </div>
+      <span class="product-name">Boyfriend T-shirt with Bohemian Print</span>
+      <span class="price">&pound;85.75</span>
+    </li>
+  </ul>
+
+  <button>Show more</button>
+
+  <section class="banners">
+    <div class="banner">
+      <div class="banner-info">
+        <h3>adidas blue</h3>
+        <span>For Men</span>
+      </div>
+      <img src="img/itemPage/banners/banner-1.jpg" alt="Adidas Blue For Men" title="Adidas Blue For Men">
+    </div>
+
+    <div class="banner">
+      <div class="banner-info">
+        <h3>repair patches</h3>
+        <span>&pound;150.50</span>
+      </div>
+      <img src="img/itemPage/banners/banner-2.jpg" alt="repair patches &pound;150.50" title="repair patches &pound;150.50">
+    </div>
+
+    <div class="banner">
+      <div class="banner-info">
+        <h3>sale</h3>
+        <span>-70%</span>
+      </div>
+      <img src="img/itemPage/banners/banner-3.jpg" alt="Sale -70%" title="Sale -70%">
+    </div>
+  </section>
+
+</section>
 
 
 
@@ -112,29 +382,47 @@
 
       <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5days.</p>
 
-      <span class="facebook"></span>
-      <span class="tweeter"></span>
+      <div class="social-ref">
+        <a href="facebook.com" class="facebook"></a>
+        <a href="tweeter.com" class="tweeter"></a>
+      </div>
+    </div>
+
+    <div class="block-mobile">
+      <ul class="legal-ref">
+        <li><a href="#">Legal notice</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Site map</a></li>
+      </ul>
+      <div class="social-ref mobile">
+        <a href="facebook.com" class="facebook"></a>
+        <a href="tweeter.com" class="tweeter"></a>
+      </div>
     </div>
   </footer>
-
 
   <div class="copyright">
     <span>&copy; 2010-2017, The Template Group inc.</span>
 
     <div class="center">
-      <h4>Share</h4>
-      <span class="triangle"></span>
-      <span class="amount-visitors">1&nbsp;437</span>
+      <h4>Share</h4>&nbsp;<span class="amount-visitors">1&nbsp;437</span>
     </div>
 
     <ul class="legal-ref">
-      <li>Legal notice</li>
-      <li>Privacy policy</li>
-      <li>Site map</li>
+      <li><a href="#">Legal notice</a></li>
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Site map</a></li>
     </ul>
   </div>
 
 
 </main>
+
+<script src="js/search-field.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/openHamburgerMenu.js"></script>
+<script src="js/bag.js"></script>
+<script src="js/catalog.js"></script>
+
 </body>
-</html>
+                </html>

@@ -1,0 +1,133 @@
+@import "/fonts/fonts.css";
+@import "/css/common-styles.css";
+
+h2 {
+  font-family: "OpenSans Bold", Arial, sans-serif;
+  font-size: 1.625em;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2% 7.3%;
+}
+
+.product-list {
+  padding: 2.3% 4.62%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  margin-bottom: 7%;
+}
+
+.product-info {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 0.75em;
+  padding: 2% 0 0 2.2%;
+  text-transform: capitalize;
+  flex-basis: 40%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info .name {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 1.17em;
+  margin-bottom: 7.5%;
+}
+
+.product-info .price {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 1.39em;
+  margin-bottom: 17%;
+}
+
+.product-info span {
+  margin-bottom: 4%;
+}
+
+.product-info .amount {
+  margin-bottom: 14%;
+}
+
+.product-info button {
+  color: #f14a58;
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 1.09em;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: auto;
+}
+
+.coupon-code {
+  border-top: 1px solid #e5e5e5;
+  padding: 1.5% 0;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 0.75em;
+}
+
+.coupon-code span {
+  color: #f27881;
+}
+
+.bottom-info {
+  margin-bottom: 4.5%;
+  padding: 2.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear {
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 0.8125em;
+  padding:0;
+  border: none;
+  margin: 0;
+  color: #f27881;
+  width: auto;
+  height: auto;
+}
+.clear:hover {
+  border: none;
+}
+
+button {
+  /*padding: 1.5% 8%;*/
+  width: 30.4%;
+}
+
+.total-sum {
+  flex-basis: 7.5%;
+  text-align: right;
+}
+
+.total-sum span {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+.total-sum span:nth-of-type(2){
+  display: block;
+  border: none;
+  font-weight: bold;
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 1.125em;
+  width: 100%;
+}
+
+.message {
+  font-size: 1.4em;
+  color: #757575;
+  margin: 0 auto;
+}

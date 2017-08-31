@@ -25,16 +25,32 @@ button {
   background-color: #fff;
   font-size: 1.5em;
   font-family: "OpenSans Bold", Arial, sans-serif;
-  font-weight: bold;
   margin: 0 auto;
   display: block;
   cursor: pointer;
+  width: 69%;
+  height: 73px;
 }
 
 button:hover {
   border: 1px solid #f14a58;
   color: #f14a58;
 }
+button:focus {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+.block {
+  display: block;
+}
+.none{
+  display: none;
+}
+
+
 
 header {
   padding: 0 4.62%;
@@ -44,20 +60,27 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 2.69%;
+  padding-top: 2.8%;
 }
 
 .logo {
   margin-bottom: 1.93%;
+  width: 143px;
+  height: 27px;
 }
 
 .logo a {
-  font-size: 1.875em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(/img/startPage/logo-desktop.png) 0 0 no-repeat;
+  text-indent: -9999px;
+
 }
 
 .right-block {
   font-family: "Roboto Regular", Arial, sans-serif;
-  flex-basis: 20%;
+  flex-basis: 27%;
   font-size: 0.75em;
   letter-spacing: 1px;
   display: flex;
@@ -73,16 +96,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-basis: 33%;
 }
 
 .bag-short-info::before {
   background: url("/img/icon-basket.jpg") 0 0 no-repeat;
   content: " ";
   display: block;
-  width: 12px;
-  height: 12px;
-  padding-right: 25%;
+  min-width: 12px;
+  min-height: 12px;
+  padding-right: 15px;
 }
 
 .bag-short-info span {
@@ -92,7 +114,8 @@ header {
 .wrap-nav {
   display: flex;
   flex-direction: row;
-  padding-bottom: 1.08%;
+  margin-bottom: 1.07%;
+  align-items: baseline;
   /*for IE*/
   display: -ms-flexbox;
   -ms-flex-direction: row;
@@ -104,7 +127,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-basis: 85%;
+  flex-basis: 90%;
   /*for IE*/
   display: -ms-flexbox;
   -ms-flex-direction: row;
@@ -123,31 +146,33 @@ nav a:hover {
 
 .search {
   position: relative;
-  width: 15%;
-  padding-top: 0;
-  margin-top: 0;
 }
 
-.search input {
+input {
   border: none;
   border-bottom: 2px #e5e5e5 solid;
-  padding-bottom: 4%;
+  padding: 4% 0;
   display: block;
   font-family: "OpenSans Bold", Arial, sans-serif;
   font-size: 0.8125em;
-  width: 85%;
-  margin-left: 15%;
+  outline: none;
 }
 
-.search::after {
+.search-input {
+  width: 71%;
+  margin-left: 29%;
+  outline: none;
+}
+
+.glass-icon {
   background: url(/img/icon-search.png) 0 0 no-repeat;
-  content: " ";
   display: block;
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 20%;
+  bottom: 32%;
   right: 0;
+  z-index: 10;
 }
 
 input::-moz-placeholder {
@@ -174,9 +199,15 @@ input:-moz-placeholder {
 }
 
 .banner {
+  border-right: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   position: relative;
   text-align: center;
+}
+
+.banner:last-of-type {
+  border-right: none;
 }
 
 .banner img {
@@ -193,13 +224,138 @@ input:-moz-placeholder {
   font-size: 1.75em;
   font-weight: bold;
   text-transform: capitalize;
+  margin-bottom: 3.73%;
+}
 
+.banner:nth-of-type(2) h3 {
+  margin-bottom: 4%;
+}
+
+.banner:nth-of-type(3) h3 {
+  color: #f14a58;
+  margin-bottom: 4%;
+}
+.banner span {
+  color: #fff;
+}
+
+.banner:nth-of-type(3) span{
+  color: #757575;
+}
+
+.banner-info {
+  position: absolute;
+  top: 16%;
+  right: 14%;
 }
 
 
 
 
 
+
+
+.wrap {
+  position: relative;
+}
+
+.wrap:hover ~ .product-info>.name {
+  color: #f14a58;
+}
+
+.shadow {
+  display: block;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 98.7%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.shadow span {
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 1.375em;
+  color: #f14a58;
+  position: absolute;
+  top: 45%;
+  left: 26%;
+}
+
+.shadow:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-items {
+  text-align: center;
+  align-items: stretch;
+  padding: 0 4.62%;
+  margin-bottom: 11.7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*for IE*/
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-pack: justify;
+}
+
+.list-items li {
+  position: relative;
+  flex-basis: 20%;
+  /*for IE*/
+  -ms-flex: 1 0 20%;
+}
+
+.list-items li::after{
+  content: '';
+  display: block;
+}
+
+.list-items li span {
+  padding: 0 4.38%;
+}
+
+.list-items img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 22.5%;
+}
+
+.list-items .product-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6%;
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.8;
+  text-transform: capitalize;
+}
+
+.list-items .price {
+  font-family: "Roboto Regular", serif;
+  font-size: 0.875em;
+}
 
 
 
@@ -229,13 +385,11 @@ footer h4 {
 .quick-links {
   padding-top: 4.62%;
   padding-left: 4.62%;
-  padding-bottom: 8.85%;
+  padding-bottom: 6.9%;
   border-right: 1px solid #e5e5e5;
   flex-basis: 49%;
   /*for IE*/
   -ms-flex: 1 0 45%;
-
-  line-height: 3;
 
   display: flex;
   flex-direction: row;
@@ -253,7 +407,7 @@ footer h4 {
 }
 
 .right-ref-block {
-  margin-right: 18%;
+  margin-right: 15%;
   flex-basis: 40%;
   /*for IE*/
   -ms-flex: 1 0 40%;
@@ -261,19 +415,20 @@ footer h4 {
 }
 
 .quick-links h4 {
-  margin-bottom: 26%;
+  margin-bottom: 23.7%;
 }
 
 .quick-links li {
   font-size: 0.875em;
+  margin-bottom: 15%;
 }
 
-.quick-links a:hover {
+.quick-links a:hover, .legal-ref a:hover {
   text-decoration: underline;
 }
 
 .socials {
-  padding-top: 5.8%;
+  padding-top: 4.62%;
   padding-left: 4.62%;
   flex-basis: 49%;
   /*for IE*/
@@ -281,7 +436,7 @@ footer h4 {
 }
 
 .socials h4 {
-  margin-bottom: 7%;
+  margin-bottom: 11.6%;
 }
 
 .socials ul {
@@ -313,7 +468,7 @@ footer h4 {
 }
 
 .socials a {
-  font-weight: bold;
+  font-family: "Roboto Bold", sans-serif;
 }
 
 .socials .order-by-phone {
@@ -331,24 +486,36 @@ footer h4 {
   margin-bottom: 12%;
 }
 
-.socials .facebook {
+
+
+
+
+.social-ref {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-ref .facebook {
   background: url(/img/startPage/facebook.png) 0 0 no-repeat;
   width: 8px;
   height: 14px;
-  display: inline-block;
-  margin-right: 3.89%;
+  display: block;
+  flex-basis: 6.17%;
 }
 
-.socials .tweeter {
+.social-ref .tweeter {
   background: url(/img/startPage/tweeter.png) 0 0 no-repeat;
   width: 14px;
   height: 11px;
-  display: inline-block;
+  display: block;
 }
+
+
+
 
 .copyright {
   border-top: 1px solid #e5e5e5;
-  padding: 2.62% 4.62%;
+  padding: 3% 5.18%;
   font-family: "Roboto Regular", Arial, sans-serif;
   font-weight: bold;
   position: relative;
@@ -363,14 +530,19 @@ footer h4 {
 
 .copyright span {
   font-size: 0.75em;
+  font-family: "Roboto Bold", sans-serif;
 }
 
-.center {
+.copyright .center {
   position: absolute;
-  left: 49.3%;
+  left: 50%;
   top: 34%;
   transform: translateX(-50%);
-  width: 8%;
+  margin-left: -9px;
+
+  /*margin-left: 3.5%;
+  margin-top: -0.5%;
+  flex-shrink: 0;*/
 }
 
 .center h4 {
@@ -384,16 +556,21 @@ footer h4 {
   background-color: #f4f4f4;
   padding: 1.5%;
   font-weight: normal;
+  font-family: "Roboto Regular", sans-serif;
+  position: relative;
 }
 
-.center .triangle {
+.copyright .amount-visitors:before {
+  content: " ";
   width: 0;
   height: 0;
   display: inline-block;
   border-top: 4px solid transparent;
   border-right: 4px solid #f4f4f4;
   border-bottom: 4px solid transparent;
-  margin-right: -5px;
+  position: absolute;
+  top: 5px;
+  left: -4px;
 }
 
 .legal-ref {
@@ -409,6 +586,10 @@ footer h4 {
 
 .legal-ref li {
   font-size: 0.75em;
+  font-family: "Roboto Bold", sans-serif;
 }
 
+.block-mobile {
+  display: none;
+}
 
