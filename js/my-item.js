@@ -1,6 +1,5 @@
 ;(function() {
   document.addEventListener('DOMContentLoaded', function() {
-
     //choose color and size - toggle radio-buttons
     const sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
     const colorBlock = document.body.querySelector('.item-info').querySelector('.colors');
@@ -45,7 +44,7 @@
     }
 
     function findCheckedElem(collection) {
-      return Array.prototype.slice.call(collection).filter((elem) => elem.hasAttribute('checked') ? elem : false)[0].value;
+      return Array.prototype.slice.call(collection).filter((elem) => elem.hasAttribute('checked') ? elem : false);
     }
 
     //bag
@@ -60,27 +59,34 @@
     function updateWidget() {
       const amount = bag.getAmount();
       const sum = bag.getSum();
-      if (!amount || !sum) return;
-
-      headerProductNumber.innerHTML = '(' + amount + ')';
-      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + (new Intl.NumberFormat("ru").format(bag.getSum().toFixed(2))).replace(",", ".") + '&nbsp;';
+      headerProductNumber.innerHTML = `(${amount})`;
+      if (sum === 0) {
+        headerBagSum.innerHTML = 'Bag&nbsp;';
+        return;
+      }
+      headerBagSum.innerHTML = `Bag&nbsp;&pound;${new Intl.NumberFormat('ru').format(sum.toFixed(2)).replace(',', '.')}&nbsp;`;
     }
 
     function addItemToBag() {
+      size = findCheckedElem(sizesBlock.querySelectorAll('input[type="radio"]'));
+      color = findCheckedElem(colorBlock.querySelectorAll('input[type="radio"]'));
+
+      console.log(size[0].value);
+      console.log(color[0].value);
+      const item = {
+        name: document.body.querySelector('.name').innerHTML,
+        description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
+        size: size[0].value,
+        color: color[0].value,
+        price: +document.body.querySelector('.item-price').innerHTML.slice(1),
+        number: 1,
+        img: document.querySelector('.main-photo').getAttribute('src'),
+      };
       bag.addItem(item);
       updateWidget();
     }
 
     updateWidget();
-
-    const item = {
-      name: 'Dark classic fit suit',
-      description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
-      size: '20S',
-      color: 'Blue',
-      price: (250 + Math.random() * (400 + 1 - 250)).toFixed(2),
-      number: 1,
-    };
   });
 })();
 

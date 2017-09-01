@@ -12,7 +12,7 @@
       if (!amount || !sum) return;
 
       headerProductNumber.innerHTML = '(' + amount + ')';
-      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + (new Intl.NumberFormat("en").format(sum.toFixed(2))) + '&nbsp;';
+      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + (new Intl.NumberFormat("en").format(sum.toFixed(2))).replace(",", ".") + '&nbsp;';
     }
 
     updateWidget();

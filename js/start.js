@@ -1,6 +1,5 @@
-;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-
+;(function () {
+  document.addEventListener('DOMContentLoaded', () => {
     const bag = new Bag();
 
     const headerBagSum = document.body.querySelector('.bag-short-info').children[0];
@@ -9,10 +8,9 @@
     function updateWidget() {
       const amount = bag.getAmount();
       const sum = bag.getSum();
-      if (!amount || !sum) return;
 
-      headerProductNumber.innerHTML = '(' + amount + ')';
-      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + (new Intl.NumberFormat("en").format(sum.toFixed(2))) + '&nbsp;';
+      headerProductNumber.innerHTML = `(${amount})`;
+      headerBagSum.innerHTML = `Bag&nbsp;&pound;${(new Intl.NumberFormat("en").format(sum.toFixed(2))).replace(',', '.')}&nbsp;`;
     }
 
     updateWidget();

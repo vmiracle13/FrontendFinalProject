@@ -50,8 +50,6 @@ button:focus {
   display: none;
 }
 
-
-
 header {
   padding: 0 4.62%;
 }
@@ -75,12 +73,11 @@ header {
   height: 100%;
   background: url(/img/startPage/logo-desktop.png) 0 0 no-repeat;
   text-indent: -9999px;
-
 }
 
 .right-block {
   font-family: "Roboto Regular", Arial, sans-serif;
-  flex-basis: 27%;
+  flex-basis: 24%;
   font-size: 0.75em;
   letter-spacing: 1px;
   display: flex;
@@ -96,6 +93,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-pack: justify;
 }
 
 .bag-short-info::before {
@@ -116,6 +116,7 @@ header {
   flex-direction: row;
   margin-bottom: 1.07%;
   align-items: baseline;
+  justify-content: space-between;
   /*for IE*/
   display: -ms-flexbox;
   -ms-flex-direction: row;
@@ -127,12 +128,12 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-basis: 90%;
+  flex-basis: 74%;
   /*for IE*/
   display: -ms-flexbox;
   -ms-flex-direction: row;
   -ms-flex-pack: justify;
-  -ms-flex: 1 0 85%;
+  -ms-flex: 1 0 74%;
 }
 
 nav a {
@@ -267,7 +268,7 @@ input:-moz-placeholder {
   display: block;
   background: rgba(0,0,0,0.5);
   width: 100%;
-  height: 98.7%;
+  height: 98.9%;
   position: absolute;
   opacity: 0;
   top: 0;
