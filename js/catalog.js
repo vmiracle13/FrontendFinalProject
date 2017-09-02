@@ -1,5 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', () => {
 
     const bag = new Bag();
 
@@ -24,8 +24,5 @@
       color: 'Blue',
       price: (250 + Math.random() * (400 + 1 - 250)).toFixed(2)
     };
-
-
-
 });
 })();

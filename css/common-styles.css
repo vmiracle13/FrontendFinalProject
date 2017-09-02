@@ -258,18 +258,18 @@ input:-moz-placeholder {
 }
 
 .main-catalog-shadow, .footer-shadow, .copyright-shadow {
+  display: none;
+}
+
+.main-catalog-shadow-active, .footer-shadow-active, .copyright-shadow-active {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
-  opacity: 0;
   width: 100%;
   height: 100%;
   z-index: 2;
-}
-
-.main-catalog-shadow-active, .footer-shadow-active, .copyright-shadow-active {
   opacity: 1;
 }
 

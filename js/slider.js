@@ -101,6 +101,17 @@
         }
       }
     }
+
+    // change a colour of a radio button under slider
+    function changeActiveRadio(actImage) {
+      for (let i = 0; i < divMiddle.childElementCount; i++) {
+        if (divMiddle.children[i].dataset.number === actImage.dataset.number) {
+          activeRadio.classList.remove('active-radio');
+          activeRadio = divMiddle.children[i];
+          activeRadio.classList.add('active-radio');
+        }
+      }
+    }
     generateHref(sliderBlock);
     generateDots(sliderBlock);
   });

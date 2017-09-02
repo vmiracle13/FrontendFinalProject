@@ -199,6 +199,11 @@
   .main-catalog {
     padding-top: 2.9%;
   }
+
+  .main-catalog-shadow {
+
+
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
