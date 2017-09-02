@@ -121,7 +121,6 @@
   }
   .top {
     padding: 0 5.63%;
-    height: 56px;
   }
   .sign-up, .prev, .next, nav, .search {
     display: none;
@@ -129,7 +128,7 @@
   .logo {
     width: 28px;
     height: 18px;
-    padding-top: 6.5%;
+    padding-top:8%;
   }
   .logo a {
     background: url(/img/startPage/logo-mobile.png) 0 0 no-repeat;
@@ -151,7 +150,7 @@
     left: 0;
     z-index: 20;
     background-color: #fff;
-    width: 88.5%;
+    width: 88.6%;
   }
   .wrap-nav-active nav {
     display: flex;
@@ -186,9 +185,9 @@
     width: 14px;
     height: 12px;
     border-left: 1px solid #e5e5e5;
-    padding-left: 3%;
-    padding-right: 4%;
-    padding-top: 14%;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 59px;
     cursor: pointer;
   }
 
@@ -198,7 +197,7 @@
     width: 15px;
     height: 15px;
     border-left: none;
-    padding-top: 5%;
+    padding-top: 10%;
     cursor: pointer;
   }
 
@@ -304,8 +303,9 @@
     left: 86%;
   }
   .right-block {
-    padding-top: 6.5%;
-    margin-left: 48%;
+    padding-top: 9%;
+    margin-left: 36%;
+    flex-basis: 18%;
   }
   .right-ref-block {
     flex-basis: 35%;
