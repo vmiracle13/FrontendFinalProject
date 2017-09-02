@@ -6,7 +6,10 @@
     const filterSubMenu = wrapFilterProps.querySelectorAll('.sub-navigation');
     let n;
 
-    filterDiv.addEventListener('mouseover', (event) => {
+
+
+    function showDropDown(event) {
+      if (window.innerWidth > 1024) return;
       const target = event.target;
       const titleList = filterDiv.querySelectorAll('.title');
       Array.prototype.slice.call(titleList).some((elem, i) => {
@@ -15,8 +18,8 @@
         }
       });
       filterSubMenu[n].style.visibility = 'visible';
-    });
-
+    }
+    filterDiv.addEventListener('mouseover', showDropDown(event));
     filterWrap.addEventListener('mouseout', (event) => {
       if (event.target.tagName === 'LI' && event.target.parentElement.classList.contains('sub-navigation') &&
         event.relatedTarget.tagName !== 'LI' && !event.relatedTarget.classList.contains('sub-navigation') &&
