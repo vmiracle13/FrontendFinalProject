@@ -3,7 +3,7 @@
     padding: 0 5.4%;
   }
   .right-block {
-    flex-basis: 40%;
+    flex-basis: 37%;
   }
   .wrap-nav {
     margin-bottom: 3.255%;
@@ -11,6 +11,7 @@
   nav {
     margin-right: 0;
     flex-basis: 200%;
+    -ms-flex: 1 0 90%;
   }
   .search {
     width: 162px;
@@ -32,7 +33,7 @@
     top: 32%;
   }
   .banners{
-    margin-bottom: 13.67%;
+    padding-bottom: 13.67%;
     height: 32.55%;
   }
   .banner-info {
@@ -55,7 +56,6 @@
   }
   button {
     font-size: 1.25em;
-    /*padding: 2.5% 11.55%;*/
     height: 70px;
     width: 34.8%;
   }
@@ -77,10 +77,12 @@
   .socials {
     flex-basis: 25%;
     padding-top: 6.05%;
+    -ms-flex: 1 0 25%;
   }
   .socials ul {
     flex-direction: column;
     margin-bottom: 33%;
+    -ms-flex-direction: column;
   }
   .socials ul li {
     margin-bottom: 18.3%;
@@ -124,7 +126,6 @@
     display: none;
   }
   .logo {
-    margin-bottom: 0;
     width: 28px;
     height: 18px;
     padding-top: 6.5%;
@@ -145,9 +146,9 @@
     flex-direction: column;
     padding-bottom: 7%;
     position: absolute;
-    top: 7.5%;
+    top: 7.4%;
     left: 0;
-    z-index: 10;
+    z-index: 20;
     background-color: #fff;
     width: 88.8%;
   }
@@ -178,17 +179,29 @@
     border-left: 1px solid transparent;
   }
 
-  .fa-bars {
+  .hamburger {
     display: block;
-    height: 15px;
-    width: 15px;
-    font-size: 1.2em;
-    padding-top: 6.5%;
-    padding-bottom: 7.9%;
-    padding-left: 6%;
+    background: url(/img/startPage/hamburger-menu-icon.png) 90% 50% no-repeat;
+    width: 14px;
+    height: 12px;
     border-left: 1px solid #e5e5e5;
+    padding-left: 3%;
+    padding-right: 4%;
+    padding-top: 14%;
+    cursor: pointer;
   }
-  .active {
+
+  .hamburger-active {
+    display: block;
+    background: url(/img/startPage/exit-icon.png) 90% 50% no-repeat;
+    width: 15px;
+    height: 15px;
+    border-left: none;
+    padding-top: 5%;
+    cursor: pointer;
+  }
+
+  .active-menu {
     color: #f14a58;
     width: 15px;
     height: 15px;
@@ -198,12 +211,9 @@
     padding-left: 6%;
   }
 
-
-
-
-
   footer {
     flex-direction: column;
+    -ms-flex-direction: column;
   }
   .quick-links {
     border-bottom: 1px solid #e5e5e5;
@@ -223,7 +233,7 @@
     display: none;
   }
   .socials ul li {
-    padding: 7.2% 0% 12% 5.87%;
+    padding: 7.2% 0 12% 5.87%;
   }
   .socials ul li:first-of-type {
     border-right: 1px solid #e5e5e5;
@@ -262,18 +272,26 @@
   .mobile {
     display: flex;
     flex-basis: 15.35%;
+    display: -ms-flexbox;
+    -ms-flex: 1 0 15.35%;
   }
   .block-mobile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 3.71% 5.33%;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+
   }
   .social-ref .facebook {
     flex-basis: 67.3%;
+    -ms-flex: 1 0 67.3%;
   }
   .legal-ref {
     flex-basis: 54%;
+    -ms-flex: 1 0 54%;
   }
   .copyright .legal-ref {
     display: none;
@@ -290,24 +308,8 @@
   }
   .right-ref-block {
     flex-basis: 35%;
+    -ms-flex: 1 0 35%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .banners {
     height: 66.2%;
@@ -324,6 +326,10 @@
   }
   .banner-info span {
     font-size: 0.875em;
+  }
+
+  .promo-block .prev, .promo-block .next {
+    top: 32%;
   }
 }
 

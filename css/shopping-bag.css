@@ -63,7 +63,11 @@ h2 {
   margin: 0;
   padding: 0;
   text-align: left;
-  width: auto;
+  width: 50%;
+  height: auto;
+}
+.product-info button:hover {
+  text-decoration: underline;
 }
 
 .coupon-code {
@@ -102,7 +106,6 @@ h2 {
 }
 
 button {
-  /*padding: 1.5% 8%;*/
   width: 30.4%;
 }
 

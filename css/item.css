@@ -59,19 +59,6 @@ article {
   left: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .item-info {
   padding-top: 1.5%;
   padding-left: 3.86%;
@@ -87,7 +74,7 @@ article {
 }
 
 .item-info p {
-  font-family: "Times New Roman", serif;
+  font-family: Crimson, serif;
   font-size: 1em;
   font-style: italic;
   margin-bottom: 5.32%;
@@ -142,13 +129,6 @@ article {
   border: 1px solid #e5e5e5;
 }
 
-button {
-  /*padding: 3.3% 18.3%;
-  width: 72%;
-  height: 18.6%;
-  font-family: "OpenSans Bold", Arial, sans-serif;*/
-}
-
 button a {
   width: 100%;
   height: 100%;
@@ -159,7 +139,7 @@ button a {
 }
 
 .banner:nth-of-type(1) span, .banner:nth-of-type(3) span {
-  font-family: "Times New Roman", serif;
+  font-family: Crimson, serif;
   font-size: 1em;
 }
 

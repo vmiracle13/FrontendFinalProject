@@ -1,6 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-
+  document.addEventListener('DOMContentLoaded', () => {
     const slider = document.body.querySelector('.promo-block');
     const sliderBlock = document.body.querySelector('.slider-images');
     const prevArrow = slider.querySelector('.prev');
@@ -11,21 +10,8 @@
     let timerId = null;
     let animatedStop = false;
     let animated = false;
-
-    generateHref(sliderBlock);
-    generateDots(sliderBlock);
-
     let activeRadio = divMiddle.querySelector('a.active-radio');
-
-
-    sliderBlock.addEventListener('click', function(){
-      animatedStop = true;
-      clearInterval(timerId);
-      runSlide();
-    });
-
     function runSlide(event) {
-
       if (animated) return;
       animated = true;
 
@@ -54,141 +40,43 @@
       changeActiveRadio(activeImage);
 
       if (animatedStop) {
-        timerId = setInterval(runSlide, 5000);
+        timerId = setInterval(runSlide, 10000);
         animatedStop = false;
       }
       animated = false;
     }
 
-    timerId = setInterval(runSlide, 5000);
+    timerId = setInterval(runSlide, 10000);
 
-    prevArrow.addEventListener('click', function(event) {
+    sliderBlock.addEventListener('click', () => {
+      animatedStop = true;
+      clearInterval(timerId);
+      runSlide();
+    });
+    prevArrow.addEventListener('click', (event) => {
       event.preventDefault();
       animatedStop = true;
       clearInterval(timerId);
       runSlide(event);
     });
 
-    nextArrow.addEventListener('click', function(event) {
+    nextArrow.addEventListener('click', (event) => {
       event.preventDefault();
       animatedStop = true;
       clearInterval(timerId);
       runSlide(event);
     });
 
-    divMiddle.addEventListener('click', function(event){
+    divMiddle.addEventListener('click', (event) => {
       if (event.target.tagName !== 'A') return;
       animatedStop = true;
       clearInterval(timerId);
       runSlide(event);
     });
-
-
-
-
-/*
-    function runSlide(event) {
-      if (animated) return;
-      animated = true;
-      if (!activeImage.nextElementSibling) {
-        activeImage.classList.remove('active');
-        activeImage = sliderBlock.firstElementChild;
-      } else {
-        activeImage.classList.remove('active');
-        activeImage = activeImage.nextElementSibling;
-      }
-
-      activeImage.classList.add('active');
-      changeActiveRadio(activeImage);
-
-      if (animatedStop) {
-        timerId = setInterval(runSlide, 2000);
-        animatedStop = false;
-      }
-      animated = false;
-    }
-
-    timerId = setInterval(runSlide, 2000);
-
-
-    prevArrow.addEventListener('click', function(event) {
-      if (event.target.classList.contains('fa-chevron-left') || event.target.contains(slider.querySelector('.fa-chevron-left'))) {
-        if (animated) return;
-        animated = true;
-        animatedStop = true;
-        clearInterval(timerId);
-
-        if (!activeImage.previousElementSibling) {
-          activeImage.classList.remove('active');
-          activeImage = sliderBlock.lastElementChild;
-        } else {
-          activeImage.classList.remove('active');
-          activeImage = activeImage.previousElementSibling;
-        }
-        timerId = setInterval(runSlide, 2000);
-        animatedStop = false;
-      }
-
-      activeImage.classList.add('active');
-      changeActiveRadio(activeImage);
-
-      if (animatedStop) {
-        timerId = setInterval(runSlide, 10000);
-        animatedStop = false;
-      }
-      animated = false;
-    });
-
-    nextArrow.addEventListener('click', function(event) {
-      if (animated) return;
-      animated = true;
-      animatedStop = true;
-      clearInterval(timerId);
-      if (!activeImage.nextElementSibling) {
-        activeImage.classList.remove('active');
-        activeImage = sliderBlock.firstElementChild;
-      } else {
-        activeImage.classList.remove('active');
-        activeImage = activeImage.nextElementSibling;
-      }
-
-      activeImage.classList.add('active');
-      changeActiveRadio(activeImage);
-
-      if (animatedStop) {
-        timerId = setInterval(runSlide, 10000);
-        animatedStop = false;
-      }
-      animated = false;
-    });
-
-    divMiddle.addEventListener('click', function(event){
-      console.log("event target = ");
-      console.log(event.target);
-      if (event.target.tagName !== 'A') return;
-      if (animated) return;
-      animated = true;
-      animatedStop = true;
-      clearInterval(timerId);
-
-      activeImage.classList.remove('active');
-      activeImage = slider.children[+event.target.dataset.number];
-
-      activeImage.classList.add('active');
-      changeActiveRadio(activeImage);
-
-      if (animatedStop) {
-        timerId = setInterval(runSlide, 10000);
-        animatedStop = false;
-      }
-      animated = false;
-    });
-*/
-
 
     // generate the same amount of radio buttons as image amount
     function generateDots(sB) {
-      let fragment = document.createDocumentFragment();
+      const fragment = document.createDocumentFragment();
 
       for (let i = 0; i < sB.childElementCount; i++) {
         const radio = document.createElement('a');
@@ -196,7 +84,7 @@
           radio.classList.add('active-radio');
         }
         radio.setAttribute('data-number', i);
-        radio.setAttribute('href', '#' + sB.children[i].dataset.number);
+        radio.setAttribute('href', `#${sB.children[i].dataset.number}`);
         fragment.appendChild(radio);
       }
       divMiddle.appendChild(fragment);
@@ -213,16 +101,7 @@
         }
       }
     }
-
-    // change a colour of a radio button under slider
-    function changeActiveRadio(actImage) {
-      for (let i = 0; i < divMiddle.childElementCount; i++) {
-        if (divMiddle.children[i].dataset.number === actImage.dataset.number) {
-          activeRadio.classList.remove('active-radio');
-          activeRadio = divMiddle.children[i];
-          activeRadio.classList.add('active-radio');
-        }
-      }
-    }
+    generateHref(sliderBlock);
+    generateDots(sliderBlock);
   });
 })();

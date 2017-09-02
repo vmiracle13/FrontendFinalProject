@@ -1,5 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', () => {
     //choose color and size - toggle radio-buttons
     const sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
     const colorBlock = document.body.querySelector('.item-info').querySelector('.colors');

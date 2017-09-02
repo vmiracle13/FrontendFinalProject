@@ -111,6 +111,10 @@ header {
   display: block;
 }
 
+.hamburger {
+  display: none;
+}
+
 .wrap-nav {
   display: flex;
   flex-direction: row;
@@ -186,11 +190,6 @@ input:-moz-placeholder {
   color: #a8a8a8;
 }
 
-
-
-
-
-
 .banners {
   display: flex;
   flex-direction: row;
@@ -250,18 +249,28 @@ input:-moz-placeholder {
   right: 14%;
 }
 
-
-
-
-
-
-
 .wrap {
   position: relative;
 }
 
 .wrap:hover ~ .product-info>.name {
   color: #f14a58;
+}
+
+.main-catalog-shadow, .footer-shadow, .copyright-shadow {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.main-catalog-shadow-active, .footer-shadow-active, .copyright-shadow-active {
+  opacity: 1;
 }
 
 .shadow {
@@ -285,27 +294,8 @@ input:-moz-placeholder {
 }
 
 .shadow:hover {
-  opacity: 1;
+  opacity: 0.99;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .list-items {
   text-align: center;
@@ -358,17 +348,8 @@ input:-moz-placeholder {
   font-size: 0.875em;
 }
 
-
-
-
-
-
-
-
-
-
-
 footer {
+  position: relative;
   border-top: 1px solid #e5e5e5;
   display: flex;
   flex-direction: row;
@@ -412,7 +393,6 @@ footer h4 {
   flex-basis: 40%;
   /*for IE*/
   -ms-flex: 1 0 40%;
-
 }
 
 .quick-links h4 {
@@ -479,17 +459,13 @@ footer h4 {
 
 .socials p {
   font-style: italic;
-  font-family: "Times New Roman", serif;
+  font-family: Crimson, serif;
   font-size: 1em;
   width: 57%;
   line-height: 2;
   color: #757575;
   margin-bottom: 12%;
 }
-
-
-
-
 
 .social-ref {
   display: flex;
@@ -510,9 +486,6 @@ footer h4 {
   height: 11px;
   display: block;
 }
-
-
-
 
 .copyright {
   border-top: 1px solid #e5e5e5;
@@ -540,7 +513,6 @@ footer h4 {
   top: 34%;
   transform: translateX(-50%);
   margin-left: -9px;
-
   /*margin-left: 3.5%;
   margin-top: -0.5%;
   flex-shrink: 0;*/
@@ -593,4 +565,3 @@ footer h4 {
 .block-mobile {
   display: none;
 }
-

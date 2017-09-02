@@ -37,3 +37,13 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Crimson';
+  src: url('./Crimson/Crimson-Roman.ttf') format('truetype'),
+  url('./Crimson/Crimson-Roman.woff') format('woff'),
+  url('./Crimson/Crimson-Roman.woff2') format('woff2'),
+  url('./Crimson/Crimson-Roman.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

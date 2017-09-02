@@ -30,16 +30,13 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px){
-  .top {
-    align-items: baseline;
-  }
   .promo-block {
     height: 475px;
   }
   .radio-commands {
     height: 14.4%;
     display: flex;
-    z-index: 0;
+    z-index: 5;
     padding: 0;
   }
   .radio-commands .middle {

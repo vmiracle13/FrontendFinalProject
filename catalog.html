@@ -5,7 +5,6 @@
   <title>Catalog Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/reset.css" rel="stylesheet">
-  <link href="fonts/fontawesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/catalog.css" rel="stylesheet">
   <link href="css/media_common-styles.css" rel="stylesheet">
   <link href="css/media_catalog.css" rel="stylesheet">
@@ -28,9 +27,8 @@
           <span class="bag-sum-productAmount">(0)</span>
         </div>
       </div>
-      <i class="fa fa-bars none" aria-hidden="true"></i>
+      <span class="hamburger"></span>
     </div>
-
 
     <div class="wrap-nav">
       <nav>
@@ -51,41 +49,43 @@
     </div>
   </header>
 
-
-
   <div class="filter-wrap">
     <nav class="filter">
-      <div class="title selected">
+      <div class="title">
         <span class="nav-item-small">Fashion</span>
-        <span class="nav-item">Casual style</span>
+        <span class="nav-item">Fashion</span>
       </div>
       <div class="title">
+        <span class="nav-item-small">Product type</span>
         <span class="nav-item">Product type</span>
       </div>
       <div class="title">
+        <span class="nav-item-small">Color</span>
         <span class="nav-item">Color</span>
       </div>
-      <div class="title selected">
+      <div class="title">
         <span class="nav-item-small">Brand</span>
-        <span class="nav-item">Antipodium</span>
-      </div>
-      <div class="title selected">
-        <span class="nav-item-small">Size</span>
-        <span class="nav-item">UK 18</span>
+        <span class="nav-item">Brand</span>
       </div>
       <div class="title">
+        <span class="nav-item-small">Size</span>
+        <span class="nav-item">Size</span>
+      </div>
+      <div class="title">
+        <span class="nav-item-small">Price range</span>
         <span class="nav-item">Price range</span>
       </div>
-      <i class="fa fa-times none" aria-hidden="true"></i>
+      <span class="after"></span>
+      <span class="exit-icon none"></span>
     </nav>
 
     <div class="wrap-filter-props">
       <div class="filter-submenu">
         <span>Fashion</span>
         <ul class="sub-navigation" data-number="0">
-        <li><span>Not selected</span></li>
+        <li class="not-selected"><span>Not selected</span></li>
         <li><span>Nail the 90s</span></li>
-        <li class="selected-prop"><span>Casual style</span></li>
+        <li><span>Casual style</span></li>
         <li><span>New look</span></li>
         <li><span>Sport</span></li>
         <li><span>Vintage</span></li>
@@ -115,9 +115,9 @@
       <div class="filter-submenu">
         <span>Brand</span>
         <ul class="sub-navigation" data-number="3">
-          <li><span>Not selected</span></li>
+          <li class="not-selected"><span>Not selected</span></li>
           <li><span>Chi Chi London</span></li>
-          <li class="selected-prop"><span>Antipodium</span></li>
+          <li><span>Antipodium</span></li>
           <li><span>Adidas</span></li>
           <li><span>New Balance</span></li>
           <li><span>River Island</span></li>
@@ -126,9 +126,9 @@
       <div class="filter-submenu">
         <span>Size</span>
         <ul class="sub-navigation" data-number="4">
-          <li><span>Not selected</span></li>
+          <li class="not-selected"><span>Not selected</span></li>
           <li><span>UK 2</span></li>
-          <li class="selected-prop"><span>UK 18</span></li>
+          <li><span>UK 18</span></li>
           <li><span>UK 18L</span></li>
           <li><span>UK 20</span></li>
           <li><span>UK 20L</span></li>
@@ -149,10 +149,9 @@
     </div>
   </div>
 
+  <section class="main-catalog">
+    <div class="main-catalog-shadow"></div>
 
-
-
-<section class="main-catalog main-catalog-shadow">
   <div class="sale-info">
     <p class="sale">Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</p>
     <p class="valid-till">This offer is valid in-store and online. Prices displayed reflect this additional discount.
@@ -318,19 +317,8 @@
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
   <footer>
+    <div class="footer-shadow"></div>
     <div class="quick-links">
       <div class="left-ref-block">
         <h4>quick links</h4>
@@ -402,6 +390,7 @@
   </footer>
 
   <div class="copyright">
+    <div class="copyright-shadow"></div>
     <span>&copy; 2010-2017, The Template Group inc.</span>
 
     <div class="center">
@@ -414,7 +403,6 @@
       <li><a href="#">Site map</a></li>
     </ul>
   </div>
-
 
 </main>
 

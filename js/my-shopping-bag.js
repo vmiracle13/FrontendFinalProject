@@ -2,8 +2,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     const bag = new Bag();
 
-    //bag.loadProducts(listOfProductsFromDB);
-
     const headerBagSum = document.body.querySelector('.bag-short-info').children[0];
     const headerProductNumber = document.body.querySelector('.bag-sum-productAmount');
     const totalSumInput = document.body.querySelector('.total-sum').querySelector('span:nth-of-type(2)');
@@ -122,30 +120,24 @@
         number: +quantityField.innerHTML.slice(10),
         price: parent.querySelector('.price').innerHTML.slice(1) };
       bag.removeItem(obj);
-      updateWidget();
 
       if (bag.productQuantity === 0) {
-        parent.parentElement.remove();
-        couponCode.remove();
-        bottomInfo.remove();
-        const message = document.createElement('span');
-        message.innerHTML = 'Your shopping bag is empty. Use Catalog to add new items';
-        message.classList.add('message');
-        productListBlock.appendChild(message);
+        if (bag.productList.length === 0) {
+          parent.parentElement.remove();
+          couponCode.remove();
+          bottomInfo.remove();
+          const message = document.createElement('span');
+          message.innerHTML = 'Your shopping bag is empty. Use Catalog to add new items';
+          message.classList.add('message');
+          productListBlock.appendChild(message);
+        } else {
+          parent.parentElement.remove();
+        }
       } else {
         quantityField.innerHTML = parent.querySelector('.amount').innerHTML.slice(0, 10) + bag.productQuantity;
       }
+      updateWidget();
     }
-
-
-
-
-
-
-
-
-
-
 
     createHTMLPage();
     updateWidget();

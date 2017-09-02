@@ -2,81 +2,118 @@
   .list-items {
     padding: 0 5.34%;
   }
+
   .list-items li:first-child {
     margin-bottom: 44.93%;
   }
+
   .list-items li {
     margin-bottom: 12%;
   }
+
   .list-items li:last-child {
     margin-bottom: 13.6%;
   }
+
   .list-items img {
     margin-bottom: 22.4%;
   }
+
   .list-items .product-name {
     margin-bottom: 8%;
   }
+
   .shadow {
     height: 85.5%;
   }
+
   .shadow span {
     left: 23%;
   }
+
   .sale-info {
     top: 17.5%;
     left: 13%;
     width: 74%;
   }
+
   p {
     line-height: 1.8;
   }
+
   .sale {
     font-size: 1.25em;
     width: 80%;
     margin: 0 auto;
   }
+
   .advertisement {
-    height: 68.2%;
+    height: 67.9%;
   }
+
   button {
     margin-bottom: 18.4%;
   }
+
   .banners {
     height: 32.55%;
   }
-  .banner:nth-of-type(2){
+
+  .banner:nth-of-type(2) {
     border-right: none;
   }
+
   .banner:nth-of-type(3) {
     display: none;
   }
+
   .nav-item-small {
     display: none;
   }
+
   .title span {
     font-size: 0.875em;
   }
-  .title:hover{
+
+  .title:hover {
     box-shadow: none;
     border: none;
   }
+
   .filter {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 0;
+    padding-left: 5%;
   }
+
   .selected {
     padding: 0;
     background-color: #fff;
   }
-  .filter>div::after {
+
+  .filter > div::after {
     display: none;
   }
-  .filter>div:hover {
+
+  .after {
+    display: block;
+    content: " ";
+    background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
+    position: absolute;
+    top: 34px;
+    left: 445px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 3px;
+    z-index: 10;
+  }
+
+  .filter > div:hover {
     border: 1px solid transparent;
   }
-  .title:not(:last-of-type)>span::after {
+
+  .title:not(:last-of-type) > span::after {
     content: " ";
     display: inline-block;
     background: url(/img/catalogPage/filter-comma-icon.png) 0 no-repeat;
@@ -86,15 +123,19 @@
     vertical-align: -2px;
     /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
   }
-  .filter>div:not(.selected) {
+
+  .filter > div:not(.selected) {
     padding: 0;
   }
+
   .filter > div {
     flex-basis: auto;
   }
-  .filter-submenu>span {
+
+  .filter-submenu > span {
     display: block;
   }
+
   .sub-navigation {
     list-style-type: disc;
     list-style-position: inside;
@@ -102,7 +143,9 @@
     box-shadow: none;
     position: static;
     margin-bottom: 50px;
+    visibility: visible;
   }
+
   .sub-navigation li {
     font-size: 1.17em;
     color: #a8a8a8;
@@ -110,32 +153,51 @@
     padding: 0;
     margin-bottom: 20px;
   }
+
   .sub-navigation li:hover {
     color: #f14a58;
     background-color: #fff;
   }
+
   .wrap-filter-props {
     padding: 6.68% 5% 0;
+    display: none;
   }
+
   .filter-submenu {
     flex-basis: 30%;
   }
+
   .sub-navigation[data-number="0"],
   .sub-navigation[data-number="1"],
   .sub-navigation[data-number="2"],
   .sub-navigation[data-number="3"],
   .sub-navigation[data-number="4"],
   .sub-navigation[data-number="5"] {
-    width: 100%;
+    width: auto;
   }
+
   .sub-navigation li.selected-prop {
     color: #f14a58;
   }
+
   .sub-navigation li.not-selected {
     color: #000;
   }
+
   .sub-navigation li.not-selected:hover {
     color: #f14a58;
+  }
+
+  .sub-navigation[data-number='0'] li {
+    padding-left: 0;
+  }
+
+  .filter > div:first-child {
+    padding-left: 0;
+  }
+  .main-catalog {
+    padding-top: 2.9%;
   }
 }
 
@@ -143,32 +205,40 @@
   .top {
     align-items: initial;
   }
+
   .nav-item-small {
     display: none;
   }
+
   .title span {
     font-size: 0.8125em;
   }
-  .title:hover{
+
+  .title:hover {
     box-shadow: none;
     border: none;
   }
+
   .filter {
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 0;
   }
+
   .selected {
     padding: 0;
     background-color: #fff;
   }
-  .filter>div::after {
-    display: none;
+
+  .filter > div::after {
+    display: block;
   }
-  .filter>div:hover {
+
+  .filter > div:hover {
     border: 1px solid transparent;
   }
-  .title:not(:last-of-type)>span::after {
+
+  .title:not(:last-of-type) > span::after {
     content: " ";
     display: inline-block;
     background: url(/img/catalogPage/filter-comma-icon.png) 0 no-repeat;
@@ -178,15 +248,19 @@
     /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
     margin-right: 5px;
   }
-  .filter>div:not(.selected) {
+
+  .filter > div:not(.selected) {
     padding: 0;
   }
+
   .filter > div {
     flex-basis: auto;
   }
-  .filter-submenu>span {
-    display: block;
+
+  .filter-submenu > span {
+     display: block;
   }
+
   .sub-navigation {
     list-style-type: disc;
     list-style-position: inside;
@@ -194,7 +268,13 @@
     box-shadow: none;
     position: static;
     margin-bottom: 50px;
+    visibility: visible;
   }
+
+  .sub-navigation[data-number='0'] li {
+    padding-left: 0;
+  }
+
   .sub-navigation li {
     font-size: 1.17em;
     color: #a8a8a8;
@@ -202,10 +282,12 @@
     padding: 0;
     margin-bottom: 20px;
   }
+
   .sub-navigation li:hover {
     color: #f14a58;
     background-color: #fff;
   }
+
   .sub-navigation[data-number="0"],
   .sub-navigation[data-number="1"],
   .sub-navigation[data-number="2"],
@@ -214,33 +296,45 @@
   .sub-navigation[data-number="5"] {
     width: 100%;
   }
+
   .sub-navigation li.selected-prop {
     color: #f14a58;
   }
+
   .sub-navigation li.not-selected {
     color: #000;
   }
+
   .sub-navigation li.not-selected:hover {
     color: #f14a58;
   }
+
   .filter-submenu {
     flex-basis: 50%;
   }
+
   .filter {
     height: 55px;
   }
+
   .wrap-filter-props {
     padding: 11.3% 5.06% 0;
+    display: none;
   }
-  .filter>div:first-child {
+/*
+  .filter > div:first-child {
     padding-left: 20px;
   }
+*/
   .sub-navigation {
     margin-bottom: 40px;
+    visibility: visible;
   }
+
   .sub-navigation li:last-child {
     margin-bottom: 0;
   }
+
   .exit {
     display: block;
     position: absolute;
@@ -250,18 +344,23 @@
     padding-left: 12px;
     z-index: 15;
   }
+
   .list-items {
     padding: 20px 20px 0 20px;
   }
+
   .list-items li {
     flex-basis: 47%;
   }
+
   .list-items .product-name {
     margin-bottom: 9%;
   }
+
   .list-items li:first-child {
     margin-bottom: 307px;
   }
+
   .sale-info {
     position: absolute;
     left: 11%;
@@ -270,59 +369,76 @@
     width: 75%;
     top: 17.5%;
   }
+
   .sale {
     font-size: 1.125em;
     margin-bottom: 5%;
   }
+
   .valid-till {
     font-size: 0.875em;
-  }
+   }
+
   .advertisement {
-    height: 63.9%;
+    height: 63.2%;
   }
+
   .wrap-position {
     bottom: 17%;
     left: 22.05%;
   }
+
   .wrap-position h3 {
     font-size: 1.25em;
   }
+
   .wrap-position {
     font-size: 0.875em;
   }
+
   .list-items li:nth-child(7) {
     margin-bottom: 22.6%;
   }
+
   .list-items li:nth-child(n + 9) {
     display: none;
   }
+
   button {
     padding: 3.5% 11.5%;
     margin-bottom: 28%;
     font-size: 1.125em;
   }
 
-  .shadow span {
-    left: 13%;
-  }
-  .filter div:nth-child(n + 5) {
-    display: none;
-  }
-  .title:nth-child(4)>span::after{
+   .shadow span {
+     left: 13%;
+   }
+
+  .after {
+    display: block;
     content: " ";
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
-    display: block;
     position: absolute;
-    top: 9px;
-    right: -20px;
+    top: 29px;
+    right: 19px;
     transform: translateY(-50%);
     width: 6px;
     height: 3px;
-    -webkit-box-shadow: -3px 1px 31px 29px rgba(255,255,255,1);
-    -moz-box-shadow: -3px 1px 31px 29px rgba(255,255,255,1);
-    box-shadow: -3px 1px 31px 29px rgba(255,255,255,1);
+    z-index: 10;
+    -webkit-box-shadow: -3px 1px 31px 29px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -3px 1px 31px 29px rgba(255, 255, 255, 1);
+    box-shadow: -3px 1px 31px 29px rgba(255, 255, 255, 1);
   }
 
+  .filter > div::after {
+    display: none;
+  }
 
+  .filter {
+    padding-left: 20px;
+  }
 
+  .filter div {
+    border: none;
+  }
 }

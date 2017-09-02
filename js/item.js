@@ -1,5 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', () => {
 
     //choose color and size - toggle radio-buttons
     const sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
@@ -62,8 +62,8 @@
       const sum = bag.getSum();
       if (!amount || !sum) return;
 
-      headerProductNumber.innerHTML = '(' + amount + ')';
-      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + (new Intl.NumberFormat("ru").format(bag.getSum().toFixed(2))).replace(",", ".") + '&nbsp;';
+      headerProductNumber.innerHTML = `(${amount})`;
+      headerBagSum.innerHTML = `Bag&nbsp;&pound;${new Intl.NumberFormat('ru').format(sum.toFixed(2)).replace(',', '.')}&nbsp;`;
     }
 
     function addItemToBag() {

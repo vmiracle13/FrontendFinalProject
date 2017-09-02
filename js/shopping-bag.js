@@ -1,5 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', () => {
     const bag = new Bag();
 
     const headerBagSum = document.body.querySelector('.bag-short-info').children[0];
@@ -12,21 +12,18 @@
     const bottomInfo = document.body.querySelector('.bottom-info');
     const buyButton = bottomInfo.children[1];
 
-    clear.addEventListener('click', clearBag);
-    buyButton.addEventListener('click', buy);
-
     function updateWidget() {
       const amount = bag.getAmount();
       const sum = bag.getSum();
-      headerProductNumber.innerHTML = '(' + amount + ')';
+      headerProductNumber.innerHTML = `(${amount})`;
       if (sum === 0) {
         console.log(sum);
         headerBagSum.innerHTML = 'Bag&nbsp;';
         totalSumInput.innerHTML = '&pound;0';
         return;
       }
-      headerBagSum.innerHTML = `Bag&nbsp;&pound;${new Intl.NumberFormat('en').format(sum.toFixed(2)).replace(",", ".")}&nbsp;`;
-      totalSumInput.innerHTML = `&pound;${new Intl.NumberFormat('en').format(sum.toFixed(2)).replace(",", ".")}`;
+      headerBagSum.innerHTML = `Bag&nbsp;&pound;${new Intl.NumberFormat('en').format(sum.toFixed(2)).replace(',', '.')}&nbsp;`;
+      totalSumInput.innerHTML = `&pound;${new Intl.NumberFormat('en').format(sum.toFixed(2)).replace(',', '.')}`;
     }
 
     updateWidget();
@@ -62,12 +59,12 @@
       bag.clear();
       updateWidget();
     }
-
-    removeButton.addEventListener('click', remove);
-
-    function remove(){
+    function remove() {
       bag.removeItem(item);
       updateWidget();
     }
+    removeButton.addEventListener('click', remove);
+    clear.addEventListener('click', clearBag);
+    buyButton.addEventListener('click', buy);
   });
 })();

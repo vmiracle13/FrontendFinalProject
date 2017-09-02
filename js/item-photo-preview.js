@@ -1,6 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-
+  document.addEventListener('DOMContentLoaded', () => {
     //changing main photo
     const photos = document.querySelector('.preview');
     const mainPhoto = document.querySelector('.main-photo');

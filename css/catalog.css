@@ -84,13 +84,8 @@ nav {
   font-family: "Roboto Bold", sans-serif;
   font-size: 0.75em;
   color: #000;
+  display: none;
 }
-
-
-
-
-
-
 
 .sub-navigation {
   flex-direction: column;
@@ -110,6 +105,7 @@ nav {
   visibility: hidden;
 }
 
+
 .sub-navigation li {
   padding: 10px 0 10px 18px;
   background-color: #fff;
@@ -122,8 +118,10 @@ nav {
 
 .sub-navigation[data-number='0'] {
   left: 0;
-  width: 14.8%;
-  padding-left: 2.8%;
+  width: 17.65%;
+}
+.sub-navigation[data-number='0'] li {
+  padding-left: 54px;
 }
 .sub-navigation[data-number='1'] {
   left: 17.7%;
@@ -145,10 +143,6 @@ nav {
   left: 75.8%;
   width: 15%;
 }
-
-
-
-
 
 .wrap-filter-props {
   flex-direction: row;
@@ -174,39 +168,6 @@ nav {
   color: #000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .sale-info {
   position: absolute;
   top: 21%;
@@ -225,14 +186,13 @@ nav {
 
 .valid-till {
   font-style: italic;
-  font-family: "Times New Roman", serif;
+  font-family: Crimson, serif;
 }
 
 .main-catalog {
   position: relative;
   background: rgba(0,0,0,0);
 }
-
 
 .list-items {
   margin-bottom: 0;
@@ -270,7 +230,7 @@ nav {
 
 .specific {
   font-style: italic;
-  font-family: "Times New Roman", serif;
+  font-family: Crimson, serif;
   color: #757575;
 }
 
@@ -286,7 +246,7 @@ nav {
   left: 0;
   color: #fff;
   width: 100%;
-  height: 69.8%;
+  height: 69.5%;
   background: rgba(0,0,0,0.15);
 }
 
@@ -301,20 +261,14 @@ nav {
 }
 
 .advertisement span {
-  font-family: "Times New Roman", serif;
+  font-family: Crimson, serif;
   font-style: italic;
 }
 
 button {
-  /*padding: 2.0% 8.6%;*/
   width: 29.3%;
   margin-bottom: 13.53%;
 }
-
-
-
-
-
 
 .banner-info span {
   font-size: 1em;
@@ -346,17 +300,11 @@ footer {
   border-top: none;
 }
 
-.exit.fa-times.fa {
-  display: block;
-  color: #f14a58;
-  font-size: 1.5em;
+.exit-icon {
+  background: url(/img/startPage/exit-icon.png) 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
   position: absolute;
-  right: 18px;
-  z-index: 15;
-  padding: 0 0 0 12px;
+  top: 37%;
+  right: 6%;
 }
-
-
-
-
-

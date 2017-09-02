@@ -43,7 +43,7 @@
     justify-content: center;
   }
   .sizes {
-     order: 4;
+    order: 4;
    }
   .colors {
     margin-bottom: 16%;
@@ -69,10 +69,8 @@
     margin-right: 5%;
   }
   button {
-    /*padding: 4% 11.55%;*/
     width: 40.4%;
     height: 70px;
-    order: 6;
   }
   .item {
     margin-bottom: 18.7%;

@@ -1,6 +1,5 @@
 ;(function() {
-  document.addEventListener('DOMContentLoaded', function() {
-
+  document.addEventListener('DOMContentLoaded', () => {
     const glassIcon = document.body.querySelector('.glass-icon');
     const searchField = document.body.querySelector('input');
 
