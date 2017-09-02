@@ -39,6 +39,9 @@
     margin-bottom: 7.6%;
     order: 3;
   }
+  .item-info a {
+    order: 6;
+  }
   .sizes, .colors {
     justify-content: center;
   }
@@ -111,11 +114,11 @@
     text-align: center;
     padding-left: 0;
   }
-  .item-info h2 {
+  .item-info .name {
     margin-bottom: 9.5%;
     order: 1;
   }
-  .item-info p {
+  .item-info .description {
     font-size: 0.875em;
     margin-bottom: 16.5%;
     line-height: 2;
@@ -125,6 +128,9 @@
     font-size: 1.125em;
     margin-bottom: 10%;
     order: 2;
+  }
+  .item-info a {
+    order: 6;
   }
   .sizes, .colors {
     margin-bottom: 20%;
@@ -142,7 +148,6 @@
     /*padding: 7% 19%;*/
     width: 70%;
     height: 60px;
-    order: 6;
   }
   .item {
     margin-bottom: 28.3%;
