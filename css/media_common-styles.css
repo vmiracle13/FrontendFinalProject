@@ -121,6 +121,7 @@
   }
   .top {
     padding: 0 5.63%;
+    height: 56px;
   }
   .sign-up, .prev, .next, nav, .search {
     display: none;
@@ -146,11 +147,11 @@
     flex-direction: column;
     padding-bottom: 7%;
     position: absolute;
-    top: 7.4%;
+    top: 56px;
     left: 0;
     z-index: 20;
     background-color: #fff;
-    width: 88.8%;
+    width: 88.5%;
   }
   .wrap-nav-active nav {
     display: flex;
