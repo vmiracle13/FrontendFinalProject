@@ -17,7 +17,6 @@
       const sum = bag.getSum();
       headerProductNumber.innerHTML = `(${amount})`;
       if (sum === 0) {
-        console.log(sum);
         headerBagSum.innerHTML = 'Bag&nbsp;';
         totalSumInput.innerHTML = '&pound;0';
         return;

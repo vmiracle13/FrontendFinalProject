@@ -14,6 +14,10 @@ img {
   padding: 2.08% 6.92%;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 4.62%;
+  cursor: pointer;
+}
+.to-catalog:hover {
+  color: #f14a58;
 }
 
 article {
@@ -36,6 +40,7 @@ article {
 .preview {
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .preview li {
@@ -118,6 +123,11 @@ article {
   top: -62%;
   left: 0;
   padding: 7% 15%;
+  cursor: pointer;
+}
+
+.size-value span:hover, .color-value span:hover {
+  border: 1px solid #f14a58;
 }
 
 .size-value, .color-value{
