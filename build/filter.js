@@ -1,31 +1,35 @@
-;(function() {
-  document.addEventListener('DOMContentLoaded', () => {
-    const filterDiv = document.body.querySelector('.filter');
-    const filterWrap = document.body.querySelector('.filter-wrap');
-    const wrapFilterProps = document.body.querySelector('.wrap-filter-props');
-    const filterSubMenu = wrapFilterProps.querySelectorAll('.sub-navigation');
-    let currentTitle = null;
-    let currentSubNav = null;
+'use strict';
 
-    filterDiv.addEventListener('mouseover', (event) => {
+;(function () {
+  var _this = this;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var filterDiv = document.body.querySelector('.filter');
+    var filterWrap = document.body.querySelector('.filter-wrap');
+    var wrapFilterProps = document.body.querySelector('.wrap-filter-props');
+    var filterSubMenu = wrapFilterProps.querySelectorAll('.sub-navigation');
+    var currentTitle = null;
+    var currentSubNav = null;
+
+    filterDiv.addEventListener('mouseover', function (event) {
       if (window.innerWidth < 1180) return;
       if (currentTitle) return;
-      let target = event.target;
+      var target = event.target;
 
-      while (target !== this) {
+      while (target !== _this) {
         if (target.classList.contains('title')) break;
         target = target.parentNode;
       }
-      if (target === this) return;
+      if (target === _this) return;
 
       currentTitle = target;
       currentSubNav = filterSubMenu[target.dataset.number];
       filterSubMenu[target.dataset.number].style.visibility = 'visible';
     });
 
-    filterWrap.addEventListener('mouseout', (event) => {
+    filterWrap.addEventListener('mouseout', function (event) {
       if (!currentSubNav || !currentTitle) return;
-      let relatedTarget = event.relatedTarget;
+      var relatedTarget = event.relatedTarget;
       if (relatedTarget) {
         while (relatedTarget) {
           if (relatedTarget === currentSubNav) return;
@@ -37,35 +41,35 @@
       currentSubNav = null;
     });
 
-    filterDiv.addEventListener('click', () => {
+    filterDiv.addEventListener('click', function () {
       if (window.innerWidth > 1024) {
         return;
       }
       wrapFilterProps.classList.toggle('flex');
-      const spans = filterDiv.querySelectorAll('span');
+      var spans = filterDiv.querySelectorAll('span');
 
-      const title = filterDiv.querySelectorAll('.title');
-      const after = filterDiv.querySelector('.after');
+      var title = filterDiv.querySelectorAll('.title');
+      var after = filterDiv.querySelector('.after');
       after.classList.toggle('none');
-      const exit = filterDiv.querySelector('.exit-icon');
+      var exit = filterDiv.querySelector('.exit-icon');
       exit.classList.toggle('none');
-      const mainShadow = document.body.querySelector('.main-catalog-shadow');
+      var mainShadow = document.body.querySelector('.main-catalog-shadow');
       mainShadow.classList.toggle('main-catalog-shadow-active');
-      const footer = document.body.querySelector('.footer-shadow');
+      var footer = document.body.querySelector('.footer-shadow');
       footer.classList.toggle('footer-shadow-active');
-      const copyright = document.body.querySelector('.copyright-shadow');
+      var copyright = document.body.querySelector('.copyright-shadow');
       copyright.classList.toggle('copyright-shadow-active');
     });
 
-    const subNavigationList = filterWrap.querySelectorAll('.sub-navigation');
-    const filterMenuList = wrapFilterProps.querySelectorAll('.filter-submenu');
-    let number;
+    var subNavigationList = filterWrap.querySelectorAll('.sub-navigation');
+    var filterMenuList = wrapFilterProps.querySelectorAll('.filter-submenu');
+    var number = void 0;
 
-    wrapFilterProps.addEventListener('click', (event) => {
+    wrapFilterProps.addEventListener('click', function (event) {
       if (event.target.tagName !== 'SPAN' && event.target.tagName !== 'LI') {
         return;
       }
-      let selectedProp;
+      var selectedProp = void 0;
 
       if (event.target.tagName === 'SPAN') {
         selectedProp = event.target;
@@ -76,7 +80,7 @@
       if (!selectedProp.innerHTML.localeCompare('Not selected')) return;
 
       //define a number of sub-navigation which has selected li
-      Array.prototype.slice.call(filterMenuList).some((elem, i) => {
+      Array.prototype.slice.call(filterMenuList).some(function (elem, i) {
         if (elem.contains(selectedProp)) {
           number = i;
         }
@@ -87,12 +91,12 @@
       } else {
         subNavigationList[number].querySelector('.not-selected').classList.remove('not-selected');
       }
-      const li = selectedProp.parentElement;
+      var li = selectedProp.parentElement;
       li.classList.add('selected-prop');
-      const selectedPropText = event.target.innerHTML;
+      var selectedPropText = event.target.innerHTML;
 
       //change text in filter menu
-      const title = filterDiv.children[number].querySelector('.nav-item');
+      var title = filterDiv.children[number].querySelector('.nav-item');
       title.parentElement.classList.add('selected');
       title.innerHTML = selectedPropText;
 

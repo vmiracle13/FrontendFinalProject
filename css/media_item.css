@@ -47,7 +47,7 @@
   }
   .sizes {
     order: 4;
-   }
+  }
   .colors {
     margin-bottom: 16%;
     margin-left: 12%;
@@ -57,8 +57,8 @@
     flex-basis: 18%;
   }
   .color-value {
-   flex-basis: 15%;
- }
+    flex-basis: 15%;
+  }
 
   .color-value:last-of-type {
     margin-right: 10%;
@@ -85,7 +85,6 @@
     width: auto;
   }
   .banner img {
-    /*height: 250px;*/
   }
   .banner:first-child .banner-info {
     top: 8%;
@@ -149,7 +148,6 @@
     margin-right: 11%;
   }
   button {
-    /*padding: 7% 19%;*/
     width: 70%;
     height: 60px;
   }

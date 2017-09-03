@@ -75,16 +75,14 @@
     margin-right: 8%;
   }
   .socials {
-    flex-basis: 28%;
+    flex-basis: 25%;
     padding-top: 6.05%;
     -ms-flex: 1 0 25%;
-    box-sizing: border-box;
   }
   .socials ul {
     flex-direction: column;
     margin-bottom: 33%;
     -ms-flex-direction: column;
-    height: 177px;
   }
   .socials ul li {
     margin-bottom: 18.3%;
@@ -200,7 +198,7 @@
     width: 15px;
     height: 15px;
     border-left: none;
-    padding-top: 10%;
+    padding-top: 22px;
     cursor: pointer;
   }
 
@@ -217,15 +215,13 @@
   footer {
     flex-direction: column;
     -ms-flex-direction: column;
-    height: 530px;
   }
   .quick-links {
     border-bottom: 1px solid #e5e5e5;
     border-right: none;
     padding-top: 9.78%;
     padding-left: 4.9%;
-    /*padding-bottom: 15.43%;*/
-    padding-bottom: 22.43%;
+    padding-bottom: 15.43%;
   }
   .quick-links li {
     margin-bottom: 18.6%;
@@ -233,7 +229,6 @@
   .socials {
     padding: 0;
     border-right: none;
-    flex-basis: 0;
   }
   .socials p {
     display: none;
@@ -267,7 +262,7 @@
     border: 1px solid #e5e5e5;
   }
   .socials ul li {
-  padding-bottom: 6.2%;
+    padding-bottom: 6.2%;
   }
   .quick-links {
     border-bottom: none;
@@ -285,7 +280,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 7.65% 5.33%;
+    padding: 3.71% 5.33%;
     display: -ms-flexbox;
     -ms-flex-direction: row;
     -ms-flex-pack: justify;
@@ -309,13 +304,34 @@
     left: 86%;
   }
   .right-block {
-    padding-top: 28px;
-    margin-left: 120px;
+    padding-top: 24px;
+    margin-left: 36%;
     flex-basis: 18%;
   }
   .right-ref-block {
-    flex-basis: 36%;
-    -ms-flex: 1 0 36%;
+    flex-basis: 35%;
+    -ms-flex: 1 0 35%;
+  }
+
+  .banners {
+    height: 66.2%;
+  }
+  .banner:nth-of-type(n + 2) {
+    display: none;
+  }
+  .banner-info {
+    top: 10.67%;
+    right: 11.47%;
+  }
+  .banner-info h3 {
+    font-size: 20px;
+  }
+  .banner-info span {
+    font-size: 0.875em;
+  }
+
+  .promo-block .prev, .promo-block .next {
+    top: 32%;
   }
 
   .banners {

@@ -1,3 +1,5 @@
+@import "/css/common-styles.css";
+
 img {
   display: block;
 }
@@ -18,12 +20,11 @@ img {
   color: #f14a58;
 }
 
-article, .article {
+article, .article{
   padding: 0 4.62%;
   display: flex;
   flex-direction: row;
 }
-
 
 .item-photo {
   display: flex;

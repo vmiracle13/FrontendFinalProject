@@ -27,7 +27,7 @@
 }
 
 .prev span{
-  background: url(/img/startPage/promo/left.png) 0 0 no-repeat;
+  background: url(/img/startPage/promo/left.jpg) 0 0 no-repeat;
   width: 14px;
   height: 24px;
   z-index: 11;
@@ -38,7 +38,7 @@
 }
 
 .next span {
-  background: url(/img/startPage/promo/right.png) 0 0 no-repeat;
+  background: url(/img/startPage/promo/right.jpg) 0 0 no-repeat;
   width: 14px;
   height: 24px;
   z-index: 11;
