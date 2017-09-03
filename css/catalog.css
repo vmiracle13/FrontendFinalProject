@@ -105,7 +105,6 @@ nav {
   visibility: hidden;
 }
 
-
 .sub-navigation li {
   padding: 10px 0 10px 18px;
   background-color: #fff;
@@ -118,30 +117,30 @@ nav {
 
 .sub-navigation[data-number='0'] {
   left: 0;
-  width: 17.65%;
+  width: 19.4%;
 }
 .sub-navigation[data-number='0'] li {
   padding-left: 54px;
 }
 .sub-navigation[data-number='1'] {
-  left: 17.7%;
-  width: 15.1%;
+  left: 19.5%;
+  width: 16.6%;
 }
 .sub-navigation[data-number='2'] {
-  left: 32.9%;
-  width: 12.45%;
+  left: 36.2%;
+  width: 13.7%;
 }
 .sub-navigation[data-number='3'] {
-  left: 45.5%;
-  width: 15%;
+  left: 50%;
+  width: 16.6%;
 }
 .sub-navigation[data-number='4'] {
-  left: 60.7%;
-  width: 14.9%;
+  left: 66.7%;
+  width: 16.5%;
 }
 .sub-navigation[data-number='5'] {
-  left: 75.8%;
-  width: 15%;
+  left: 83.35%;
+  width: 16.5%;
 }
 
 .wrap-filter-props {

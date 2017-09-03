@@ -4,29 +4,37 @@
     const filterWrap = document.body.querySelector('.filter-wrap');
     const wrapFilterProps = document.body.querySelector('.wrap-filter-props');
     const filterSubMenu = wrapFilterProps.querySelectorAll('.sub-navigation');
-    let n;
+    let currentTitle = null;
+    let currentSubNav = null;
 
+    filterDiv.addEventListener('mouseover', (event) => {
+      if (window.innerWidth < 1180) return;
+      if (currentTitle) return;
+      let target = event.target;
 
-
-    function showDropDown(event) {
-      if (window.innerWidth > 1024) return;
-      const target = event.target;
-      const titleList = filterDiv.querySelectorAll('.title');
-      Array.prototype.slice.call(titleList).some((elem, i) => {
-        if (elem.contains(target)) {
-          n = i;
-        }
-      });
-      filterSubMenu[n].style.visibility = 'visible';
-    }
-    filterDiv.addEventListener('mouseover', showDropDown(event));
-    filterWrap.addEventListener('mouseout', (event) => {
-      if (event.target.tagName === 'LI' && event.target.parentElement.classList.contains('sub-navigation') &&
-        event.relatedTarget.tagName !== 'LI' && !event.relatedTarget.classList.contains('sub-navigation') &&
-        !event.relatedTarget.classList.contains('title') && !event.target.classList.contains('nav-item') &&
-      event.relatedTarget.tagName !== 'SPAN') {
-        filterSubMenu[n].style.visibility = 'hidden';
+      while (target !== this) {
+        if (target.classList.contains('title')) break;
+        target = target.parentNode;
       }
+      if (target === this) return;
+
+      currentTitle = target;
+      currentSubNav = filterSubMenu[target.dataset.number];
+      filterSubMenu[target.dataset.number].style.visibility = 'visible';
+    });
+
+    filterWrap.addEventListener('mouseout', (event) => {
+      if (!currentSubNav || !currentTitle) return;
+      let relatedTarget = event.relatedTarget;
+      if (relatedTarget) {
+        while (relatedTarget) {
+          if (relatedTarget === currentSubNav) return;
+          relatedTarget = relatedTarget.parentNode;
+        }
+      }
+      currentSubNav.style.visibility = 'hidden';
+      currentTitle = null;
+      currentSubNav = null;
     });
 
     filterDiv.addEventListener('click', () => {
@@ -35,7 +43,13 @@
       }
       wrapFilterProps.classList.toggle('flex');
       const spans = filterDiv.querySelectorAll('span');
-      spans[spans.length - 2].classList.toggle('after');
+
+      const title = filterDiv.querySelectorAll('.title');
+      const lastSpan = title[title.length - 1].querySelector('.nav-item');
+
+      //spans[spans.length - 2].classList.toggle('after');
+
+
       spans[spans.length - 1].classList.toggle('none');
       const mainShadow = document.body.querySelector('.main-catalog-shadow');
       mainShadow.classList.toggle('main-catalog-shadow-active');

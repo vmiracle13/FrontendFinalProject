@@ -96,7 +96,7 @@
     display: none;
   }
 
-  .after {
+  /*.after {
     display: block;
     content: " ";
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
@@ -107,7 +107,7 @@
     width: 6px;
     height: 3px;
     z-index: 10;
-  }
+  }*/
 
   .filter > div:hover {
     border: 1px solid transparent;
@@ -121,6 +121,18 @@
     height: 4px;
     margin-right: 5px;
     vertical-align: -2px;
+    /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
+  }
+
+  .title:last-of-type > span::after {
+    content: " ";
+    display: inline-block;
+    background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
+    width: 6px;
+    height: 3px;
+    position: absolute;
+    top: 8px;
+    right: -28px;
     /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
   }
 
