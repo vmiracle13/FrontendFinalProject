@@ -263,7 +263,7 @@
     height: 4px;
     vertical-align: -2px;
     /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
-    margin-right: 5px;
+    margin-right: 3px;
   }
 
   .filter > div:not(.selected) {
@@ -437,14 +437,14 @@
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
     position: absolute;
     top: 29px;
-    right: 19px;
+    right: 23px;
     transform: translateY(-50%);
     width: 6px;
     height: 3px;
     z-index: 10;
-    -webkit-box-shadow: -3px 1px 31px 29px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -3px 1px 31px 29px rgba(255, 255, 255, 1);
-    box-shadow: -3px 1px 31px 29px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: -3px 1px 18px 29px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -3px 1px 18px 29px rgba(255, 255, 255, 1);
+    box-shadow: -3px 1px 18px 29px rgba(255, 255, 255, 1);
   }
 
   .filter > div::after {

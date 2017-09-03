@@ -123,16 +123,16 @@ nav {
   padding-left: 54px;
 }
 .sub-navigation[data-number='1'] {
-  left: 19.5%;
-  width: 16.6%;
+  left: 19.6%;
+  width: 16.4%;
 }
 .sub-navigation[data-number='2'] {
   left: 36.2%;
   width: 13.7%;
 }
 .sub-navigation[data-number='3'] {
-  left: 50%;
-  width: 16.6%;
+  left: 50.1%;
+  width: 16.4%;
 }
 .sub-navigation[data-number='4'] {
   left: 66.7%;
@@ -305,6 +305,7 @@ footer {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 37%;
+  top: 38%;
   right: 6%;
+  z-index: 10;
 }
