@@ -3,7 +3,7 @@
     padding: 3.125% 9.4%;
     margin-bottom: 6.2%;
   }
-  article {
+  article, .article{
     padding: 0 5.2%;
     flex-direction: column;
   }
@@ -102,7 +102,7 @@
   .to-catalog {
     padding: 7.3% 5.6%;
   }
-  article{
+  article, .article{
     padding: 0 5.6%;
     flex-direction: column;
   }
@@ -111,7 +111,7 @@
     height: 223px;
   }
   .item-photo {
-    margin-bottom: 16%;
+    margin: 0 auto 16%;
   }
   .item-info {
     text-align: center;
@@ -159,13 +159,7 @@
   .preview {
     width: 317px;
   }
-  .preview li img {
-    width: 100%;
-    height: 100%;
-  }
-  .banner {
-    width: 100%;
-  }
+
   .size-value label, .color-value label {
     padding: 10% 18%;
   }

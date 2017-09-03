@@ -6,9 +6,8 @@
   "scripts": {
     "build": "babel js -d build --presets es2015",
     "watch": "babel js -d build --presets es2015 -w",
-    "prestart": "npm install",
-    "start": "http-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install && npm run build",
+    "start": "http-server"
   },
   "author": "vmiracle13@gmail.com",
   "license": "MIT",
