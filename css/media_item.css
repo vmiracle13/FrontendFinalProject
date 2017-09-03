@@ -54,7 +54,7 @@
     order: 5;
   }
   .size-value {
-    flex-basis: 14%;
+    flex-basis: 18%;
   }
   .color-value {
    flex-basis: 15%;
@@ -82,7 +82,7 @@
     margin-bottom: 0;
   }
   .banner img {
-    height: 250px;
+    /*height: 250px;*/
   }
   .banner:first-child .banner-info {
     top: 8%;

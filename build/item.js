@@ -2,31 +2,6 @@
 
 ;(function () {
   document.addEventListener('DOMContentLoaded', function () {
-
-    //choose color and size - toggle radio-buttons
-    var sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
-    var colorBlock = document.body.querySelector('.item-info').querySelector('.colors');
-    var size = void 0;
-    var color = void 0;
-
-    sizesBlock.addEventListener('click', checkSizeColor);
-    colorBlock.addEventListener('click', checkSizeColor);
-
-    function checkSizeColor(event) {
-      var target = event.target;
-
-      console.log('hell');
-
-      //if (target.tagName !== 'LABEL') {
-      //return;
-      //}
-
-
-      var checked = sizesBlock.querySelectorAll('checked');
-
-      console.log(checked);
-    }
-
     function findCheckedElem(collection) {
       return Array.prototype.slice.call(collection).filter(function (elem) {
         return elem.hasAttribute('checked') ? elem : false;

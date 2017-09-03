@@ -134,3 +134,7 @@ button {
   color: #757575;
   margin: 0 auto;
 }
+
+.wrap {
+  margin-bottom: 0;
+}

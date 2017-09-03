@@ -47,9 +47,8 @@
       const title = filterDiv.querySelectorAll('.title');
       const lastSpan = title[title.length - 1].querySelector('.nav-item');
 
-      //spans[spans.length - 2].classList.toggle('after');
-
-
+      const after = filterDiv.querySelector('.after');
+      after.classList.toggle('none');
       spans[spans.length - 1].classList.toggle('none');
       const mainShadow = document.body.querySelector('.main-catalog-shadow');
       mainShadow.classList.toggle('main-catalog-shadow-active');

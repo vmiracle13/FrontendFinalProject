@@ -103,6 +103,10 @@ article {
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 8%;
+  align-items: baseline;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-pack: start;
 }
 
 .sizes input, .colors input {
@@ -119,9 +123,6 @@ article {
 .size-value label, .color-value label {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875em;
-  position: absolute;
-  top: -62%;
-  left: 0;
   padding: 7% 15%;
   cursor: pointer;
 }

@@ -16,7 +16,7 @@
   }
 
   .list-items img {
-    margin-bottom: 22.4%;
+    /*margin-bottom: 22.4%;*/
   }
 
   .list-items .product-name {
@@ -24,7 +24,7 @@
   }
 
   .shadow {
-    height: 85.5%;
+    /*height: 85.5%;*/
   }
 
   .shadow span {
@@ -48,7 +48,7 @@
   }
 
   .advertisement {
-    height: 67.9%;
+    /*height: 67.9%;*/
   }
 
   button {
@@ -397,7 +397,8 @@
    }
 
   .advertisement {
-    height: 63.2%;
+    /*height: 63.2%;*/
+    height: auto;
   }
 
   .wrap-position {
@@ -422,17 +423,17 @@
   }
 
   button {
-    padding: 3.5% 11.5%;
+    padding: 1.5% 11.5%;
     margin-bottom: 28%;
     font-size: 1.125em;
   }
 
    .shadow span {
-     left: 13%;
+     /*left: 13%;*/
+     left: 15%;
    }
 
   .after {
-    display: block;
     content: " ";
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
     position: absolute;
@@ -457,5 +458,9 @@
 
   .filter div {
     border: none;
+  }
+
+  .banner {
+    width: 100%;
   }
 }
