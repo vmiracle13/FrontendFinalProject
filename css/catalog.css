@@ -194,14 +194,14 @@ nav {
 }
 
 .list-items {
-  margin-bottom: 0;
+  margin-bottom: 1.7%;
   flex-wrap: wrap;
   /*for IE*/
   -ms-flex-wrap: wrap;
 }
 
 .list-items li {
-  margin-bottom: 9.4%;
+  margin-bottom: 7.5%;
   flex-basis: 20.5%;
 }
 

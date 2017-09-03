@@ -32,7 +32,7 @@
   height: 24px;
   z-index: 11;
   position: absolute;
-  top: 36%;
+  top: 38%;
   transform: translateX(-50%);
   left: 50%;
 }
@@ -43,7 +43,7 @@
   height: 24px;
   z-index: 11;
   position: absolute;
-  top: 40%;
+  top: 38%;
   transform: translateX(-50%);
   left: 50%;
 }
@@ -79,7 +79,7 @@
   left: 0;
   background-color: #f7f7f7;
   border-top: 1px solid #ddd;
-  height: 6.15%;
+  height: 9.81%;
   width: 100%;
   z-index: 15;
 }
@@ -112,7 +112,7 @@
 }
 
 .banners {
-  margin-bottom: 11.5%;
+  margin-bottom: 11.9%;
 }
 
 .banner span {
@@ -124,13 +124,21 @@ h2 {
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 7.69%;
+  margin-bottom: 8.48%;
 }
 
 .catalog {
-  margin-bottom: 7.15%;
+  margin-bottom: 6.8%;
 }
 
 button {
   width: 29.3%;
+}
+.list-items {
+  margin-bottom: 8.5%;
+}
+
+.list-items img {
+  height: auto;
+  margin-bottom: 23.7%;
 }

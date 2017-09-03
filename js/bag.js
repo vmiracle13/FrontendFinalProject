@@ -99,10 +99,3 @@ class BagParent {
     this.deserialize();
   }
 }
-
-
-class Bag extends BagParent {
-  constructor(){
-    super();
-  }
-}

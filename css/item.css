@@ -1,5 +1,3 @@
-@import "/css/common-styles.css";
-
 img {
   display: block;
 }
@@ -11,16 +9,16 @@ img {
 
 .to-catalog {
   display: block;
-  padding: 2.08% 6.92%;
+  padding: 1.9% 6.92%;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 4.62%;
+  margin-bottom: 5.2%;
   cursor: pointer;
 }
 .to-catalog:hover {
   color: #f14a58;
 }
 
-article {
+.article {
   padding: 0 4.62%;
   display: flex;
   flex-direction: row;
@@ -34,7 +32,7 @@ article {
 
 .main-photo {
   width: 535px;
-  height: 312px;
+  height: 390px;
 }
 
 .preview {
@@ -65,7 +63,7 @@ article {
 }
 
 .item-info {
-  padding-top: 1.5%;
+  padding-top: 2.2%;
   padding-left: 3.86%;
   flex-basis: 50%;
   display: flex;
@@ -75,14 +73,14 @@ article {
 .item-info h2 {
   font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 1.625em;
-  margin-bottom: 4%;
+  margin-bottom: 4.8%;
 }
 
 .item-info p {
   font-family: Crimson, serif;
   font-size: 1em;
   font-style: italic;
-  margin-bottom: 5.32%;
+  margin-bottom: 7.32%;
   line-height: 1.8;
 }
 
@@ -102,11 +100,15 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
   align-items: baseline;
   display: -ms-flexbox;
   -ms-flex-direction: row;
   -ms-flex-pack: start;
+}
+
+.colors {
+  margin-bottom: 9%;
 }
 
 .sizes input, .colors input {

@@ -6,7 +6,7 @@ h2 {
   font-size: 1.625em;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 2% 7.3%;
+  padding: 1.4% 7.3%;
 }
 
 .product-list {
@@ -21,7 +21,11 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-basis: 50%;
-  margin-bottom: 7%;
+  margin-bottom: 8.5%;
+}
+
+.product:last-child {
+  margin-bottom: 10.85%;
 }
 
 .product-info {
@@ -44,7 +48,7 @@ h2 {
 .product-info .price {
   font-family: "Roboto Bold", sans-serif;
   font-size: 1.39em;
-  margin-bottom: 17%;
+  margin-bottom: 20%;
 }
 
 .product-info span {
@@ -72,7 +76,7 @@ h2 {
 
 .coupon-code {
   border-top: 1px solid #e5e5e5;
-  padding: 1.5% 0;
+  padding: 1.15% 0;
   background-color: #f7f7f7;
   text-align: center;
   font-family: "OpenSans Bold", sans-serif;
@@ -84,7 +88,7 @@ h2 {
 }
 
 .bottom-info {
-  margin-bottom: 4.5%;
+  margin-bottom: 2.5%;
   padding: 2.5%;
   display: flex;
   justify-content: space-between;
@@ -137,4 +141,8 @@ button {
 
 .wrap {
   margin-bottom: 0;
+}
+
+.wrap img {
+  vertical-align: top;
 }

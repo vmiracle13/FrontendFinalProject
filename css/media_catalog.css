@@ -96,8 +96,7 @@
     display: none;
   }
 
-  /*.after {
-    display: block;
+  .after {
     content: " ";
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
     position: absolute;
@@ -107,7 +106,7 @@
     width: 6px;
     height: 3px;
     z-index: 10;
-  }*/
+  }
 
   .filter > div:hover {
     border: 1px solid transparent;
@@ -124,7 +123,7 @@
     /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
   }
 
-  .title:last-of-type > span::after {
+  /*.title:last-of-type > span::after {
     content: " ";
     display: inline-block;
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
@@ -133,8 +132,8 @@
     position: absolute;
     top: 8px;
     right: -28px;
-    /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
-  }
+    !*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*!
+  }*/
 
   .filter > div:not(.selected) {
     padding: 0;
@@ -262,8 +261,6 @@
     width: 3px;
     height: 4px;
     vertical-align: -2px;
-    /*vertical-align: -webkit-baseline-middle; // i don't know if other browsers support it*/
-    margin-right: 3px;
   }
 
   .filter > div:not(.selected) {
@@ -364,10 +361,12 @@
 
   .list-items {
     padding: 20px 20px 0 20px;
+    margin-bottom: 4.5%;
   }
 
   .list-items li {
     flex-basis: 47%;
+    margin-bottom: 17.5%;
   }
 
   .list-items .product-name {
@@ -398,11 +397,11 @@
 
   .advertisement {
     /*height: 63.2%;*/
-    height: auto;
+    height: 100%;
   }
 
   .wrap-position {
-    bottom: 17%;
+    bottom: 12%;
     left: 22.05%;
   }
 
@@ -462,5 +461,14 @@
 
   .banner {
     width: 100%;
+  }
+
+  .exit-icon {
+    -webkit-box-shadow: -3px 1px 18px 29px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -3px 1px 18px 29px rgba(255, 255, 255, 1);
+    box-shadow: -3px 1px 18px 29px rgba(255, 255, 255, 1);
+  }
+  .wrap {
+    margin-bottom: 23.6%;
   }
 }
