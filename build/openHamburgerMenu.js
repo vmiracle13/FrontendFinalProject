@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 ;(function () {
   document.addEventListener('DOMContentLoaded', function () {
     var menu = document.body.querySelector('.hamburger');
@@ -14,3 +14,4 @@
     });
   });
 })();
+*/

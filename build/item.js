@@ -15,39 +15,16 @@
     function checkSizeColor(event) {
       var target = event.target;
 
-      if (target.tagName !== 'SPAN') {
-        return;
-      }
+      console.log('hell');
 
-      var block = void 0;
+      //if (target.tagName !== 'LABEL') {
+      //return;
+      //}
 
-      if (target.closest('.sizes')) {
-        block = sizesBlock;
-        size = target.innerHTML;
-      } else {
-        block = colorBlock;
-        color = target.innerHTML;
-      }
 
-      var radioBox = block.querySelectorAll('input[type="radio"]');
-      var spanCheckedRadioBox = block.querySelectorAll('span');
+      var checked = sizesBlock.querySelectorAll('checked');
 
-      var checkedSpan = Array.prototype.slice.call(spanCheckedRadioBox).filter(function (elem) {
-        return elem.classList.contains('checked') ? elem : false;
-      })[0];
-      var checkedRadioBox = Array.prototype.slice.call(radioBox).filter(function (elem) {
-        return elem.hasAttribute('checked') ? elem : false;
-      })[0];
-
-      checkedSpan.classList.remove('checked');
-
-      if (checkedSpan.previousElementSibling.matches('input[type="radio"]')) {
-        checkedSpan.previousElementSibling.removeAttribute('checked');
-      }
-      checkedSpan = target;
-      checkedSpan.classList.add('checked');
-
-      checkedSpan.previousElementSibling.setAttribute('checked', '1');
+      console.log(checked);
     }
 
     function findCheckedElem(collection) {

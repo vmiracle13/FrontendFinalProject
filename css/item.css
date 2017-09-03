@@ -116,7 +116,7 @@ article {
   margin-right: 47px;
 }
 
-.size-value span, .color-value span {
+.size-value label, .color-value label {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875em;
   position: absolute;
@@ -126,17 +126,18 @@ article {
   cursor: pointer;
 }
 
-.size-value span:hover, .color-value span:hover {
+.size-value label:hover, .color-value label:hover {
   border: 1px solid #f14a58;
+}
+
+.sizes input[type="radio"]:checked + label,
+.colors input[type="radio"]:checked + label{
+  border: 1px solid #e5e5e5;
 }
 
 .size-value, .color-value{
   position: relative;
   flex-basis: 27%;
-}
-
-.checked {
-  border: 1px solid #e5e5e5;
 }
 
 button a {
