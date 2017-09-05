@@ -1,7 +1,4 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .promo-block {
-    height: 820px;
-  }
   .prev, .next {
     display: none;
   }
@@ -37,9 +34,6 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px){
-  .promo-block {
-    height: 475px;
-  }
   .radio-commands {
     height: 11.7%;
     display: flex;

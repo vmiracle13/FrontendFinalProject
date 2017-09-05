@@ -48,9 +48,6 @@
   .list-items li {
     flex-basis: 30.5%;
   }
-  .list-items img {
-    /*margin-bottom: 22%;*/
-  }
   .catalog {
     margin-bottom: 10.22%;
   }
@@ -304,7 +301,7 @@
     left: 86%;
   }
   .right-block {
-    padding-top: 24px;
+    padding-top: 28px;
     margin-left: 36%;
     flex-basis: 18%;
   }
