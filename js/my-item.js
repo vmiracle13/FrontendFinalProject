@@ -1,4 +1,4 @@
-;(function() {
+;(function () {
   document.addEventListener('DOMContentLoaded', () => {
     //choose color and size - toggle radio-buttons
     const sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
@@ -43,6 +43,11 @@
 
     updateWidget();
     buttonAddToBag.addEventListener('click', addItemToBag);
+
+    window.addEventListener('storage', () => {
+      bag.deserialize();
+      updateWidget();
+    });
   });
 })();
 

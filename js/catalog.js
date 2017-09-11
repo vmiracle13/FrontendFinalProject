@@ -10,8 +10,8 @@
       const sum = bag.getSum();
       if (!amount || !sum) return;
 
-      headerProductNumber.innerHTML = `${amount}`;
-      headerBagSum.innerHTML = `Bag&nbsp;&pound;${(new Intl.NumberFormat('en').format(sum.toFixed(2))).replace(',', '.')}&nbsp;`;
+      headerProductNumber.innerHTML = `(${amount})`;
+      headerBagSum.innerHTML = `Bag&nbsp;&pound;${new Intl.NumberFormat('ru').format(sum.toFixed(2)).replace(',', '.')}&nbsp;`;
     }
 
     updateWidget();

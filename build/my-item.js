@@ -47,5 +47,10 @@
 
     updateWidget();
     buttonAddToBag.addEventListener('click', addItemToBag);
+
+    window.addEventListener('storage', function () {
+      bag.deserialize();
+      updateWidget();
+    });
   });
 })();

@@ -137,6 +137,7 @@ button {
   font-size: 1.4em;
   color: #757575;
   margin: 0 auto;
+  transition: color 5s linear 15s;
 }
 
 .wrap {
@@ -145,4 +146,8 @@ button {
 
 .wrap img {
   vertical-align: top;
+}
+
+.changeColor {
+  color: red;
 }

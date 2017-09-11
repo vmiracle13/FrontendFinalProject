@@ -1,4 +1,4 @@
-class BagParent {
+class Bag {
   constructor() {
     this.productList = [];
     this.productsAmount = 0;
@@ -94,15 +94,15 @@ class BagParent {
     return this.productsAmount;
   }
 
-  loadProducts(items) {
+  /*loadProducts(items) {
     localStorage.setItem('bag', JSON.stringify(items));
     this.deserialize();
-  }
+  }*/
 }
 
 
-class Bag extends BagParent {
+/*class Bag extends BagParent {
   constructor(){
     super();
   }
-}
+}*/

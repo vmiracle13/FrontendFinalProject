@@ -146,5 +146,11 @@
     productListBlock.addEventListener('click', remove);
     clear.addEventListener('click', clearBag);
     buyButton.addEventListener('click', buy);
+
+    window.addEventListener('storage', function () {
+      bag.deserialize();
+      createHTMLPage();
+      updateWidget();
+    });
   });
 })();

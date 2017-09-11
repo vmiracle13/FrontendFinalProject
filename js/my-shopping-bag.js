@@ -1,4 +1,4 @@
-;(function() {
+;(function () {
   document.addEventListener('DOMContentLoaded', () => {
     const bag = new Bag();
 
@@ -144,5 +144,12 @@
     productListBlock.addEventListener('click', remove);
     clear.addEventListener('click', clearBag);
     buyButton.addEventListener('click', buy);
+
+    window.addEventListener('storage', () => {
+      console.log('something has changed');
+      bag.deserialize();
+      createHTMLPage();
+      updateWidget();
+    });
   });
 })();

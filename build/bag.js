@@ -2,15 +2,11 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var BagParent = function () {
-  function BagParent() {
-    _classCallCheck(this, BagParent);
+var Bag = function () {
+  function Bag() {
+    _classCallCheck(this, Bag);
 
     this.productList = [];
     this.productsAmount = 0;
@@ -18,7 +14,7 @@ var BagParent = function () {
     this.deserialize();
   }
 
-  _createClass(BagParent, [{
+  _createClass(Bag, [{
     key: 'addItem',
     value: function addItem(product) {
       if (this.productList === null) {
@@ -122,25 +118,19 @@ var BagParent = function () {
       });
       return this.productsAmount;
     }
-  }, {
-    key: 'loadProducts',
-    value: function loadProducts(items) {
+
+    /*loadProducts(items) {
       localStorage.setItem('bag', JSON.stringify(items));
       this.deserialize();
-    }
+    }*/
+
   }]);
 
-  return BagParent;
+  return Bag;
 }();
 
-var Bag = function (_BagParent) {
-  _inherits(Bag, _BagParent);
-
-  function Bag() {
-    _classCallCheck(this, Bag);
-
-    return _possibleConstructorReturn(this, (Bag.__proto__ || Object.getPrototypeOf(Bag)).call(this));
+/*class Bag extends BagParent {
+  constructor(){
+    super();
   }
-
-  return Bag;
-}(BagParent);
+}*/

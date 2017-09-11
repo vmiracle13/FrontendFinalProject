@@ -23,8 +23,8 @@
         totalSumInput.innerHTML = '&pound;0';
         return;
       }
-      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + new Intl.NumberFormat('en').format(sum.toFixed(2)).replace(',', '.') + '&nbsp;';
-      totalSumInput.innerHTML = '&pound;' + new Intl.NumberFormat('en').format(sum.toFixed(2)).replace(',', '.');
+      headerBagSum.innerHTML = 'Bag&nbsp;&pound;' + new Intl.NumberFormat('ru').format(sum.toFixed(2)).replace(',', '.') + '&nbsp;';
+      totalSumInput.innerHTML = '&pound;' + new Intl.NumberFormat('ru').format(sum.toFixed(2)).replace(',', '.');
     }
 
     updateWidget();
@@ -57,6 +57,9 @@
       message.innerHTML = 'Thank You for your purchase!';
       message.classList.add('message');
       productListBlock.appendChild(message);
+      if (bag.totalSum > 1000) {
+        message.classList.add('changeColor');
+      }
       bag.clear();
       updateWidget();
     }

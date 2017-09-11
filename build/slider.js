@@ -39,9 +39,10 @@
         }
       }
     }
-    var activeRadio = divMiddle.querySelector('.active-radio');
-    console.log(activeRadio);
+    generateHref(sliderBlock);
+    generateDots(sliderBlock);
 
+    var activeRadio = divMiddle.querySelector('.active-radio');
     // change a colour of a radio button under slider
     function changeActiveRadio(actImage) {
       for (var i = 0; i < divMiddle.childElementCount; i++) {
@@ -52,9 +53,6 @@
         }
       }
     }
-    generateHref(sliderBlock);
-    generateDots(sliderBlock);
-
     function runSlide(event) {
       if (animated) return;
 
@@ -83,7 +81,7 @@
       changeActiveRadio(activeImage);
 
       if (animatedStop) {
-        timerId = setTimeout(runSlide, 2000);
+        timerId = setTimeout(runSlide, 10000);
         animatedStop = false;
       }
       animated = false;

@@ -108,7 +108,10 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  main {
+    min-width: 375px;
+  }
   button {
     width: 61.8%;
     height: 60px;
