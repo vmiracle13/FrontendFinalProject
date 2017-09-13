@@ -17,5 +17,10 @@
     }
 
     updateWidget();
+
+    window.addEventListener('storage', () => {
+      bag.deserialize();
+      updateWidget();
+    });
   });
 })();

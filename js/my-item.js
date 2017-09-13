@@ -1,13 +1,11 @@
 ;(function () {
   document.addEventListener('DOMContentLoaded', () => {
-    //choose color and size - toggle radio-buttons
     const sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
     const colorBlock = document.body.querySelector('.item-info').querySelector('.colors');
+    //choose color and size - toggle radio-buttons
     function findCheckedElem(collection) {
       return Array.prototype.slice.call(collection).filter((elem) => elem.checked ? elem : false);
     }
-
-    //bag
     const bag = new Bag();
 
     const buttonAddToBag = document.body.querySelector('.item-info button');
