@@ -1,25 +1,26 @@
-@import "/fonts/fonts.css";
-@import "/css/reset.css";
-
 body {
-  max-width: 1180px;
+  max-width: 1300px;
   margin: 0 auto;
-}
-
-main {
+  border: 1px solid red;
   background-color: #fff;
   color: #000;
   font: 1em/1.2 "OpenSans Bold", Arial, sans-serif;
-  /*for IE*/
-  display: block;
 }
 
-a {
+/*.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  !*for IE*!
+  display: block;
+}*/
+
+.a {
   color: #000;
   text-decoration: none;
 }
 
-button {
+.button {
   border: 1px solid #e5e5e5;
   background-color: #fff;
   font-size: 1.5em;
@@ -29,13 +30,14 @@ button {
   cursor: pointer;
   width: 69%;
   height: 73px;
+  padding: 0;
 }
 
-button:hover {
+.button:hover {
   border: 1px solid #f14a58;
   color: #f14a58;
 }
-button:focus {
+.button:focus {
   outline: none;
 }
 
@@ -50,14 +52,16 @@ button:focus {
 }
 
 header {
-  padding: 0 4.62%;
+  /*padding: 0 4.61%;*/
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 2.55%;
 }
 
 .logo {
@@ -66,7 +70,7 @@ header {
   height: 27px;
 }
 
-.logo a {
+.logo .a {
   display: block;
   width: 100%;
   height: 100%;
@@ -76,9 +80,9 @@ header {
 
 .right-block {
   font-family: "Roboto Regular", Arial, sans-serif;
-  flex-basis: 24%;
   font-size: 0.75em;
   letter-spacing: 1px;
+  flex-basis: 24%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -89,6 +93,7 @@ header {
 }
 
 .bag-short-info {
+  margin-left: 18.67%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -117,7 +122,7 @@ header {
 .wrap-nav {
   display: flex;
   flex-direction: row;
-  margin-bottom: 1.07%;
+  margin-bottom: 1.022%;
   align-items: baseline;
   justify-content: space-between;
   /*for IE*/
@@ -126,25 +131,25 @@ header {
   -ms-flex-pack: justify;
 }
 
-nav {
-  margin-right: 8.03%;
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-basis: 74%;
+  flex-basis: 80%;
   /*for IE*/
   display: -ms-flexbox;
   -ms-flex-direction: row;
   -ms-flex-pack: justify;
-  -ms-flex: 1 0 74%;
+  -ms-flex: 1 0 80%;
 }
 
-nav a {
+.nav .a {
   text-transform: capitalize;
   font-size: 0.8125em;
+  font-family: "OpenSans Bold", sans-serif;
 }
 
-nav a:hover {
+.nav .a:hover {
   color: #f14a58;
 }
 
@@ -152,20 +157,16 @@ nav a:hover {
   position: relative;
 }
 
-input {
+.search-input {
+  width: 66.11%;
+  margin-left: 34%;
+  outline: none;
   border: none;
   border-bottom: 2px #e5e5e5 solid;
-  padding: 4% 0;
+  padding: 4.59% 0;
   display: block;
   font-family: "OpenSans Bold", Arial, sans-serif;
   font-size: 0.8125em;
-  outline: none;
-}
-
-.search-input {
-  width: 71%;
-  margin-left: 29%;
-  outline: none;
 }
 
 .glass-icon {
@@ -203,6 +204,7 @@ input:-moz-placeholder {
   border-bottom: 1px solid #e5e5e5;
   position: relative;
   text-align: center;
+  font-family: "OpenSans Bold", sans-serif;
 }
 
 .banner:last-of-type {
@@ -212,7 +214,6 @@ input:-moz-placeholder {
 .banner img {
   width: 100%;
   height: 100%;
-  /*width: auto*/
 }
 
 .banner span {
@@ -314,9 +315,9 @@ input:-moz-placeholder {
 
 .list-items li {
   position: relative;
-  flex-basis: 20%;
+  flex-basis: 20.35%;
   /*for IE*/
-  -ms-flex: 1 0 20%;
+  -ms-flex: 1 0 20.35%;
 }
 
 .list-items li::after{
@@ -325,7 +326,7 @@ input:-moz-placeholder {
 }
 
 .list-items li span {
-  padding: 0 4.38%;
+  padding: 0 8%;
 }
 
 .list-items img {
@@ -337,7 +338,7 @@ input:-moz-placeholder {
 .list-items .product-name {
   font-weight: bold;
   display: block;
-  margin-bottom: 6%;
+  margin-bottom: 10%;
   font-family: "Roboto Bold", Arial, sans-serif;
   font-size: 0.875em;
   line-height: 1.8;
@@ -349,7 +350,7 @@ input:-moz-placeholder {
   font-size: 0.875em;
 }
 
-footer {
+.footer-main-block {
   position: relative;
   border-top: 1px solid #e5e5e5;
   display: flex;
@@ -360,7 +361,7 @@ footer {
   font-family: "Roboto Regular", Arial, sans-serif;
 }
 
-footer h4 {
+.footer h4 {
   text-transform: capitalize;
   font-family: "OpenSans Bold", Arial, sans-serif;
 }
@@ -368,7 +369,7 @@ footer h4 {
 .quick-links {
   padding-top: 4.62%;
   padding-left: 4.62%;
-  padding-bottom: 6.9%;
+  padding-bottom: 8.85%;
   border-right: 1px solid #e5e5e5;
   flex-basis: 49%;
   /*for IE*/
@@ -396,13 +397,17 @@ footer h4 {
   -ms-flex: 1 0 40%;
 }
 
+.custom-ref li:last-child {
+  margin-bottom: 0;
+}
+
 .quick-links h4 {
-  margin-bottom: 23.7%;
+  margin-bottom: 22.95%;
 }
 
 .quick-links li {
   font-size: 0.875em;
-  margin-bottom: 15%;
+  margin-bottom: 12%;
 }
 
 .quick-links a:hover, .legal-ref a:hover {
@@ -418,11 +423,11 @@ footer h4 {
 }
 
 .socials h4 {
-  margin-bottom: 11.6%;
+  margin-bottom: 8.4%;
 }
 
 .socials ul {
-  margin-bottom: 14.5%;
+  margin-bottom: 13.58%;
   display: flex;
   flex-direction: row;
   /*for IE*/
@@ -431,9 +436,9 @@ footer h4 {
 }
 
 .socials ul li {
-  flex-basis: 49%;
+  flex-basis: 45%;
   /*for IE*/
-  -ms-flex: 1 0 49%;
+  -ms-flex: 1 0 45%;
 }
 
 .socials .tweet-us {
@@ -449,7 +454,7 @@ footer h4 {
   margin-right: 5%;
 }
 
-.socials a {
+.socials .a {
   font-family: "Roboto Bold", sans-serif;
 }
 
@@ -462,10 +467,10 @@ footer h4 {
   font-style: italic;
   font-family: Crimson, serif;
   font-size: 1em;
-  width: 57%;
+  width: 53%;
   line-height: 2;
   color: #757575;
-  margin-bottom: 12%;
+  margin-bottom: 6.8%;
 }
 
 .social-ref {
@@ -490,7 +495,7 @@ footer h4 {
 
 .copyright {
   border-top: 1px solid #e5e5e5;
-  padding: 3% 5.18%;
+  padding: 2.7% 4.62%;
   font-family: "Roboto Regular", Arial, sans-serif;
   font-weight: bold;
   position: relative;
@@ -545,7 +550,7 @@ footer h4 {
 }
 
 .legal-ref {
-  flex-basis: 25%;
+  flex-basis: 23%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

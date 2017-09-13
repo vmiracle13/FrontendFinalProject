@@ -1,3 +1,5 @@
+@import "/css/reset.css";
+@import "/fonts/fonts.css";
 @import "/css/common-styles.css";
 
 img {
@@ -6,21 +8,26 @@ img {
 
 .item {
   border-top: 1px solid #e5e5e5;
-  margin-bottom: 12.3%;
+  margin-bottom: 12.16%;
+}
+
+.back-to-catalog-block {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 1.85% 6.93%;
+  margin-bottom: 4.62%;
 }
 
 .to-catalog {
   display: block;
-  padding: 1.9% 6.92%;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 5.2%;
   cursor: pointer;
+  width: 13%;
 }
+
 .to-catalog:hover {
   color: #f14a58;
 }
 
-article, .article{
+.article{
   padding: 0 4.62%;
   display: flex;
   flex-direction: row;
@@ -29,11 +36,10 @@ article, .article{
 .item-photo {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 54.2%;
 }
 
 .main-photo {
-  width: 535px;
   height: 390px;
 }
 
@@ -65,8 +71,8 @@ article, .article{
 }
 
 .item-info {
-  padding-top: 2.2%;
-  padding-left: 3.86%;
+  padding-top: 2.12%;
+  padding-left: 4.24%;
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -82,7 +88,7 @@ article, .article{
   font-family: Crimson, serif;
   font-size: 1em;
   font-style: italic;
-  margin-bottom: 7.32%;
+  margin-bottom: 9.24%;
   line-height: 1.8;
 }
 
@@ -124,12 +130,17 @@ article, .article{
   margin-right: 47px;
 }
 
+.colors span {
+  margin-right: 44px;
+}
+
 .size-value label, .color-value label {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875em;
   padding: 7% 15%;
   cursor: pointer;
 }
+
 
 .size-value label:hover, .color-value label:hover {
   border: 1px solid #f14a58;
@@ -148,6 +159,14 @@ article, .article{
 button a {
   width: 100%;
   height: 100%;
+}
+
+.banner {
+  border-bottom: none;
+}
+
+.banner-info {
+  right: 13%;
 }
 
 .banner:nth-of-type(3) h3 {
@@ -174,7 +193,6 @@ button a {
 }
 
 .banner h3 {
-  margin-bottom: 8%;
   color: #fff;
 }
 

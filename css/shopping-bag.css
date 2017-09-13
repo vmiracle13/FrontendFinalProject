@@ -6,11 +6,11 @@ h2 {
   font-size: 1.625em;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 1.4% 7.3%;
+  padding: 1.62% 7%;
 }
 
 .product-list {
-  padding: 2.3% 4.62%;
+  padding: 2.31% 4.62%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,20 +21,15 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-basis: 50%;
-  margin-bottom: 8.5%;
-}
-
-.product:last-child {
-  /*margin-bottom: 10.85%;*/
+  margin-bottom: 7.65%;
 }
 
 .product-info {
   font-family: "Roboto Regular", sans-serif;
   font-size: 0.75em;
-  padding: 2% 0 0 2.2%;
+  padding: 2.38% 0 0 4.41%;
   text-transform: capitalize;
-  flex-basis: 40%;
-
+  flex-basis: 38%;
   display: flex;
   flex-direction: column;
 }
@@ -59,7 +54,7 @@ h2 {
   margin-bottom: 14%;
 }
 
-.product-info button {
+.product-info .button {
   color: #f14a58;
   font-family: "OpenSans Bold", sans-serif;
   font-size: 1.09em;
@@ -76,7 +71,7 @@ h2 {
 
 .coupon-code {
   border-top: 1px solid #e5e5e5;
-  padding: 1.15% 0;
+  padding: 0.97% 0;
   background-color: #f7f7f7;
   text-align: center;
   font-family: "OpenSans Bold", sans-serif;
@@ -88,14 +83,14 @@ h2 {
 }
 
 .bottom-info {
-  margin-bottom: 2.5%;
-  padding: 2.5%;
+  margin: 0 4.62% 2.31%;
+  padding: 2.31%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.clear {
+.clear.button {
   font-family: "Roboto Bold", sans-serif;
   font-size: 0.8125em;
   padding:0;
@@ -104,12 +99,12 @@ h2 {
   width: auto;
   height: auto;
 }
-.clear:hover {
+.clear.button:hover {
   border: none;
   color: #f14a58;
 }
 
-button {
+.button {
   width: 30.4%;
 }
 
