@@ -1,3 +1,7 @@
+html {
+  font-size: 100%;
+}
+
 body {
   max-width: 1300px;
   margin: 0 auto;
@@ -15,12 +19,12 @@ body {
   display: block;
 }*/
 
-.a {
+.link {
   color: #000;
   text-decoration: none;
 }
 
-.button {
+.btn {
   border: 1px solid #e5e5e5;
   background-color: #fff;
   font-size: 1.5em;
@@ -33,11 +37,11 @@ body {
   padding: 0;
 }
 
-.button:hover {
+.btn:hover {
   border: 1px solid #f14a58;
   color: #f14a58;
 }
-.button:focus {
+.btn:focus {
   outline: none;
 }
 
@@ -70,7 +74,7 @@ header {
   height: 27px;
 }
 
-.logo .a {
+.logo .link {
   display: block;
   width: 100%;
   height: 100%;
@@ -85,15 +89,14 @@ header {
   flex-basis: 24%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   /*for IE*/
   display: -ms-flexbox;
   -ms-flex-direction: row;
-  -ms-flex-pack: justify;
 }
 
 .bag-short-info {
-  margin-left: 18.67%;
+  margin-left: 55px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -143,13 +146,13 @@ header {
   -ms-flex: 1 0 80%;
 }
 
-.nav .a {
+.nav .link {
   text-transform: capitalize;
-  font-size: 0.8125em;
+  font-size: 0.75em;
   font-family: "OpenSans Bold", sans-serif;
 }
 
-.nav .a:hover {
+.nav .link:hover {
   color: #f14a58;
 }
 
@@ -454,7 +457,7 @@ input:-moz-placeholder {
   margin-right: 5%;
 }
 
-.socials .a {
+.socials .link {
   font-family: "Roboto Bold", sans-serif;
 }
 

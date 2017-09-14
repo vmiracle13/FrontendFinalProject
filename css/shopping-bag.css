@@ -1,3 +1,4 @@
+@import "/css/reset.css";
 @import "/fonts/fonts.css";
 @import "/css/common-styles.css";
 
@@ -54,7 +55,7 @@ h2 {
   margin-bottom: 14%;
 }
 
-.product-info .button {
+.product-info .btn {
   color: #f14a58;
   font-family: "OpenSans Bold", sans-serif;
   font-size: 1.09em;
@@ -65,7 +66,7 @@ h2 {
   width: 50%;
   height: auto;
 }
-.product-info button:hover {
+.product-info .btn:hover {
   text-decoration: underline;
 }
 
@@ -90,7 +91,7 @@ h2 {
   align-items: center;
 }
 
-.clear.button {
+.clear.btn {
   font-family: "Roboto Bold", sans-serif;
   font-size: 0.8125em;
   padding:0;
@@ -99,12 +100,12 @@ h2 {
   width: auto;
   height: auto;
 }
-.clear.button:hover {
+.clear.btn:hover {
   border: none;
   color: #f14a58;
 }
 
-.button {
+.btn {
   width: 30.4%;
 }
 

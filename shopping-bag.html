@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Shopping bag</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/common-styles.css" rel="stylesheet">
-    <link href="css/shopping-bag.css" rel="stylesheet">
-    <link href="css/media_common-styles.css" rel="stylesheet">
-    <link href="css/media_shopping-bag.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Shopping bag</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/shopping-bag.css" rel="stylesheet">
+  <link href="css/media_common-styles.css" rel="stylesheet">
+  <link href="css/media_shopping-bag.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="wrapper">
 
   <header>
     <div class="top">
       <h1 class="logo">
-        <a href="start.html" class="a">Template</a>
+        <a href="start.html" class="link">Template</a>
       </h1>
 
       <div class="right-block">
-        <a href="#" class="a sign-up">Email sign up</a>
+        <a href="#" class="link sign-up">Email sign up</a>
 
         <div class="bag-short-info">
           <span>Bag&nbsp;</span>
@@ -31,14 +31,14 @@
 
     <div class="wrap-nav">
       <nav class="nav">
-        <a href="#" class="a">Women</a>
-        <a href="#" class="a">men</a>
-        <a href="#" class="a">handsbag</a>
-        <a href="#" class="a">accessories</a>
-        <a href="#" class="a">sale</a>
-        <a href="#" class="a">new arrivals</a>
-        <a href="#" class="a">clearance</a>
-        <a href="#" class="a">store locator</a>
+        <a href="#" class="link">Women</a>
+        <a href="#" class="link">men</a>
+        <a href="#" class="link">handsbag</a>
+        <a href="#" class="link">accessories</a>
+        <a href="#" class="link">sale</a>
+        <a href="#" class="link">new arrivals</a>
+        <a href="#" class="link">clearance</a>
+        <a href="#" class="link">store locator</a>
       </nav>
 
       <div class="search">
@@ -48,96 +48,102 @@
     </div>
   </header>
 
-<section class="main-content">
-  <h2>Shopping bag</h2>
+  <main>
+    <section class="main-content">
+      <h2>Shopping bag</h2>
 
-  <div class="product-list">
+      <div class="product-list">
 
-    <div class="product">
-      <div class="wrap">
-        <img src="img/shoppingBagPage/shopping-bag-1.jpg" alt="Only skinny jeans" title="Only skinny jeans">
-        <a href="item.html" class="a shadow">
-          <span>View item</span>
-        </a>
+        <div class="product">
+          <div class="wrap">
+            <img src="img/shoppingBagPage/shopping-bag-1.jpg" alt="Only skinny jeans" title="Only skinny jeans">
+            <a href="item.html" class="link shadow">
+              <span>View item</span>
+            </a>
+          </div>
+
+          <div class="product-info">
+            <p class="name">only skinny jeans</p>
+            <span class="price">&pound;390.25</span>
+            <span class="color">Color: Phillipa wash</span>
+            <span class="size">Size: UK 17</span>
+            <span class="amount">Quantity: 1</span>
+            <button class="btn">Remove item</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="wrap">
+            <img src="img/shoppingBagPage/shopping-bag-2.jpg" alt="Paul & joe sister jumper with neon trims"
+                 title="Paul & joe sister jumper with neon trims">
+            <a href="item.html" class="link shadow">
+              <span>View item</span>
+            </a>
+          </div>
+
+          <div class="product-info">
+            <p class="name">paul & joe sister jumper with neon trims</p>
+            <span class="price">&pound;400.75</span>
+            <span class="color">Color: Blue</span>
+            <span class="size">Size: UK 18</span>
+            <span class="amount">Quantity: 1</span>
+            <button class="btn">Remove item</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="wrap">
+            <img src="img/shoppingBagPage/shopping-bag-3.jpg" alt="Boyfriend T-shirt with Bohemian print"
+                 title="Boyfriend T-shirt with Bohemian print">
+            <a href="item.html" class="link shadow">
+              <span>View item</span>
+            </a>
+          </div>
+
+          <div class="product-info">
+            <p class="name">boyfriend T-shirt with Bohemian print</p>
+            <span class="price">&pound;360.00</span>
+            <span class="color">Color: Black</span>
+            <span class="size">Size: UK 18</span>
+            <span class="amount">Quantity: 1</span>
+            <button class="btn">Remove item</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="wrap">
+            <img src="img/shoppingBagPage/shopping-bag-4.jpg" alt="Turtle neck jumper in rib"
+                 title="Turtle neck jumper in rib">
+            <a href="item.html" class="link shadow">
+              <span>View item</span>
+            </a>
+          </div>
+
+          <div class="product-info">
+            <p class="name">turtle neck jumper in rib</p>
+            <span class="price">&pound;390.25</span>
+            <span class="color">Color: Phillipa wash</span>
+            <span class="size">Size: UK 14</span>
+            <span class="amount">Quantity: 1</span>
+            <button onfocus="event.preventDefault()" class="btn">Remove item</button>
+          </div>
+        </div>
       </div>
 
-      <div class="product-info">
-        <p class="name">only skinny jeans</p>
-        <span class="price">&pound;390.25</span>
-        <span class="color">Color: Phillipa wash</span>
-        <span class="size">Size: UK 17</span>
-        <span class="amount">Quantity: 1</span>
-        <button class="button">Remove item</button>
-      </div>
-    </div>
+      <p class="coupon-code">You've qualified for free UK Next Day Delivery on your order. Don't forget to enter the
+        code <span>nextday</span> at checkout</p>
+      <div class="bottom-info">
+        <button class="btn clear">Clear bag</button>
+        <button class="btn">Buy now</button>
+        <div class="total-sum">
+          <span>Total cost:</span>
+          <span>&pound;1&nbsp;640.25</span>
+        </div>
 
-    <div class="product">
-      <div class="wrap">
-        <img src="img/shoppingBagPage/shopping-bag-2.jpg" alt="Paul & joe sister jumper with neon trims" title="Paul & joe sister jumper with neon trims">
-        <a href="item.html" class="a shadow">
-          <span>View item</span>
-        </a>
       </div>
 
-      <div class="product-info">
-        <p class="name">paul & joe sister jumper with neon trims</p>
-        <span class="price">&pound;400.75</span>
-        <span class="color">Color: Blue</span>
-        <span class="size">Size: UK 18</span>
-        <span class="amount">Quantity: 1</span>
-        <button class="button">Remove item</button>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="wrap">
-        <img src="img/shoppingBagPage/shopping-bag-3.jpg" alt="Boyfriend T-shirt with Bohemian print" title="Boyfriend T-shirt with Bohemian print">
-        <a href="item.html" class="a shadow">
-          <span>View item</span>
-        </a>
-      </div>
-
-      <div class="product-info">
-        <p class="name">boyfriend T-shirt with Bohemian print</p>
-        <span class="price">&pound;360.00</span>
-        <span class="color">Color: Black</span>
-        <span class="size">Size: UK 18</span>
-        <span class="amount">Quantity: 1</span>
-        <button class="button">Remove item</button>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="wrap">
-      <img src="img/shoppingBagPage/shopping-bag-4.jpg" alt="Turtle neck jumper in rib" title="Turtle neck jumper in rib">
-        <a href="item.html" class="a shadow">
-          <span>View item</span>
-        </a>
-      </div>
-
-      <div class="product-info">
-        <p class="name">turtle neck jumper in rib</p>
-        <span class="price">&pound;390.25</span>
-        <span class="color">Color: Phillipa wash</span>
-        <span class="size">Size: UK 14</span>
-        <span class="amount">Quantity: 1</span>
-        <button onfocus="event.preventDefault()" class="button">Remove item</button>
-      </div>
-    </div>
-  </div>
-
-  <p class="coupon-code">You've qualified for free UK Next Day Delivery on your order. Don't forget to enter the code <span>nextday</span> at checkout</p>
-  <div class="bottom-info">
-    <button class="button clear">Clear bag</button>
-    <button class="button">Buy now</button>
-    <div class="total-sum">
-      <span>Total cost:</span>
-      <span>&pound;1&nbsp;640.25</span>
-    </div>
-
-  </div>
-
-</section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-main-block">
@@ -147,19 +153,19 @@
 
           <ul class="company-ref">
             <li>
-              <a href="#" class="a">Store Locator</a>
+              <a href="#" class="link">Store Locator</a>
             </li>
             <li>
-              <a href="#" class="a">Gift cards</a>
+              <a href="#" class="link">Gift cards</a>
             </li>
             <li>
-              <a href="#" class="a">Size guide</a>
+              <a href="#" class="link">Size guide</a>
             </li>
             <li>
-              <a href="#" class="a">About us</a>
+              <a href="#" class="link">About us</a>
             </li>
             <li>
-              <a href="#" class="a">Support</a>
+              <a href="#" class="link">Support</a>
             </li>
           </ul>
         </div>
@@ -168,12 +174,12 @@
           <h4>customer care</h4>
 
           <ul class="custom-ref">
-            <li><a href="#" class="a">Customer service</a></li>
-            <li><a href="#" class="a">Track my order</a></li>
-            <li><a href="#" class="a">Return policy</a></li>
-            <li><a href="#" class="a">Shipping & delivery</a></li>
-            <li><a href="#" class="a">Contact us</a></li>
-            <li><a href="#" class="a">Careers</a></li>
+            <li><a href="#" class="link">Customer service</a></li>
+            <li><a href="#" class="link">Track my order</a></li>
+            <li><a href="#" class="link">Return policy</a></li>
+            <li><a href="#" class="link">Shipping & delivery</a></li>
+            <li><a href="#" class="link">Contact us</a></li>
+            <li><a href="#" class="link">Careers</a></li>
           </ul>
         </div>
       </div>
@@ -182,7 +188,7 @@
         <ul>
           <li>
             <h4>Questions</h4>
-            <span class="tweet-us">Tweet us <a href="#" class="a">@template</a></span>
+            <span class="tweet-us">Tweet us <a href="#" class="link">@template</a></span>
           </li>
           <li>
             <h4>Order by phone</h4>
@@ -193,25 +199,23 @@
         <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5days.</p>
 
         <div class="social-ref">
-          <a href="facebook.com" class="a facebook"></a>
-          <a href="tweeter.com" class="a tweeter"></a>
+          <a href="facebook.com" class="link facebook"></a>
+          <a href="tweeter.com" class="link tweeter"></a>
         </div>
       </div>
 
       <div class="block-mobile">
         <ul class="legal-ref">
-          <li><a href="#" class="a">Legal notice</a></li>
-          <li><a href="#" class="a">Privacy policy</a></li>
-          <li><a href="#" class="a">Site map</a></li>
+          <li><a href="#" class="link">Legal notice</a></li>
+          <li><a href="#" class="link">Privacy policy</a></li>
+          <li><a href="#" class="link">Site map</a></li>
         </ul>
         <div class="social-ref mobile">
-          <a href="facebook.com" class="a facebook"></a>
-          <a href="tweeter.com" class="a tweeter"></a>
+          <a href="facebook.com" class="link facebook"></a>
+          <a href="tweeter.com" class="link tweeter"></a>
         </div>
       </div>
     </div>
-
-
 
     <div class="copyright">
       <span>&copy; 2010-2017, The Template Group inc.</span>
@@ -221,12 +225,14 @@
       </div>
 
       <ul class="legal-ref">
-        <li><a href="#" class="a">Legal notice</a></li>
-        <li><a href="#" class="a">Privacy policy</a></li>
-        <li><a href="#" class="a">Site map</a></li>
+        <li><a href="#" class="link">Legal notice</a></li>
+        <li><a href="#" class="link">Privacy policy</a></li>
+        <li><a href="#" class="link">Site map</a></li>
       </ul>
     </div>
   </footer>
+
+</div>
 
 <script src="build/bag.js"></script>
 <script src="build/search-field.js"></script>

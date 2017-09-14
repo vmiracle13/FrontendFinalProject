@@ -1,35 +1,20 @@
-@media screen and (max-width: 1172px) {
-  .right-block {
-    flex-basis: 26%;
-  }
-}
-
-@media screen and (max-width: 1085px) {
-  .right-block {
-    flex-basis: 28%;
-  }
-}
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
-    padding: 0 5.4%;
+    padding: 0 5.23%;
   }
   .right-block {
     flex-basis: 37%;
   }
   .wrap-nav {
-    margin-bottom: 3.255%;
+    margin-bottom: 4.05%;
   }
-  nav {
+  .nav {
     margin-right: 0;
-    flex-basis: 200%;
-    -ms-flex: 1 0 90%;
+    flex-basis: 89%;
+    -ms-flex: 1 0 89%;
   }
   .search {
-    width: 162px;
+    width: 1px;
     height: 15px;
   }
   .search-input {
@@ -38,11 +23,28 @@
   .activeSearch {
     display: block;
     position: absolute;
-    top: -32%;
-    left: -250%;
+    left: -206px;
     z-index: 5;
-    padding: 5%;
-    width: 250px;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    width: 207px;
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+    outline: none;
+    font-size: 0.75em;
+
+    -webkit-box-shadow: -8px 0 10px 2px rgba(255,255,255,1);
+    -moz-box-shadow: -8px 0 10px 2px rgba(255,255,255,1);
+    box-shadow: -8px 0 10px 2px rgba(255,255,255,1);
+  }
+  .activeSearch::-moz-placeholder {
+    color: #a8a8a8;
+  }
+  .activeSearch::-webkit-input-placeholder {
+    font-family: "OpenSans Bold", sans-serif;
+  }
+  .activeSearch:-moz-placeholder {
+    color: #a8a8a8;
   }
   .glass-icon {
     top: 32%;
@@ -66,7 +68,7 @@
   .catalog {
     margin-bottom: 10.22%;
   }
-  button {
+  .btn {
     font-size: 1.25em;
     height: 70px;
     width: 34.8%;
@@ -77,18 +79,20 @@
   .quick-links {
     flex-basis: 56%;
     border-right: none;
-    padding-top: 6.05%;
-    padding-bottom: 9.88%;
+    padding: 7.05% 0 12.8% 5.23%;
   }
   .quick-links h4 {
-    margin-bottom: 23.1%;
+    margin-bottom: 26.27%;
+  }
+  .quick-links li {
+    margin-bottom: 13%;
   }
   .right-ref-block {
     margin-right: 8%;
   }
   .socials {
     flex-basis: 25%;
-    padding-top: 6.05%;
+    padding-top: 7.05%;
     -ms-flex: 1 0 25%;
   }
   .socials ul {
@@ -103,7 +107,7 @@
     margin-bottom: 10.4%;
   }
   .copyright {
-    padding: 4.9% 5.21%;
+    padding: 4.3% 5.23%;
   }
   .copyright .center {
     margin-left: 0;
@@ -113,7 +117,7 @@
     font-size: 1em;
   }
   .legal-ref {
-    flex-basis: 34%;
+    flex-basis: 32%;
   }
   .block-mobile {
     display: none;
@@ -127,7 +131,7 @@
   body {
     min-width: 375px;
   }
-  button {
+  .btn {
     width: 61.8%;
     height: 60px;
   }
