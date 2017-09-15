@@ -8,13 +8,11 @@ img {
 
 .item {
   border-top: 1px solid #e5e5e5;
-  margin-bottom: 12.16%;
 }
 
 .back-to-catalog-block {
   border-bottom: 1px solid #e5e5e5;
   padding: 1.85% 6.93%;
-  margin-bottom: 4.62%;
 }
 
 .to-catalog {
@@ -28,7 +26,7 @@ img {
 }
 
 .article{
-  padding: 0 4.62%;
+  padding: 4.62% 4.62% 12%;
   display: flex;
   flex-direction: row;
 }

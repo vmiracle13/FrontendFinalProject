@@ -42,9 +42,6 @@
         return;
       }
       wrapFilterProps.classList.toggle('flex');
-      const spans = filterDiv.querySelectorAll('span');
-
-      const title = filterDiv.querySelectorAll('.title');
       const after = filterDiv.querySelector('.after');
       after.classList.toggle('none');
       const exit = filterDiv.querySelector('.exit-icon');

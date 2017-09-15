@@ -1,12 +1,18 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  header {
+  .header {
     padding: 0 5.23%;
+  }
+  .top {
+    padding-top: 4.94%;
+  }
+  .logo {
+    margin-bottom: 3.75%;
   }
   .right-block {
     flex-basis: 37%;
   }
   .wrap-nav {
-    margin-bottom: 4.05%;
+    margin-bottom: 3.5%;
   }
   .nav {
     margin-right: 0;
@@ -50,8 +56,19 @@
     top: 32%;
   }
   .banners{
-    padding-bottom: 13.67%;
     height: 32.55%;
+  }
+  .banner {
+    height: 255px;
+  }
+  .banner img {
+    object-fit: cover;
+  }
+  .banner:first-of-type {
+    flex-basis: 71%;
+  }
+  .banner:last-of-type {
+    flex-basis: 35%;
   }
   .banner-info {
     right: 12%;
@@ -63,7 +80,7 @@
     padding: 0 5.4%;
   }
   .list-items li {
-    flex-basis: 30.5%;
+    flex-basis: 29.28%;
   }
   .catalog {
     margin-bottom: 10.22%;
@@ -128,19 +145,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  body {
+  .wrapper {
     min-width: 375px;
   }
   .btn {
     width: 61.8%;
     height: 60px;
   }
-  header {
+  .header {
     padding: 0;
     height: 70px;
   }
   .top {
-    padding: 0 5.63%;
+    padding: 0 5.35%;
   }
   .sign-up, .prev, .next, nav, .search {
     display: none;
@@ -148,9 +165,9 @@
   .logo {
     width: 28px;
     height: 18px;
-    padding-top: 24px;
+    padding-top: 7.5%;
   }
-  .logo a {
+  .logo .link {
     background: url(/img/startPage/logo-mobile.png) 0 0 no-repeat;
     width: 28px;
     height: 18px;
@@ -162,11 +179,11 @@
   }
   .wrap-nav-active {
     display: flex;
-    padding-top: 35px;
+    padding-top: 9.1%;
     flex-direction: column;
-    padding-bottom: 7%;
+    padding-bottom: 6.7%;
     position: absolute;
-    top: 70px;
+    top: 9%;
     left: 0;
     z-index: 20;
     background-color: #fff;
@@ -176,8 +193,8 @@
     display: flex;
     flex-direction: column;
   }
-  .wrap-nav-active nav a {
-    margin-bottom: 40px;
+  .wrap-nav-active .nav .link {
+    margin-bottom: 22.1%;
     font-size: 1.5em;
   }
   .wrap-nav-active .search {
@@ -186,6 +203,15 @@
   }
   .wrap-nav-active .search input {
     width: 100%;
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 6%;
+    font-family: "OpenSans Bold", sans-serif;
+    font-size: 0.875em;
+    outline: none;
+  }
+  .glass-icon {
+    bottom: 46%;
   }
   .nav-exit {
     display: block;
@@ -198,7 +224,6 @@
     padding-left: 6%;
     border-left: 1px solid transparent;
   }
-
   .hamburger {
     display: block;
     background: url(/img/startPage/hamburger-menu-icon.png) 90% 50% no-repeat;
@@ -210,17 +235,15 @@
     padding-top: 59px;
     cursor: pointer;
   }
-
   .hamburger-active {
     display: block;
     background: url(/img/startPage/exit-icon.png) 90% 50% no-repeat;
     width: 15px;
     height: 15px;
     border-left: none;
-    padding-top: 22px;
+    padding-top: 9%;
     cursor: pointer;
   }
-
   .active-menu {
     color: #f14a58;
     width: 15px;
@@ -230,20 +253,58 @@
     padding-bottom: 7.9%;
     padding-left: 6%;
   }
-
-  footer {
+  .banners {
+    height: 66.2%;
+  }
+  .banner:nth-of-type(n + 2) {
+    display: none;
+  }
+  .banner-info {
+    top: 10.67%;
+    right: 11.47%;
+  }
+  .banner-info h3 {
+    font-size: 20px;
+  }
+  .banner-info span {
+    font-size: 0.875em;
+  }
+  .promo-block .prev, .promo-block .next {
+    top: 32%;
+  }
+  .banners {
+    height: 66.2%;
+  }
+  .banner:nth-of-type(n + 2) {
+    display: none;
+  }
+  .banner-info {
+    top: 10.67%;
+    right: 11.47%;
+  }
+  .banner-info h3 {
+    font-size: 20px;
+  }
+  .banner-info span {
+    font-size: 0.875em;
+  }
+  .footer-main-block {
     flex-direction: column;
     -ms-flex-direction: column;
   }
   .quick-links {
     border-bottom: 1px solid #e5e5e5;
     border-right: none;
-    padding-top: 9.78%;
-    padding-left: 4.9%;
-    padding-bottom: 15.43%;
+    padding: 9.78% 0 17% 5.35%;
   }
   .quick-links li {
-    margin-bottom: 18.6%;
+    margin-bottom: 16%;
+  }
+  .quick-links h4 {
+    font-size: 0.875em;
+  }
+  .quick-links .link {
+    font-size: 0.858em;
   }
   .socials {
     padding: 0;
@@ -252,14 +313,20 @@
   .socials p {
     display: none;
   }
+  .socials ul {
+    border-right: none;
+    border-top: none;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
   .socials ul li {
-    padding: 7.2% 0 12% 5.87%;
+    padding: 6.5% 6.93% 10% 5.87%;
   }
   .socials ul li:first-of-type {
     border-right: 1px solid #e5e5e5;
   }
   .socials li:last-of-type {
-    padding-right: 13.33%;
+    padding-right: 0;
   }
   .socials h4 {
     font-size: 0.875em
@@ -267,24 +334,24 @@
   .socials .tweet-us {
     font-size: 0.75em;
   }
+  .socials .order-by-phone{
+    font-size: 0.75em;
+  }
+  .copyright {
+    padding: 8.5% 5.6% 9.5%;
+  }
   .copyright span, .legal-ref li {
     font-size: 0.625em;
+  }
+  .copyright .center {
+    top: 32%;
+    left: 86%;
   }
   .center h4 {
     font-size: 0.875em;
   }
-  .socials li:last-of-type {
-    padding-right: 0;
-  }
-  .socials ul {
-    margin-bottom: 0;
-    border: 1px solid #e5e5e5;
-  }
-  .socials ul li {
-    padding-bottom: 6.2%;
-  }
-  .quick-links {
-    border-bottom: none;
+  .copyright .amount-visitors:before {
+    top: 3px;
   }
   .social-ref {
     display: none;
@@ -299,11 +366,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3.71% 5.33%;
+    padding: 6.7% 5.33%;
     display: -ms-flexbox;
     -ms-flex-direction: row;
     -ms-flex-pack: justify;
-
   }
   .social-ref .facebook {
     flex-basis: 67.3%;
@@ -316,71 +382,13 @@
   .copyright .legal-ref {
     display: none;
   }
-  .copyright {
-    padding: 8.4% 5.6% 9.8%;
-  }
-  .copyright .center {
-    left: 86%;
-  }
   .right-block {
-    padding-top: 28px;
-    margin-left: 36%;
-    flex-basis: 18%;
+    padding-top: 8.4%;
+    margin-left: 29%;
+
   }
   .right-ref-block {
     flex-basis: 35%;
     -ms-flex: 1 0 35%;
-  }
-
-  .banners {
-    height: 66.2%;
-  }
-  .banner:nth-of-type(n + 2) {
-    display: none;
-  }
-  .banner-info {
-    top: 10.67%;
-    right: 11.47%;
-  }
-  .banner-info h3 {
-    font-size: 20px;
-  }
-  .banner-info span {
-    font-size: 0.875em;
-  }
-
-  .promo-block .prev, .promo-block .next {
-    top: 32%;
-  }
-
-  .banners {
-    height: 66.2%;
-  }
-  .banner:nth-of-type(n + 2) {
-    display: none;
-  }
-  .banner-info {
-    top: 10.67%;
-    right: 11.47%;
-  }
-  .banner-info h3 {
-    font-size: 20px;
-  }
-  .banner-info span {
-    font-size: 0.875em;
-  }
-
-  .promo-block .prev, .promo-block .next {
-    top: 32%;
-  }
-}
-
-
-@media screen and (min-width: 512px) and (max-width: 767px) {
-  .copyright {
-    padding: 4% 3.5% 5%;
-  }
-  .copyright .center {
-    top: 22%;
   }
 }

@@ -1,17 +1,20 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .to-catalog {
-    padding: 3.125% 9.4%;
-    margin-bottom: 6.2%;
+  .back-to-catalog-block {
+    padding: 3.27% 5.23%;
   }
-  article, .article{
-    padding: 0 5.2%;
+  .to-catalog {
+    width: 20%;
+    margin-left: 4.3%;
+  }
+  .article{
+    padding: 3.93% 5.2% 18.3%;
     flex-direction: column;
   }
   .item-photo {
     flex-direction: row;
   }
   .main-photo {
-    width: 516px;
+    min-width: 516px;
     height: 344px;
   }
   .preview {
@@ -21,70 +24,54 @@
     width: 173px;
   }
   .item-info {
-    padding-top: 3.5%;
+    padding: 3.65% 0 0;
     text-align: center;
   }
   .item-info h2 {
-    margin-bottom: 4.7%;
+    margin-bottom: 4.38%;
     order: 1;
   }
   .item-info .item-price {
-    margin-bottom: 4.7%;
+    margin-bottom: 4%;
     order: 2;
-
   }
   .item-info p {
-    padding: 0 16%;
+    padding: 0 18%;
     font-size: 0.875em;
-    margin-bottom: 7.6%;
+    margin-bottom: 6.44%;
     order: 3;
   }
   .item-info a {
     order: 6;
   }
-  .sizes, .colors {
-    justify-content: center;
-  }
   .sizes {
     order: 4;
+    margin-left: 27%;
   }
   .colors {
-    margin-bottom: 16%;
-    margin-left: 12%;
+    margin: 0 0 15% 35%;
     order: 5;
   }
   .size-value {
-    flex-basis: 18%;
+    flex-basis: 20%;
   }
   .color-value {
-    flex-basis: 15%;
+    flex-basis: 21%;
   }
-
-  .color-value:last-of-type {
-    margin-right: 10%;
-  }
-
   .size-value span, .color-value span {
     padding: 10% 18%;
   }
-
   .sizes span, .colors span {
-    margin-right: 5%;
+    margin-right: 0;
   }
-  button {
-    width: 40.4%;
-    height: 70px;
-  }
-  .item {
-    margin-bottom: 18.7%;
+  .btn {
+    width: 38%;
   }
   .banners {
     margin-bottom: 0;
   }
-  .banner {
-    width: auto;
-  }
-  .banner img {
+  .banner:first-of-type {
+    flex-basis: 86%;
   }
   .banner:first-child .banner-info {
     top: 8%;
@@ -97,24 +84,28 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .to-catalog {
-    padding: 7.3% 5.6%;
+@media screen and (max-width: 767px) {
+  .back-to-catalog-block {
+    padding: 5.6% 5.35%;
   }
-  article, .article{
-    padding: 0 5.6%;
+  .to-catalog {
+    font-size: 0.75em;
+    width: 32%;
+  }
+  .article{
+    padding: 4% 5.36% 26.7%;
     flex-direction: column;
   }
-  .main-photo {
-    width: 317px;
-    height: 223px;
-  }
   .item-photo {
-    margin: 0 auto 16%;
+     margin: 0 auto 15%;
+     width: 335px;
+  }
+  .main-photo {
+    height: 223px;
   }
   .item-info {
     text-align: center;
-    padding-left: 0;
+    padding: 0;
   }
   .item-info .name {
     margin-bottom: 9.5%;
@@ -144,21 +135,19 @@
   .colors {
     order: 5;
   }
-  .sizes span, .colors span {
-    margin-right: 11%;
+  .sizes span {
+    margin-right: 1.4%;
   }
-  button {
-    width: 70%;
-    height: 60px;
+  .colors span {
+    margin-right: 0;
   }
-  .item {
-    margin-bottom: 28.3%;
+  .btn {
+    width: 66%;
   }
-  .preview {
-    width: 317px;
-  }
-
   .size-value label, .color-value label {
-    padding: 10% 18%;
+    padding: 7px 11px;
+  }
+  .banner {
+    min-height: 235px;
   }
 }

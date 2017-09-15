@@ -1,50 +1,53 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   h2 {
-    padding: 2.5% 9.1%;
+    padding: 2.5% 9.15%;
     font-size: 1.25em;
   }
   .product-list {
-    padding: 4.3% 5.4%;
+    padding: 3.93% 5.23% 2%;
   }
   .wrap img {
     width: 144px;
     height: auto;
   }
-  .product-info .price {
-    font-size: 1.17em;
-  }
-  .product-info button {
-    width: auto;
-    height: auto;
-  }
   .product {
     margin-bottom: 14.4%;
   }
-  .shadow {
-    /*height: 98%;*/
+  .product-info {
+     padding: 2.38% 0 0 7.3%;
+     flex-basis: 32%;
+   }
+  .product-info .price {
+     font-size: 1.17em;
+   }
+  .product-info .btn {
+    width: 85%;
+    font-size: 1.17em;
+  }
+  .product-info span {
+    margin-bottom: 9%;
   }
   .shadow span {
     left: 12%;
-  }
-  .product-list {
-    padding: 4.3% 5.4% 2%;
   }
   .coupon-code {
     padding: 1.7% 0;
   }
   .bottom-info {
-    padding: 4% 5.4% 5%;
-    margin-bottom: 3.5%
+    margin: 0 5.23% 7.85%;
+    padding: 4% 0 0;
+  }
+  .total-sum {
+    flex-basis: 10%;
   }
   .total-sum input {
     font-size: 1em;
   }
-  .total-sum {
-    flex-basis: 11%;
+  .coupon-code {
+    font-size: 0.69em;
   }
-  button {
-    width: 39%;
-    font-size: 1.25em;
+  .btn {
+    width: 42.5%;
   }
 }
 

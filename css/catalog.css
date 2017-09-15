@@ -198,7 +198,7 @@ nav {
 }
 
 .list-items {
-  margin-bottom: 0.9%;
+  margin-bottom: 0;
   flex-wrap: wrap;
   /*for IE*/
   -ms-flex-wrap: wrap;
@@ -213,6 +213,10 @@ nav {
   margin-bottom: 20.93%;
 }
 
+.list-items li:last-child {
+  margin-bottom: 7.63%;
+}
+
 .wrap:hover ~ .product-name {
   color: #f14a58;
 }
@@ -220,7 +224,6 @@ nav {
 .shadow {
   height: 100%;
 }
-
 
 .list-items .price {
   font-family: "Roboto Regular", sans-serif;
@@ -314,7 +317,7 @@ nav {
   font-style: normal;
 }
 
-footer {
+.footer {
   border-top: none;
 }
 
@@ -324,10 +327,10 @@ footer {
   height: 15px;
   position: absolute;
   top: 38%;
-  right: 6%;
+  right: 5.5%;
   z-index: 10;
 }
 
-.list-items .product-name {
+/*.list-items .product-name {
   margin-bottom: 8.37%;
-}
+}*/

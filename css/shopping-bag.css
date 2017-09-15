@@ -30,7 +30,7 @@ h2 {
   font-size: 0.75em;
   padding: 2.38% 0 0 4.41%;
   text-transform: capitalize;
-  flex-basis: 38%;
+  flex-basis: 33%;
   display: flex;
   flex-direction: column;
 }
@@ -58,7 +58,7 @@ h2 {
 .product-info .btn {
   color: #f14a58;
   font-family: "OpenSans Bold", sans-serif;
-  font-size: 1.09em;
+  font-size: 1em;
   border: none;
   margin: 0;
   padding: 0;
