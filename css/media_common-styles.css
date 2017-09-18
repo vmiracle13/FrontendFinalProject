@@ -165,12 +165,16 @@
   .logo {
     width: 28px;
     height: 18px;
-    padding-top: 7.5%;
+    margin-top: 25px;
   }
   .logo .link {
     background: url(/img/startPage/logo-mobile.png) 0 0 no-repeat;
     width: 28px;
     height: 18px;
+  }
+  .right-block {
+    margin-top: 27px;
+    margin-left: 29%;
   }
   .wrap-nav {
     display: none;
@@ -230,7 +234,7 @@
     width: 14px;
     height: 12px;
     border-left: 1px solid #e5e5e5;
-    padding-left: 10px;
+    padding-left: 4%;
     padding-right: 15px;
     padding-top: 59px;
     cursor: pointer;
@@ -241,7 +245,7 @@
     width: 15px;
     height: 15px;
     border-left: none;
-    padding-top: 9%;
+    padding-top: 29px;
     cursor: pointer;
   }
   .active-menu {
@@ -381,11 +385,6 @@
   }
   .copyright .legal-ref {
     display: none;
-  }
-  .right-block {
-    padding-top: 8.4%;
-    margin-left: 29%;
-
   }
   .right-ref-block {
     flex-basis: 35%;

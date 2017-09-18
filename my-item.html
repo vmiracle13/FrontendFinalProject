@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <title>My Item Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/reset.css" rel="stylesheet">
   <link href="css/item.css" rel="stylesheet">
-  <link href="css/common-styles.css" rel="stylesheet">
   <link href="css/media_common-styles.css" rel="stylesheet">
   <link href="css/media_item.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="wrapper">
+
   <header class="header">
     <div class="top">
       <h1 class="logo">
@@ -50,96 +49,102 @@
 
   <main>
 
-  <section class="item">
-    <a href="catalog.html" class="link to-catalog">< Back to catalog</a>
-
-    <article class="article">
-      <div class="item-photo">
-        <img class="main-photo" src="img/itemPage/full.jpg" alt="main-photo" title="main-photo">
-
-        <ul class="preview">
-          <li>
-            <img src="img/itemPage/full.jpg">
-            <div class="shadow-img"></div>
-          </li>
-          <li>
-            <img src="img/itemPage/preview1.jpg">
-            <div></div>
-          </li>
-          <li>
-            <img src="img/itemPage/preview2.jpg">
-            <div></div>
-          </li>
-        </ul>
+    <section class="item">
+      <div class="back-to-catalog-block">
+        <a href="catalog.html" class="link to-catalog">< Back to catalog</a>
       </div>
 
-      <div class="item-info">
-        <h2 class="name">Dark classic fit suit</h2>
-        <p class="description">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</p>
-        <span class="item-price">&#163;180.60</span>
 
-        <div class="sizes">
-          <span>Size:</span>
-          <div class="size-value">
-            <input id="52" type="radio" value="52" name="size" checked>
-            <label for="52">UK 52</label>
-          </div>
-          <div class="size-value">
-            <input id="54" type="radio" name="size" value="54">
-            <label for="54">UK 54</label>
-          </div>
-          <div class="size-value">
-            <input id="56" type="radio" name="size" value="56">
-            <label for="56">UK 56</label>
-          </div>
+      <article class="article">
+        <div class="item-photo">
+          <img class="main-photo" src="img/itemPage/full.jpg" alt="main-photo" title="main-photo">
+
+          <ul class="preview">
+            <li>
+              <img src="img/itemPage/full.jpg">
+              <div class="shadow-img"></div>
+            </li>
+            <li>
+              <img src="img/itemPage/preview1.jpg">
+              <div></div>
+            </li>
+            <li>
+              <img src="img/itemPage/preview2.jpg">
+              <div></div>
+            </li>
+          </ul>
         </div>
 
-        <div class="colors">
-          <span>Color:</span>
-          <div class="color-value">
-            <input id="Black" type="radio" value="Black" name="color">
-            <label for="Black">Black</label>
+        <div class="item-info">
+          <h2 class="name">Dark classic fit suit</h2>
+          <p class="description">Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons
+            at the cuffs</p>
+          <span class="item-price">&#163;180.60</span>
+
+          <div class="sizes">
+            <span>Size:</span>
+            <div class="size-value">
+              <input id="52" type="radio" value="52" name="size" checked>
+              <label for="52">UK 52</label>
+            </div>
+            <div class="size-value">
+              <input id="54" type="radio" name="size" value="54">
+              <label for="54">UK 54</label>
+            </div>
+            <div class="size-value">
+              <input id="56" type="radio" name="size" value="56">
+              <label for="56">UK 56</label>
+            </div>
           </div>
-          <div class="color-value">
-            <input id="Blue" type="radio" value="Blue" name="color" checked>
-            <label for="Blue">Blue</label>
+
+          <div class="colors">
+            <span>Color:</span>
+            <div class="color-value">
+              <input id="Black" type="radio" value="Black" name="color">
+              <label for="Black">Black</label>
+            </div>
+            <div class="color-value">
+              <input id="Blue" type="radio" value="Blue" name="color" checked>
+              <label for="Blue">Blue</label>
+            </div>
           </div>
+
+          <a href="shopping-bag.html" class="link">
+            <button class="btn">Add to bag</button>
+          </a>
         </div>
+      </article>
+    </section>
 
-        <a href="my-shopping-bag.html" class="link"><button class="btn">Add to bag</button></a>
-
+    <section class="banners">
+      <div class="banner">
+        <div class="banner-info">
+          <h3>adidas blue</h3>
+          <span>For Men</span>
+        </div>
+        <img src="img/itemPage/banners/banner-1.jpg" alt="Adidas Blue For Men" title="Adidas Blue For Men">
       </div>
-    </article>
-  </section>
 
-  <section class="banners">
-    <div class="banner">
-      <div class="banner-info">
-        <h3>adidas blue</h3>
-        <span>For Men</span>
+      <div class="banner">
+        <div class="banner-info">
+          <h3>repair patches</h3>
+          <span>&pound;150.50</span>
+        </div>
+        <img src="img/itemPage/banners/banner-2.jpg" alt="repair patches &pound;150.50"
+             title="repair patches &pound;150.50">
       </div>
-      <img src="img/itemPage/banners/banner-1.jpg" alt="Adidas Blue For Men" title="Adidas Blue For Men">
-    </div>
 
-    <div class="banner">
-      <div class="banner-info">
-        <h3>repair patches</h3>
-        <span>&pound;150.50</span>
+      <div class="banner">
+        <div class="banner-info">
+          <h3>sale</h3>
+          <span>-70%</span>
+        </div>
+        <img src="img/itemPage/banners/banner-3.jpg" alt="Sale -70%" title="Sale -70%">
       </div>
-      <img src="img/itemPage/banners/banner-2.jpg" alt="repair patches &pound;150.50"
-           title="repair patches &pound;150.50">
-    </div>
-
-    <div class="banner">
-      <div class="banner-info">
-        <h3>sale</h3>
-        <span>-70%</span>
-      </div>
-      <img src="img/itemPage/banners/banner-3.jpg" alt="Sale -70%" title="Sale -70%">
-    </div>
-  </section>
+    </section>
 
   </main>
+
   <footer class="footer">
     <div class="footer-main-block">
       <div class="quick-links">
@@ -227,14 +232,13 @@
       </ul>
     </div>
   </footer>
+
 </div>
 
 <script src="build/item-photo-preview.js"></script>
 <script src="build/search-field.js"></script>
-<script src="build/openHamburgerMenu.js"></script>
-<script src="js/bag.js"></script>
+<script src="js/openHamburgerMenu.js"></script>
+<script src="build/bag.js"></script>
 <script src="js/my-item.js"></script>
-<!--<script src="js/my-shopping-bag.js"></script>-->
-
 </body>
 </html>

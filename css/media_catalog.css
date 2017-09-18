@@ -18,7 +18,7 @@
     left: 23%;
   }
   .sale-info {
-    top: 17.5%;
+    top: 19%;
     left: 13%;
     width: 74%;
   }
@@ -149,9 +149,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .top {
-    align-items: initial;
-  }
   .nav-item-small {
     display: none;
   }

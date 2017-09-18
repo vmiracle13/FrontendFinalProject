@@ -97,8 +97,7 @@
     flex-direction: column;
   }
   .item-photo {
-     margin: 0 auto 15%;
-     width: 335px;
+     margin-bottom: 15%;
   }
   .main-photo {
     height: 223px;
@@ -149,5 +148,6 @@
   }
   .banner {
     min-height: 235px;
+    width: 100%;
   }
 }

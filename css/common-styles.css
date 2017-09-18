@@ -1,19 +1,13 @@
-body {
+.wrapper {
   max-width: 1300px;
-  margin: 0 auto;
   border: 1px solid red;
   background-color: #fff;
   color: #000;
   font: 1em/1.2 "OpenSans Bold", Arial, sans-serif;
-}
-
-/*.wrapper {
-  max-width: 1180px;
   margin: 0 auto;
-
-  !*for IE*!
+  /*for IE*/
   display: block;
-}*/
+}
 
 .link {
   color: #000;
@@ -52,9 +46,8 @@ body {
 }
 
 .header {
-  /*padding: 0 4.61%;*/
+  padding: 0 4.61%;
   max-width: 1180px;
-  margin: 0 auto;
 }
 
 .top {

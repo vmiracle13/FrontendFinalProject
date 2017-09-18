@@ -139,8 +139,8 @@ nav {
   width: 16.45%;
 }
 .sub-navigation[data-number='4'] {
-  left: 66.7%;
-  width: 16.5%;
+  left: 66.8%;
+  width: 16.4%;
 }
 .sub-navigation[data-number='5'] {
   left: 83.35%;
@@ -327,10 +327,6 @@ nav {
   height: 15px;
   position: absolute;
   top: 38%;
-  right: 5.5%;
+  right: 5%;
   z-index: 10;
 }
-
-/*.list-items .product-name {
-  margin-bottom: 8.37%;
-}*/

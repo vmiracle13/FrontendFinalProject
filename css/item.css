@@ -18,7 +18,7 @@ img {
 .to-catalog {
   display: block;
   cursor: pointer;
-  width: 13%;
+  width: 17%;
 }
 
 .to-catalog:hover {
@@ -35,12 +35,13 @@ img {
   display: flex;
   flex-direction: column;
   flex-basis: 54.2%;
-  width: 590px;
+  /*width: 590px;*/
 }
 
 .main-photo {
   height: 390px;
   width: 100%;
+  object-fit: cover;
 }
 
 .preview {
@@ -50,7 +51,7 @@ img {
 }
 
 .preview li {
-  flex-basis: 33.31%;
+  flex-basis: 33.4%;
   height: auto;
   width: 176px;
   position: relative;
@@ -137,7 +138,7 @@ img {
 .size-value label, .color-value label {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875em;
-  padding: 7% 15%;
+  padding: 7% 13%;
   cursor: pointer;
 }
 

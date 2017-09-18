@@ -11,8 +11,7 @@
   <link href="css/media_shopping-bag.css" rel="stylesheet">
 </head>
 <body>
-
-<main>
+<div class="wrapper">
   <header class="header">
     <div class="top">
       <h1 class="logo">
@@ -49,22 +48,24 @@
     </div>
   </header>
 
-  <section class="main-content">
-    <h2>Shopping bag</h2>
+  <main>
+    <section class="main-content">
+      <h2>Shopping bag</h2>
 
-    <div class="product-list">
-    </div>
-    <p class="coupon-code">You've qualified for free UK Next Day Delivery on your order. Don't forget to enter the code <span>nextday</span> at checkout</p>
-    <div class="bottom-info">
-      <button class="clear">Clear bag</button>
-      <button>Buy now</button>
-      <div class="total-sum">
-        <span>Total cost:</span>
-        <span>&pound;</span>
+      <div class="product-list">
       </div>
-    </div>
-
-  </section>
+      <p class="coupon-code">You've qualified for free UK Next Day Delivery on your order. Don't forget to enter the
+        code <span>nextday</span> at checkout</p>
+      <div class="bottom-info">
+        <button class="btn clear">Clear bag</button>
+        <button class="btn buy">Buy now</button>
+        <div class="total-sum">
+          <span>Total cost:</span>
+          <span>&pound;</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-main-block">
@@ -153,13 +154,12 @@
       </ul>
     </div>
   </footer>
-</main>
 
+</div>
 <script src="js/bag.js"></script>
 <script src="js/search-field.js"></script>
 <script src="js/openHamburgerMenu.js"></script>
 <script src="js/my-shopping-bag.js"></script>
-<!--<script src="js/my-item.js"></script>-->
 
 </body>
 </html>

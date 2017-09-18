@@ -47,7 +47,7 @@ h2 {
   margin-bottom: 20%;
 }
 
-.product-info span {
+.product-info .color, .size, .amount{
   margin-bottom: 4%;
 }
 
@@ -63,7 +63,7 @@ h2 {
   margin: 0;
   padding: 0;
   text-align: left;
-  width: 50%;
+  width: 55%;
   height: auto;
 }
 .product-info .btn:hover {
