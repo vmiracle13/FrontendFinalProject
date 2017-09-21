@@ -8,6 +8,8 @@
     var nextArrow = slider.querySelector('.next');
     var activeImage = sliderBlock.querySelector('a.active');
     var divMiddle = document.body.querySelector('.middle');
+    var initialPoint = void 0;
+    var finalPoint = void 0;
 
     var timerId = null;
     var animatedStop = false;
@@ -64,7 +66,7 @@
           activeImage.classList.remove('active');
           activeImage = activeImage.previousElementSibling;
         }
-      } else if (event !== undefined && event.target.tagName === "A" && divMiddle.contains(event.target)) {
+      } else if (event !== undefined && event.target.tagName === 'A' && divMiddle.contains(event.target)) {
         activeImage.classList.remove('active');
         activeImage = sliderBlock.children[event.target.dataset.number];
       } else {
@@ -114,5 +116,43 @@
       clearInterval(timerId);
       runSlide(event);
     });
+
+    //swipe
+    document.addEventListener('touchstart', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      initialPoint = event.changedTouches[0];
+    }, false);
+
+    document.addEventListener('touchend', function (event) {
+      finalPoint = event.changedTouches[0];
+      var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+      var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
+      if (xAbs > 20 && xAbs > yAbs) {
+        if (finalPoint.pageX < initialPoint.pageX) {
+          animatedStop = true;
+          clearInterval(timerId);
+          activeImage.classList.remove('active');
+          if (activeImage === sliderBlock.lastElementChild) {
+            activeImage = sliderBlock.firstElementChild;
+          } else {
+            activeImage = activeImage.nextElementSibling;
+          }
+        } else {
+          animatedStop = true;
+          clearInterval(timerId);
+          activeImage.classList.remove('active');
+          if (activeImage === sliderBlock.firstElementChild) {
+            activeImage = sliderBlock.lastElementChild;
+          } else {
+            activeImage = activeImage.previousElementSibling;
+          }
+        }
+      }
+      activeImage.classList.add('active');
+      changeActiveRadio(activeImage);
+      event.preventDefault();
+      event.stopPropagation();
+    }, false);
   });
 })();

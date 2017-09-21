@@ -18,7 +18,7 @@ img {
 .to-catalog {
   display: block;
   cursor: pointer;
-  width: 17%;
+  width: 136px;
 }
 
 .to-catalog:hover {
@@ -35,7 +35,6 @@ img {
   display: flex;
   flex-direction: column;
   flex-basis: 54.2%;
-  /*width: 590px;*/
 }
 
 .main-photo {
@@ -207,4 +206,12 @@ img {
 
 footer {
   border-top: none;
+}
+
+
+/*for Firefox*/
+@-moz-document url-prefix() {
+  .colors {
+    margin-bottom: 14%;
+  }
 }

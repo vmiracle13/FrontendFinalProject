@@ -66,6 +66,20 @@
   .btn {
     width: 42.5%;
   }
+
+  /*for Firefox*/
+  @-moz-document url-prefix() {
+    .product {
+      margin-bottom: 98px;
+    }
+    .product-info .price {
+       margin-bottom: 20px;
+     }
+    .product-info .size,
+    .product-info .color {
+      margin-bottom: 4px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -145,5 +159,30 @@
 
   .total-sum {
     flex-basis: 20%;
+  }
+
+  /*for Firefox*/
+  @-moz-document url-prefix() {
+    .product {
+      margin-bottom: 40px;
+    }
+    .product-info .price {
+      margin-bottom: 25px;
+    }
+    .product-info .size,
+    .product-info .color {
+      margin-bottom: 4px;
+    }
+    .product-info .amount {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+/*for IE11*/
+
+@media all  and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .product {
+    flex-basis: 85%;
   }
 }

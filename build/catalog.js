@@ -18,12 +18,17 @@
 
     updateWidget();
 
-    var item = {
+    /*const item = {
       name: 'Dark classic fit suit',
       description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
       size: '20S',
       color: 'Blue',
       price: (250 + Math.random() * (400 + 1 - 250)).toFixed(2)
-    };
+    };*/
+
+    window.addEventListener('storage', function () {
+      bag.deserialize();
+      updateWidget();
+    });
   });
 })();

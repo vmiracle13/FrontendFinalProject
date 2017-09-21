@@ -147,3 +147,9 @@ h2 {
 .changeColor {
   color: red;
 }
+
+@-moz-document url-prefix() {
+  .product {
+    margin-bottom: 90px;
+  }
+}

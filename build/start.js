@@ -19,5 +19,10 @@
     }
 
     updateWidget();
+
+    window.addEventListener('storage', function () {
+      bag.deserialize();
+      updateWidget();
+    });
   });
 })();

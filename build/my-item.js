@@ -2,16 +2,14 @@
 
 ;(function () {
   document.addEventListener('DOMContentLoaded', function () {
-    //choose color and size - toggle radio-buttons
     var sizesBlock = document.body.querySelector('.item-info').querySelector('.sizes');
     var colorBlock = document.body.querySelector('.item-info').querySelector('.colors');
+    //choose color and size - toggle radio-buttons
     function findCheckedElem(collection) {
       return Array.prototype.slice.call(collection).filter(function (elem) {
         return elem.checked ? elem : false;
       });
     }
-
-    //bag
     var bag = new Bag();
 
     var buttonAddToBag = document.body.querySelector('.item-info button');

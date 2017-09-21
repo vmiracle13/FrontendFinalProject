@@ -146,6 +146,25 @@
     padding-left: 0;
     flex-basis: auto;
   }
+
+  /*for Firefox*/
+  @-moz-document url-prefix() {
+    .list-items li:first-child {
+      margin-bottom: 310px;
+    }
+    .list-items li {
+      margin-bottom: 86px;
+    }
+    .sale-info {
+
+    }
+    .banner:first-of-type {
+      flex-basis: 68.2%;
+    }
+    .banner:nth-of-type(2) {
+      flex-basis: 31.8%;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -317,7 +336,7 @@
     background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
     position: absolute;
     top: 29px;
-    right: 23px;
+    right: 6%;
     transform: translateY(-50%);
     width: 6px;
     height: 3px;
@@ -350,5 +369,33 @@
   .btn {
     width: 58.7%;
     margin-bottom: 26.7%;
+  }
+
+  /*for Firefox*/
+  @-moz-document url-prefix() {
+    .list-items li {
+      margin-bottom: 60px;
+    }
+    .sale-info {
+      top: 18%;
+    }
+  }
+}
+
+
+/*for IE11*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .banner:first-of-type {
+    flex-basis: 68.2%;
+  }
+  .banner:nth-of-type(2) {
+    flex-basis: 31.8%;
+  }
+}
+
+@media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .filter > div:first-child {
+    padding-left: 0;
   }
 }

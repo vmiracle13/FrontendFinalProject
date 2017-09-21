@@ -62,19 +62,18 @@ nav {
   z-index: 5;
 }
 
-.filter > div::after {
+.filter > div:after, .filter > div::after {
   content: " ";
   background: url(/img/catalogPage/filter-arrow-icon.png) 0 0 no-repeat;
   display: block;
   position: absolute;
-  top: 30px;
+  top: 50%;
   right: 20px;
-  transform: translateY(-50%);
   width: 6px;
   height: 3px;
 }
 
-.filter>div:last-of-type::after {
+.filter > div:last-of-type:after, .filter > div:last-of-type::after {
   right: 28%;
 }
 
@@ -174,7 +173,7 @@ nav {
 .sale-info {
   position: absolute;
   top: 21.7%;
-  left: 13%;
+  left: 17%;
   text-align: center;
 }
 
@@ -329,4 +328,50 @@ nav {
   top: 38%;
   right: 5%;
   z-index: 10;
+}
+
+/*for Firefox*/
+@-moz-document url-prefix() {
+  .sub-navigation[data-number='2'] {
+    left: 36.7%;
+    width: 13.25%;
+  }
+  .sub-navigation[data-number='4'] {
+    left: 66.7%;
+    width: 16.5%;
+  }
+  .list-items li:first-child {
+    margin-bottom: 246px;
+  }
+  .list-items li {
+    margin-bottom: 88px;
+  }
+}
+
+/*for IE11*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sub-navigation[data-number='0'] {
+    left: 0;
+    width: 19.25%;
+  }
+  .sub-navigation[data-number='1'] {
+    left: 19.4%;
+    width: 16%;
+  }
+  .sub-navigation[data-number='2'] {
+    left: 35.6%;
+    width: 15.9%;
+  }
+  .sub-navigation[data-number='3'] {
+    left: 51.65%;
+    width: 16%;
+  }
+  .sub-navigation[data-number='4'] {
+    left: 67.8%;
+    width: 15.9%;
+  }
+  .sub-navigation[data-number='5'] {
+    left: 83.9%;
+    width: 16%;
+  }
 }

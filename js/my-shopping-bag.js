@@ -67,6 +67,7 @@
 
         const button = document.createElement('button');
         button.innerHTML = 'Remove item';
+        button.classList.add('btn');
         productInfoBlock.appendChild(button);
 
         productListBlock.appendChild(productBlock);
@@ -87,8 +88,6 @@
     function clearBag() {
       bag.clear();
       productListBlock.innerHTML = '';
-      /*couponCode.remove();
-      bottomInfo.remove();*/
       couponCode.hidden = true;
       bottomInfo.hidden = true;
       const message = document.createElement('span');
@@ -100,8 +99,6 @@
 
     function buy() {
       productListBlock.innerHTML = '';
-      /*couponCode.remove();
-      bottomInfo.remove();*/
       couponCode.hidden = true;
       bottomInfo.hidden = true;
       const message = document.createElement('span');
@@ -128,8 +125,6 @@
       if (bag.productQuantity === 0) {
         if (bag.productList.length === 0) {
           parent.parentElement.remove();
-          /*couponCode.remove();
-          bottomInfo.remove();*/
           couponCode.hidden = true;
           bottomInfo.hidden = true;
           const message = document.createElement('span');

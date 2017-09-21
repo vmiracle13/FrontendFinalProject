@@ -69,6 +69,7 @@
 
         var button = document.createElement('button');
         button.innerHTML = 'Remove item';
+        button.classList.add('btn');
         productInfoBlock.appendChild(button);
 
         productListBlock.appendChild(productBlock);
@@ -89,8 +90,8 @@
     function clearBag() {
       bag.clear();
       productListBlock.innerHTML = '';
-      couponCode.remove();
-      bottomInfo.remove();
+      couponCode.hidden = true;
+      bottomInfo.hidden = true;
       var message = document.createElement('span');
       message.innerHTML = 'Your shopping bag is empty. Use Catalog to add new items';
       message.classList.add('message');
@@ -100,8 +101,8 @@
 
     function buy() {
       productListBlock.innerHTML = '';
-      couponCode.remove();
-      bottomInfo.remove();
+      couponCode.hidden = true;
+      bottomInfo.hidden = true;
       var message = document.createElement('span');
       message.innerHTML = 'Thank You for your purchase!';
       message.classList.add('message');
@@ -126,8 +127,8 @@
       if (bag.productQuantity === 0) {
         if (bag.productList.length === 0) {
           parent.parentElement.remove();
-          couponCode.remove();
-          bottomInfo.remove();
+          couponCode.hidden = true;
+          bottomInfo.hidden = true;
           var message = document.createElement('span');
           message.innerHTML = 'Your shopping bag is empty. Use Catalog to add new items';
           message.classList.add('message');
@@ -148,8 +149,12 @@
     buyButton.addEventListener('click', buy);
 
     window.addEventListener('storage', function () {
+      console.log('something has changed');
       bag.deserialize();
+      productListBlock.innerHTML = '';
       createHTMLPage();
+      couponCode.hidden = false;
+      bottomInfo.hidden = false;
       updateWidget();
     });
   });
