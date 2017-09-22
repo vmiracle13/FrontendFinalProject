@@ -11,10 +11,30 @@ nav {
   margin-right: 0;
 }
 
+.clip {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4.6%;
+}
+
+.clip-after{
+  content: '';
+  display: block;
+  background-color: #fff;
+  width: 50px;
+  height: 55px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: 9;
+  -webkit-box-shadow: -24px 0 42px 0 rgba(255,255,255,1);
+  -moz-box-shadow: -24px 0 42px 0 rgba(255,255,255,1);
+  box-shadow: -24px 0 42px 0 rgba(255,255,255,1);
+}
+
 .filter {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 4.6%;
   height: 64px;
   display: flex;
   flex-direction: row;

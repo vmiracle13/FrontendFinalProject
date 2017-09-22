@@ -186,6 +186,7 @@
   }
   .filter > div:first-child {
     flex-basis: auto;
+    padding-left: 0;
   }
   .selected {
     padding: 0;
@@ -341,15 +342,13 @@
     width: 6px;
     height: 3px;
     z-index: 10;
-    -webkit-box-shadow: -3px 1px 18px 27px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -3px 1px 18px 27px rgba(255, 255, 255, 1);
-    box-shadow: -3px 1px 18px 27px rgba(255, 255, 255, 1);
   }
   .filter > div::after {
     display: none;
   }
   .filter {
     padding-left: 20px;
+    width: 140%;
   }
   .filter div {
     border: none;
@@ -359,9 +358,9 @@
     min-height: 236px;
   }
   .exit-icon {
-    -webkit-box-shadow: -3px 1px 18px 20px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -3px 1px 18px 20px rgba(255, 255, 255, 1);
-    box-shadow: -3px 1px 18px 20px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: -3px 1px 18px 18px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -3px 1px 18px 18px rgba(255, 255, 255, 1);
+    box-shadow: -3px 1px 18px 18px rgba(255, 255, 255, 1);
   }
   .wrap {
     margin-bottom: 21%;

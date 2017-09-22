@@ -144,6 +144,12 @@ h2 {
   vertical-align: top;
 }
 
+.added-img {
+  object-fit: cover;
+  width: 240px;
+  height: 340px;
+}
+
 .changeColor {
   color: red;
 }

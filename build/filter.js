@@ -54,8 +54,6 @@
       mainShadow.classList.toggle('main-catalog-shadow-active');
       var footer = document.body.querySelector('.footer-shadow');
       footer.classList.toggle('footer-shadow-active');
-      var copyright = document.body.querySelector('.copyright-shadow');
-      copyright.classList.toggle('copyright-shadow-active');
     });
 
     var subNavigationList = filterWrap.querySelectorAll('.sub-navigation');

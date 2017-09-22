@@ -249,7 +249,7 @@
 
   .right-block {
     margin-top: 27px;
-    margin-left: 29%;
+    flex-basis: 66%;
   }
 
   .wrap-nav {

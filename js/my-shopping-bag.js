@@ -23,12 +23,11 @@
         const img = document.createElement('img');
         img.setAttribute('src', bag.productList[i].img);
         img.setAttribute('alt', bag.productList[i].name);
-        img.style.width = '144px';
-        img.style.height = 'auto';
+        img.classList.add('added-img');
         wrapBlock.appendChild(img);
 
         const a = document.createElement('a');
-        a.setAttribute('href', 'item.html');
+        a.setAttribute('href', 'my-item.html');
         a.classList.add('shadow');
         wrapBlock.appendChild(a);
 
@@ -147,7 +146,6 @@
     buyButton.addEventListener('click', buy);
 
     window.addEventListener('storage', () => {
-      console.log('something has changed');
       bag.deserialize();
       productListBlock.innerHTML = '';
       createHTMLPage();

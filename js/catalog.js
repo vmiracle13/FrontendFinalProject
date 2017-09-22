@@ -8,9 +8,11 @@
     function updateWidget() {
       const amount = bag.getAmount();
       const sum = bag.getSum();
-      if (!amount || !sum) return;
-
       headerProductNumber.innerHTML = `(${amount})`;
+      if (sum === 0) {
+        headerBagSum.innerHTML = 'Bag&nbsp;';
+        return;
+      }
       headerBagSum.innerHTML = `Bag&nbsp;&pound;${new Intl.NumberFormat('ru').format(sum.toFixed(2)).replace(',', '.')}&nbsp;`;
     }
 
